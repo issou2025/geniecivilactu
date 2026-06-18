@@ -24,7 +24,7 @@ jobs:
       - name: Installer les dépendances
         run: |
           python -m pip install --upgrade pip
-          pip install feedparser requests beautifulsoup4 python-dateutil
+          pip install feedparser requests beautifulsoup4 python-dateutil deep-translator
 
       - name: Exécuter le script d'actualités
         run: python scripts/fetch_news.py

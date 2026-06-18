@@ -21,6 +21,8 @@ Le projet fournit une veille légère, rapide et professionnelle, prête à publ
 - Script Python pour agréger les flux d’actualités.
 - Mise à jour automatique par GitHub Actions.
 - Pages statiques importantes : catégories, à propos, contact et mentions légales.
+- Traduction automatique en français des titres et résumés récupérés.
+- Lecture intégrée dans le site avec accès à la source originale.
 
 ## Structure du projet
 
@@ -44,17 +46,11 @@ genie-civil-actu/
         └── update_news.yml
 ```
 
-## Pages du site
-
-- `index.html` : accueil, recherche, filtres et grille d’actualités.
-- `categories.html` : présentation des grandes rubriques de veille.
-- `a-propos.html` : objectif du site et fonctionnement général.
-- `contact.html` : proposition de source ou signalement via GitHub Issues.
-- `mentions-legales.html` : attribution, limites légales et responsabilité.
-
 ## Ouvrir le site localement
 
-Pour tester correctement le chargement JSON avec un petit serveur local :
+Ouvrez simplement `index.html` dans un navigateur moderne.
+
+Pour tester le chargement JSON avec un petit serveur local :
 
 ```bash
 python -m http.server 8000
@@ -88,22 +84,86 @@ Chaque source contient :
 
 ## Fonctionnement du script Python
 
-Le script `scripts/fetch_news.py` lit les sources, récupère les derniers articles, conserve uniquement les titres, résumés courts, sources, dates, liens et catégories, supprime les doublons, trie les articles et sauvegarde `data/news.json` en UTF-8.
+Le script `scripts/fetch_news.py` :
+
+- lit les sources définies dans `scripts/sources.py` ;
+- récupère les derniers articles ;
+- traduit en ligne les titres et résumés vers le français quand la dépendance de traduction est disponible ;
+- limite chaque source à quelques articles ;
+- conserve le titre, le résumé court, la source, la date, le lien et la catégorie ;
+- ne copie jamais les articles complets ;
+- ne télécharge pas les images ;
+- met `image` à une chaîne vide ;
+- supprime les doublons ;
+- classe automatiquement les articles par mots-clés ;
+- génère un identifiant unique ;
+- trie les articles par date décroissante ;
+- conserve les 200 derniers articles ;
+- sauvegarde un JSON propre en UTF-8 dans `data/news.json`.
 
 Pour lancer le script :
 
 ```bash
-pip install feedparser requests beautifulsoup4 python-dateutil
+pip install feedparser requests beautifulsoup4 python-dateutil deep-translator
 python scripts/fetch_news.py
 ```
 
 ## Fonctionnement de GitHub Actions
 
-Le workflow `.github/workflows/update_news.yml` se lance chaque jour à 6h avec le cron `0 6 * * *`. Il peut aussi être lancé manuellement depuis l’onglet `Actions` de GitHub.
+Le workflow `.github/workflows/update_news.yml` se lance chaque jour à 6h avec le cron :
+
+```text
+0 6 * * *
+```
+
+Il peut aussi être lancé manuellement depuis l’onglet `Actions` de GitHub.
+
+Le workflow :
+
+- installe Python ;
+- installe `feedparser`, `requests`, `beautifulsoup4`, `python-dateutil` et `deep-translator` ;
+- exécute `scripts/fetch_news.py` ;
+- committe `data/news.json` si le fichier a changé ;
+- pousse les modifications dans le dépôt.
+
+## Ajouter une nouvelle source
+
+Ajoutez un dictionnaire dans `SOURCES` :
+
+```python
+{
+    "name": "Nom de la source",
+    "url": "https://example.com/feed/",
+    "type": "rss",
+    "category_hint": "Construction",
+    "language": "fr",
+}
+```
+
+Privilégiez toujours un flux RSS fiable. Si une source n’a pas de flux RSS, utilisez `type: "html"` pour une extraction simple.
+
+## Changer les catégories
+
+Les catégories visibles du site sont dans `app.js`.
+
+Les règles de catégorisation automatique sont dans `scripts/fetch_news.py`, dans `CATEGORY_KEYWORDS`. Ajoutez ou modifiez les mots-clés pour adapter le classement.
+
+## Traduction automatique
+
+La fonction `translate_to_french(text)` utilise une traduction en ligne vers le français avec détection automatique de la langue. Si la traduction échoue ou si la dépendance n’est pas installée, le script conserve le texte original et continue avec les autres articles.
 
 ## Limites légales
 
-Le site ne copie pas les articles complets, ne télécharge pas les images dans la version actuelle, affiche toujours la source et renvoie vers l’article original.
+Le site respecte les règles suivantes :
+
+- ne pas copier les articles complets ;
+- ne pas voler les images ;
+- ne pas télécharger les images dans la version 1 ;
+- afficher seulement titre, résumé court, source, date et lien ;
+- toujours mettre le lien vers l’article original ;
+- toujours afficher la source ;
+- ne pas supprimer l’attribution.
+- lire les articles dans une fenêtre intégrée quand la source l’autorise, sans stocker le texte complet dans le JSON.
 
 ## Améliorations futures
 

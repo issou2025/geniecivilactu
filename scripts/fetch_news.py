@@ -14,6 +14,11 @@ import requests
 from bs4 import BeautifulSoup
 from dateutil import parser as date_parser
 
+try:
+    from deep_translator import GoogleTranslator
+except ImportError:  # Le workflow installe cette dépendance; ce fallback garde le script testable.
+    GoogleTranslator = None
+
 from sources import SOURCES
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
@@ -21,6 +26,7 @@ OUTPUT_FILE = ROOT_DIR / "data" / "news.json"
 MAX_PER_SOURCE = 8
 MAX_ARTICLES = 200
 REQUEST_TIMEOUT = 15
+TRANSLATION_CACHE: dict[str, str] = {}
 
 CATEGORY_KEYWORDS = {
     "Structures": ["structure", "structural", "building", "frame", "steel", "reinforced", "seismic", "design"],
@@ -57,7 +63,10 @@ def main() -> int:
     clean_articles = clean_articles[:MAX_ARTICLES]
 
     OUTPUT_FILE.parent.mkdir(parents=True, exist_ok=True)
-    OUTPUT_FILE.write_text(json.dumps(clean_articles, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
+    OUTPUT_FILE.write_text(
+        json.dumps(clean_articles, ensure_ascii=False, indent=2) + "\n",
+        encoding="utf-8",
+    )
 
     print("Sources réussies :")
     for item in successes:
@@ -82,7 +91,8 @@ def fetch_rss_source(source: dict[str, str]) -> list[dict[str, str]]:
     response = requests.get(source["url"], timeout=REQUEST_TIMEOUT, headers=request_headers())
     response.raise_for_status()
     feed = feedparser.parse(response.content)
-    return [entry_to_article(entry, source) for entry in feed.entries[:MAX_PER_SOURCE] if entry.get("link") or entry.get("title")]
+    entries = feed.entries[:MAX_PER_SOURCE]
+    return [entry_to_article(entry, source) for entry in entries if entry.get("link") or entry.get("title")]
 
 
 def fetch_html_source(source: dict[str, str]) -> list[dict[str, str]]:
@@ -94,41 +104,75 @@ def fetch_html_source(source: dict[str, str]) -> list[dict[str, str]]:
     for link in soup.select("article a[href], h2 a[href], h3 a[href]")[:MAX_PER_SOURCE]:
         title = clean_text(link.get_text(" ", strip=True))
         url = absolute_url(link.get("href", ""), source["url"])
-        if title and url:
-            articles.append(build_article(source=source, title=title, summary="", url=url, published_at=""))
+        if not title or not url:
+            continue
+        articles.append(build_article(source=source, title=title, summary="", url=url, published_at=""))
 
     return articles
 
 
 def entry_to_article(entry: Any, source: dict[str, str]) -> dict[str, str]:
     title = clean_text(entry.get("title", ""))
-    summary = truncate(clean_text(entry.get("summary", "") or entry.get("description", "")), 220)
-    published_at = parse_date(entry.get("published", "") or entry.get("updated", "") or entry.get("created", "") or "")
-    return build_article(source=source, title=title, summary=summary, url=entry.get("link", ""), published_at=published_at)
+    summary = clean_text(entry.get("summary", "") or entry.get("description", ""))
+    summary = truncate(summary, 220)
+    url = entry.get("link", "")
+    published_at = parse_date(
+        entry.get("published", "")
+        or entry.get("updated", "")
+        or entry.get("created", "")
+        or ""
+    )
+    return build_article(source=source, title=title, summary=summary, url=url, published_at=published_at)
 
 
 def build_article(source: dict[str, str], title: str, summary: str, url: str, published_at: str) -> dict[str, str]:
-    category = detect_category(f"{title} {summary}", source.get("category_hint", "Actualité"))
+    combined_text = f"{title} {summary}"
+    category = detect_category(combined_text, source.get("category_hint", "Actualité"))
+    translated_title = translate_to_french(title)
+    translated_summary = translate_to_french(summary)
     return {
         "id": make_id(source["name"], title, url),
         "source": source["name"],
         "category": category,
-        "title_fr": translate_to_french(title) or "Titre non disponible",
-        "summary_fr": translate_to_french(summary) or "Résumé non disponible",
+        "title_original": title,
+        "summary_original": summary,
+        "title_fr": translated_title or "Titre non disponible",
+        "summary_fr": translated_summary or "Résumé non disponible",
         "url": url,
         "image": "",
         "published_at": published_at or datetime.now(timezone.utc).date().isoformat(),
+        "language": source.get("language", "auto"),
     }
 
 
 def translate_to_french(text: str) -> str:
-    # Version 1 : retourne le texte original. Une API de traduction pourra être connectée ici plus tard.
-    return text
+    text = clean_text(text)
+    if not text:
+        return ""
+
+    if text in TRANSLATION_CACHE:
+        return TRANSLATION_CACHE[text]
+
+    if GoogleTranslator is None:
+        TRANSLATION_CACHE[text] = text
+        return text
+
+    try:
+        translated = GoogleTranslator(source="auto", target="fr").translate(text)
+    except Exception as exc:
+        print(f"Traduction échouée, texte conservé : {exc}")
+        translated = text
+
+    TRANSLATION_CACHE[text] = translated or text
+    return TRANSLATION_CACHE[text]
 
 
 def detect_category(text: str, fallback: str) -> str:
     searchable = text.lower()
-    scores = {category: sum(1 for keyword in keywords if keyword.lower() in searchable) for category, keywords in CATEGORY_KEYWORDS.items()}
+    scores: dict[str, int] = {}
+    for category, keywords in CATEGORY_KEYWORDS.items():
+        scores[category] = sum(1 for keyword in keywords if keyword.lower() in searchable)
+
     best_category, best_score = max(scores.items(), key=lambda item: item[1])
     return best_category if best_score > 0 else fallback
 
@@ -138,9 +182,10 @@ def deduplicate(articles: list[dict[str, str]]) -> list[dict[str, str]]:
     unique: list[dict[str, str]] = []
     for article in articles:
         key = normalize_duplicate_key(article.get("url") or article.get("title_fr", ""))
-        if key and key not in seen:
-            seen.add(key)
-            unique.append(article)
+        if not key or key in seen:
+            continue
+        seen.add(key)
+        unique.append(article)
     return unique
 
 
@@ -155,7 +200,8 @@ def make_id(source_name: str, title: str, url: str) -> str:
 
 def clean_text(value: str) -> str:
     soup = BeautifulSoup(value or "", "html.parser")
-    return re.sub(r"\s+", " ", soup.get_text(" ", strip=True)).strip()
+    text = soup.get_text(" ", strip=True)
+    return re.sub(r"\s+", " ", text).strip()
 
 
 def truncate(value: str, max_length: int) -> str:
@@ -174,6 +220,7 @@ def parse_date(value: str) -> str:
             parsed = date_parser.parse(value)
         except (TypeError, ValueError, date_parser.ParserError):
             return ""
+
     if parsed.tzinfo is None:
         parsed = parsed.replace(tzinfo=timezone.utc)
     return parsed.date().isoformat()
