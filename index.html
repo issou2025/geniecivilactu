@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Génie Civil Actu - Actualités du génie civil et du BTP</title>
+  <meta name="description" content="Suivez les dernières actualités du génie civil, du BTP, des infrastructures, du béton, des routes, des ponts, de l’hydraulique, du BIM, de Revit, de la géotechnique et de la construction.">
+  <meta property="og:title" content="Génie Civil Actu - Actualités du génie civil et du BTP">
+  <meta property="og:description" content="Veille technique en génie civil, BTP, infrastructures, BIM, routes, ponts, béton, hydraulique et construction.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="#accueil" aria-label="Accueil Génie Civil Actu">
+        <span class="brand-mark" aria-hidden="true">GC</span>
+        <span>
+          <strong>Génie Civil Actu</strong>
+          <small>Les dernières actualités du génie civil, du BTP et des infrastructures</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="#actualites">Actualités techniques</a>
+        <a href="#innovations">Innovations</a>
+        <a href="#infrastructures">BTP et infrastructures</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre">
+        <span aria-hidden="true" id="themeIcon">◐</span>
+        <span id="themeText">Mode sombre</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <section class="hero">
+      <div class="container hero-content">
+        <p class="eyebrow">Veille technique et innovation</p>
+        <h1>Actualités, innovations et veille technique pour les ingénieurs civils</h1>
+        <p class="hero-text">
+          Suivez les nouveautés du génie civil, du béton, des routes, des ponts, du BIM,
+          de l’hydraulique, de la géotechnique et de la construction.
+        </p>
+        <a class="primary-link" href="#actualites">Voir les actualités</a>
+      </div>
+    </section>
+
+    <section class="controls-section" aria-labelledby="filtersTitle">
+      <div class="container">
+        <h2 id="filtersTitle" class="section-title">Rechercher une actualité</h2>
+        <div class="search-row">
+          <label class="sr-only" for="searchInput">Rechercher une actualité</label>
+          <input id="searchInput" class="search-input" type="search" placeholder="Rechercher une actualité, une source, une catégorie..." autocomplete="off">
+        </div>
+        <div class="category-filters" id="categoryFilters" aria-label="Toutes les catégories"></div>
+      </div>
+    </section>
+
+    <section class="news-section" id="actualites" aria-labelledby="newsTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Dernières publications</p>
+            <h2 id="newsTitle">Actualités techniques</h2>
+          </div>
+          <div class="meta-panel" aria-live="polite">
+            <span id="articleCount">Chargement des actualités...</span>
+            <span id="lastUpdated">Dernière mise à jour : en cours</span>
+          </div>
+        </div>
+
+        <div class="status-box" id="statusBox" role="status">Chargement des actualités...</div>
+        <div class="news-grid" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <section class="info-band" id="innovations">
+      <div class="container info-grid">
+        <div>
+          <p class="eyebrow">Innovations</p>
+          <h2>Une veille claire pour suivre les tendances du secteur</h2>
+        </div>
+        <p>
+          Les articles sont classés par thème afin de suivre rapidement les sujets liés aux matériaux,
+          au BIM, aux ouvrages, aux routes, à l’environnement et à la sécurité chantier.
+        </p>
+      </div>
+    </section>
+
+    <section class="info-band muted" id="infrastructures">
+      <div class="container info-grid">
+        <div>
+          <p class="eyebrow">BTP et infrastructures</p>
+          <h2>Une base statique prête pour GitHub Pages</h2>
+        </div>
+        <p>
+          Le site lit un fichier JSON local généré automatiquement par GitHub Actions, sans backend,
+          sans base de données et sans système de connexion.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Génie Civil Actu</strong>
+        <p>Site statique alimenté automatiquement par GitHub Actions.</p>
+      </div>
+      <p>
+        Ce site affiche uniquement des titres, de courts résumés et des liens vers les sources originales.
+        Les articles complets, images et contenus appartiennent à leurs auteurs et éditeurs respectifs.
+      </p>
+    </div>
+  </footer>
+
+  <template id="articleTemplate">
+    <article class="news-card">
+      <div class="card-media"></div>
+      <div class="card-content">
+        <span class="badge"></span>
+        <h3></h3>
+        <p class="summary"></p>
+        <dl class="article-meta">
+          <div>
+            <dt>Source</dt>
+            <dd class="source"></dd>
+          </div>
+          <div>
+            <dt>Date</dt>
+            <dd class="date"></dd>
+          </div>
+        </dl>
+        <a class="read-link" target="_blank" rel="noopener noreferrer">Lire l’article original</a>
+      </div>
+    </article>
+  </template>
+
+  <script src="app.js" defer></script>
+</body>
+</html>
