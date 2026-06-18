@@ -12,10 +12,7 @@
     <div class="container header-grid">
       <a class="brand" href="index.html" aria-label="Accueil Génie Civil Actu">
         <span class="brand-mark" aria-hidden="true">GC</span>
-        <span>
-          <strong>Génie Civil Actu</strong>
-          <small>Veille génie civil, BTP et infrastructures</small>
-        </span>
+        <span><strong>Génie Civil Actu</strong><small>Veille BTP, ouvrages et infrastructures</small></span>
       </a>
       <nav class="main-nav" aria-label="Navigation principale">
         <a href="index.html">Accueil</a>
@@ -23,55 +20,57 @@
         <a href="a-propos.html">À propos</a>
         <a href="contact.html" aria-current="page">Contact</a>
       </nav>
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre">
-        <span aria-hidden="true" id="themeIcon">◐</span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Changer le thème">
+        <span aria-hidden="true" id="themeIcon">●</span>
         <span id="themeText">Mode sombre</span>
       </button>
     </div>
   </header>
 
   <main>
-    <section class="page-hero">
+    <section class="page-hero contact-hero">
       <div class="container">
         <p class="eyebrow">Contact</p>
-        <h1>Proposer une source ou signaler une information</h1>
-        <p>Cette page fournit un contact simple pour les suggestions, les corrections et les demandes liées au site.</p>
+        <h1>Proposer une source, une correction ou une idée.</h1>
+        <p>Une bonne veille se construit avec des sources solides. Envoyez une suggestion claire et utile pour améliorer le site.</p>
       </div>
     </section>
 
     <section class="page-section">
       <div class="container contact-layout">
-        <aside class="contact-panel">
-          <h2>Écrire au projet</h2>
-          <p>Utilisez GitHub Issues pour proposer une nouvelle source, signaler un lien cassé ou demander une correction.</p>
+        <aside class="contact-panel contact-highlight">
+          <h2>Ce que vous pouvez envoyer</h2>
+          <p>Une source fiable, un lien cassé, une erreur de catégorie, une amélioration d'interface ou un sujet important à suivre.</p>
           <div class="contact-list">
-            <a href="https://github.com/issou2025/geniecivilactu/issues/new" target="_blank" rel="noopener noreferrer">Créer une demande sur GitHub</a>
-            <a href="https://github.com/issou2025/geniecivilactu" target="_blank" rel="noopener noreferrer">Voir le dépôt du projet</a>
+            <span>Sources professionnelles</span>
+            <span>Revues techniques</span>
+            <span>Actualités infrastructures</span>
+            <span>Suggestions design</span>
           </div>
         </aside>
 
         <section class="contact-panel" aria-labelledby="contactFormTitle">
           <h2 id="contactFormTitle">Préparer votre message</h2>
-          <form class="contact-form" action="https://github.com/issou2025/geniecivilactu/issues/new" method="get" target="_blank">
+          <form class="contact-form" action="mailto:contact@geniecivilactu.com" method="post" enctype="text/plain">
             <div class="form-field">
-              <label for="title">Titre</label>
-              <input id="title" name="title" type="text" placeholder="Proposition de source, correction, suggestion...">
+              <label for="title">Sujet</label>
+              <input id="title" name="Sujet" type="text" placeholder="Proposition de source, correction, suggestion...">
             </div>
             <div class="form-field">
               <label for="labels">Type de demande</label>
-              <select id="labels" name="labels">
-                <option value="source">Proposer une source</option>
-                <option value="bug">Signaler une erreur</option>
-                <option value="correction">Demander une correction</option>
-                <option value="amelioration">Suggestion d’amélioration</option>
+              <select id="labels" name="Type">
+                <option value="Source">Proposer une source</option>
+                <option value="Erreur">Signaler une erreur</option>
+                <option value="Correction">Demander une correction</option>
+                <option value="Amélioration">Suggestion d'amélioration</option>
               </select>
             </div>
             <div class="form-field">
               <label for="message">Message</label>
-              <textarea id="message" name="body" placeholder="Décrivez votre demande..."></textarea>
+              <textarea id="message" name="Message" placeholder="Décrivez votre demande..."></textarea>
             </div>
-            <button class="primary-link" type="submit">Ouvrir la demande GitHub</button>
-            <p class="form-note">Le formulaire ouvre GitHub dans un nouvel onglet. Aucun message n’est stocké par le site.</p>
+            <button class="primary-link" type="submit">Envoyer le message</button>
+            <p class="form-note">Votre application de messagerie s'ouvrira pour envoyer la demande.</p>
           </form>
         </section>
       </div>
@@ -80,10 +79,7 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div>
-        <strong>Génie Civil Actu</strong>
-        <p>Site statique alimenté automatiquement par GitHub Actions.</p>
-      </div>
+      <div><strong>Génie Civil Actu</strong><p>Une veille claire pour les professionnels, étudiants et passionnés du génie civil.</p></div>
       <nav class="footer-links" aria-label="Liens du pied de page">
         <a href="index.html">Accueil</a>
         <a href="categories.html">Catégories</a>
@@ -91,7 +87,7 @@
         <a href="contact.html">Contact</a>
         <a href="mentions-legales.html">Mentions légales</a>
       </nav>
-      <p>Ce site affiche uniquement des titres, de courts résumés et des liens vers les sources originales. Les articles complets, images et contenus appartiennent à leurs auteurs et éditeurs respectifs.</p>
+      <p>Les contenus complets appartiennent à leurs auteurs et éditeurs respectifs.</p>
     </div>
   </footer>
 

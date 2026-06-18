@@ -56,10 +56,10 @@ function setupTheme() {
   if (!themeToggle || !themeText || !themeIcon) {
     return;
   }
+
   const savedTheme = localStorage.getItem("theme");
   const prefersDark = window.matchMedia("(prefers-color-scheme: dark)").matches;
-  const theme = savedTheme || (prefersDark ? "dark" : "light");
-  applyTheme(theme);
+  applyTheme(savedTheme || (prefersDark ? "dark" : "light"));
 
   themeToggle.addEventListener("click", () => {
     const nextTheme = document.documentElement.dataset.theme === "dark" ? "light" : "dark";
@@ -73,9 +73,10 @@ function applyTheme(theme) {
   if (!themeToggle || !themeText || !themeIcon) {
     return;
   }
+
   const dark = theme === "dark";
   themeText.textContent = dark ? "Mode clair" : "Mode sombre";
-  themeIcon.textContent = dark ? "☼" : "◐";
+  themeIcon.textContent = dark ? "☼" : "●";
   themeToggle.setAttribute("aria-label", dark ? "Activer le mode clair" : "Activer le mode sombre");
 }
 
@@ -128,7 +129,7 @@ async function loadNews() {
   } catch (error) {
     console.error(error);
     articleCount.textContent = "Aucun article disponible";
-    lastUpdated.textContent = "Dernière mise à jour : non disponible";
+    lastUpdated.textContent = "Dernière mise à jour: non disponible";
     showError("Impossible de charger les actualités");
   }
 }
@@ -210,8 +211,8 @@ function createArticleCard(article) {
 
   if (article.url) {
     link.href = article.url;
-    link.textContent = "Source originale";
-    link.setAttribute("aria-label", `Ouvrir la source originale : ${article.title_fr}`);
+    link.textContent = "Source";
+    link.setAttribute("aria-label", `Ouvrir la source originale: ${article.title_fr}`);
     readerButton.addEventListener("click", () => openReader(article));
   } else {
     link.remove();
@@ -248,7 +249,7 @@ function openReader(article) {
   readerSource.textContent = article.source;
   readerDate.textContent = formatDate(article.published_at);
   readerSourceLink.href = article.url;
-  readerSourceLink.setAttribute("aria-label", `Lire à la source : ${article.title_fr}`);
+  readerSourceLink.setAttribute("aria-label", `Lire à la source: ${article.title_fr}`);
   readerFrame.src = article.url;
 
   readerModal.setAttribute("aria-hidden", "false");
@@ -291,12 +292,12 @@ function updateLastUpdated() {
     .filter((timestamp) => !Number.isNaN(timestamp));
 
   if (!dates.length) {
-    lastUpdated.textContent = "Dernière mise à jour : non disponible";
+    lastUpdated.textContent = "Dernière mise à jour: non disponible";
     return;
   }
 
   const latest = new Date(Math.max(...dates));
-  lastUpdated.textContent = `Dernière mise à jour : ${latest.toLocaleDateString("fr-FR", {
+  lastUpdated.textContent = `Dernière mise à jour: ${latest.toLocaleDateString("fr-FR", {
     year: "numeric",
     month: "long",
     day: "numeric"

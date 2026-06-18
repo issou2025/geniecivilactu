@@ -4,9 +4,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Génie Civil Actu - Actualités du génie civil et du BTP</title>
-  <meta name="description" content="Suivez les dernières actualités du génie civil, du BTP, des infrastructures, du béton, des routes, des ponts, de l’hydraulique, du BIM, de Revit, de la géotechnique et de la construction.">
-  <meta property="og:title" content="Génie Civil Actu - Actualités du génie civil et du BTP">
-  <meta property="og:description" content="Veille technique en génie civil, BTP, infrastructures, BIM, routes, ponts, béton, hydraulique et construction.">
+  <meta name="description" content="Actualités en français sur le génie civil, le BTP, les infrastructures, le béton, les routes, les ponts, le BIM, l'hydraulique et la construction.">
+  <meta property="og:title" content="Génie Civil Actu">
+  <meta property="og:description" content="Une veille moderne pour suivre les sujets importants du génie civil et du BTP.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="fr_FR">
   <link rel="stylesheet" href="style.css">
@@ -18,7 +18,7 @@
         <span class="brand-mark" aria-hidden="true">GC</span>
         <span>
           <strong>Génie Civil Actu</strong>
-          <small>Les dernières actualités du génie civil, du BTP et des infrastructures</small>
+          <small>Veille BTP, ouvrages et infrastructures</small>
         </span>
       </a>
 
@@ -29,33 +29,69 @@
         <a href="contact.html">Contact</a>
       </nav>
 
-      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Activer le mode sombre">
-        <span aria-hidden="true" id="themeIcon">◐</span>
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Changer le thème">
+        <span aria-hidden="true" id="themeIcon">●</span>
         <span id="themeText">Mode sombre</span>
       </button>
     </div>
   </header>
 
   <main id="accueil">
-    <section class="hero">
-      <div class="container hero-content">
-        <p class="eyebrow">Veille technique et innovation</p>
-        <h1>Actualités, innovations et veille technique pour les ingénieurs civils</h1>
-        <p class="hero-text">
-          Suivez les nouveautés du génie civil, du béton, des routes, des ponts, du BIM,
-          de l’hydraulique, de la géotechnique et de la construction.
-        </p>
-        <a class="primary-link" href="#actualites">Voir les actualités</a>
+    <section class="hero hero-home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Actualités techniques en français</p>
+          <h1>Le fil d'actualité du génie civil, clair, rapide et bien organisé.</h1>
+          <p class="hero-text">
+            Routes, ponts, béton, BIM, hydraulique, géotechnique, sécurité chantier et grands projets:
+            retrouvez les sujets importants dans une interface moderne, lisible et agréable.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#actualites">Lire les articles</a>
+            <a class="secondary-link" href="categories.html">Voir les catégories</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Résumé du site">
+          <div class="metric">
+            <strong>13</strong>
+            <span>rubriques métier</span>
+          </div>
+          <div class="metric">
+            <strong>20</strong>
+            <span>sources suivies par le script</span>
+          </div>
+          <div class="metric">
+            <strong>FR</strong>
+            <span>lecture orientée français</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-strip" aria-label="Thèmes principaux">
+      <div class="container topic-grid">
+        <span>Structures</span>
+        <span>Béton</span>
+        <span>Routes</span>
+        <span>Ponts</span>
+        <span>BIM</span>
+        <span>Hydraulique</span>
+        <span>Géotechnique</span>
+        <span>Environnement</span>
       </div>
     </section>
 
     <section class="controls-section" aria-labelledby="filtersTitle">
-      <div class="container">
-        <h2 id="filtersTitle" class="section-title">Rechercher une actualité</h2>
-        <p class="section-intro">Utilisez la recherche et les filtres pour parcourir les thèmes clés du génie civil.</p>
+      <div class="container control-panel">
+        <div>
+          <p class="eyebrow">Recherche</p>
+          <h2 id="filtersTitle" class="section-title">Trouver rapidement une information</h2>
+          <p class="section-intro">Filtrez les articles par thème, source ou mot-clé technique.</p>
+        </div>
         <div class="search-row">
           <label class="sr-only" for="searchInput">Rechercher une actualité</label>
-          <input id="searchInput" class="search-input" type="search" placeholder="Rechercher une actualité, une source, une catégorie..." autocomplete="off">
+          <input id="searchInput" class="search-input" type="search" placeholder="Rechercher: pont, béton, BIM, sécurité..." autocomplete="off">
         </div>
         <div class="category-filters" id="categoryFilters" aria-label="Toutes les catégories"></div>
       </div>
@@ -66,11 +102,11 @@
         <div class="section-heading">
           <div>
             <p class="eyebrow">Dernières publications</p>
-            <h2 id="newsTitle">Actualités techniques</h2>
+            <h2 id="newsTitle">Articles à lire maintenant</h2>
           </div>
           <div class="meta-panel" aria-live="polite">
             <span id="articleCount">Chargement des actualités...</span>
-            <span id="lastUpdated">Dernière mise à jour : en cours</span>
+            <span id="lastUpdated">Dernière mise à jour: en cours</span>
           </div>
         </div>
 
@@ -79,29 +115,23 @@
       </div>
     </section>
 
-    <section class="info-band" id="innovations">
-      <div class="container info-grid">
-        <div>
-          <p class="eyebrow">Innovations</p>
-          <h2>Une veille claire pour suivre les tendances du secteur</h2>
-        </div>
-        <p>
-          Les articles sont classés par thème afin de suivre rapidement les sujets liés aux matériaux,
-          au BIM, aux ouvrages, aux routes, à l’environnement et à la sécurité chantier.
-        </p>
-      </div>
-    </section>
-
-    <section class="info-band muted" id="infrastructures">
-      <div class="container info-grid">
-        <div>
-          <p class="eyebrow">BTP et infrastructures</p>
-          <h2>Une base statique prête pour GitHub Pages</h2>
-        </div>
-        <p>
-          Le site lit un fichier JSON local généré automatiquement par GitHub Actions, sans backend,
-          sans base de données et sans système de connexion.
-        </p>
+    <section class="feature-band">
+      <div class="container feature-grid">
+        <article>
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <h2>Une lecture plus fluide</h2>
+          <p>Chaque carte met en avant l'image, la catégorie, la source et un résumé court pour décider vite quoi lire.</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <h2>Des catégories utiles</h2>
+          <p>Les thèmes suivent les besoins réels du secteur: ouvrages, matériaux, infrastructures, méthodes et sécurité.</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <h2>Une veille internationale</h2>
+          <p>Les sources peuvent publier dans différentes langues; l'affichage met l'accent sur une lecture en français.</p>
+        </article>
       </div>
     </section>
 
@@ -120,7 +150,7 @@
           </a>
           <a class="link-card" href="a-propos.html">
             <strong>À propos</strong>
-            <span>Comprendre l’objectif du site et son fonctionnement sans backend.</span>
+            <span>Comprendre l'objectif du site et son organisation éditoriale.</span>
           </a>
           <a class="link-card" href="contact.html">
             <strong>Contact</strong>
@@ -128,7 +158,7 @@
           </a>
           <a class="link-card" href="mentions-legales.html">
             <strong>Mentions légales</strong>
-            <span>Lire les règles d’attribution, de responsabilité et de respect des sources.</span>
+            <span>Lire les règles d'attribution, de responsabilité et de respect des sources.</span>
           </a>
         </div>
       </div>
@@ -139,7 +169,7 @@
     <div class="container footer-grid">
       <div>
         <strong>Génie Civil Actu</strong>
-        <p>Site statique alimenté automatiquement par GitHub Actions.</p>
+        <p>Une veille claire pour les professionnels, étudiants et passionnés du génie civil.</p>
       </div>
       <nav class="footer-links" aria-label="Liens du pied de page">
         <a href="index.html">Accueil</a>
@@ -149,8 +179,8 @@
         <a href="mentions-legales.html">Mentions légales</a>
       </nav>
       <p>
-        Ce site affiche uniquement des titres, de courts résumés et des liens vers les sources originales.
-        Les articles complets, images et contenus appartiennent à leurs auteurs et éditeurs respectifs.
+        Le site affiche des titres, de courts résumés et des liens vers les sources originales.
+        Les contenus complets appartiennent à leurs auteurs et éditeurs respectifs.
       </p>
     </div>
   </footer>
@@ -172,8 +202,10 @@
             <dd class="date"></dd>
           </div>
         </dl>
-        <a class="read-link" target="_blank" rel="noopener noreferrer">Lire l’article original</a>
-        <button class="reader-button" type="button">Lire dans le site</button>
+        <div class="card-actions">
+          <button class="reader-button" type="button">Lire ici</button>
+          <a class="read-link" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
       </div>
     </article>
   </template>
@@ -194,7 +226,7 @@
       <div class="reader-frame-wrap">
         <iframe id="readerFrame" title="Article original intégré" loading="lazy" referrerpolicy="no-referrer"></iframe>
         <div class="reader-frame-note">
-          Si l’éditeur bloque l’affichage intégré, utilisez le bouton vers la source originale.
+          Si l'éditeur bloque l'affichage intégré, utilisez le lien vers la source.
         </div>
       </div>
       <a class="read-link reader-source-link" id="readerSourceLink" target="_blank" rel="noopener noreferrer">Lire à la source</a>
