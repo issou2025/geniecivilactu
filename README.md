@@ -20,12 +20,17 @@ Le projet fournit une veille légère, rapide et professionnelle, prête à publ
 - Messages de chargement, d’erreur, de réessai et d’absence de résultat.
 - Script Python pour agréger les flux d’actualités.
 - Mise à jour automatique par GitHub Actions.
+- Pages statiques importantes : catégories, à propos, contact et mentions légales.
 
 ## Structure du projet
 
 ```text
 genie-civil-actu/
 ├── index.html
+├── categories.html
+├── a-propos.html
+├── contact.html
+├── mentions-legales.html
 ├── style.css
 ├── app.js
 ├── README.md
@@ -39,11 +44,17 @@ genie-civil-actu/
         └── update_news.yml
 ```
 
+## Pages du site
+
+- `index.html` : accueil, recherche, filtres et grille d’actualités.
+- `categories.html` : présentation des grandes rubriques de veille.
+- `a-propos.html` : objectif du site et fonctionnement général.
+- `contact.html` : proposition de source ou signalement via GitHub Issues.
+- `mentions-legales.html` : attribution, limites légales et responsabilité.
+
 ## Ouvrir le site localement
 
-Ouvrez simplement `index.html` dans un navigateur moderne.
-
-Pour tester le chargement JSON avec un petit serveur local :
+Pour tester correctement le chargement JSON avec un petit serveur local :
 
 ```bash
 python -m http.server 8000
@@ -77,21 +88,7 @@ Chaque source contient :
 
 ## Fonctionnement du script Python
 
-Le script `scripts/fetch_news.py` :
-
-- lit les sources définies dans `scripts/sources.py` ;
-- récupère les derniers articles ;
-- limite chaque source à quelques articles ;
-- conserve le titre, le résumé court, la source, la date, le lien et la catégorie ;
-- ne copie jamais les articles complets ;
-- ne télécharge pas les images ;
-- met `image` à une chaîne vide ;
-- supprime les doublons ;
-- classe automatiquement les articles par mots-clés ;
-- génère un identifiant unique ;
-- trie les articles par date décroissante ;
-- conserve les 200 derniers articles ;
-- sauvegarde un JSON propre en UTF-8 dans `data/news.json`.
+Le script `scripts/fetch_news.py` lit les sources, récupère les derniers articles, conserve uniquement les titres, résumés courts, sources, dates, liens et catégories, supprime les doublons, trie les articles et sauvegarde `data/news.json` en UTF-8.
 
 Pour lancer le script :
 
@@ -102,61 +99,11 @@ python scripts/fetch_news.py
 
 ## Fonctionnement de GitHub Actions
 
-Le workflow `.github/workflows/update_news.yml` se lance chaque jour à 6h avec le cron :
-
-```text
-0 6 * * *
-```
-
-Il peut aussi être lancé manuellement depuis l’onglet `Actions` de GitHub.
-
-Le workflow :
-
-- installe Python ;
-- installe `feedparser`, `requests`, `beautifulsoup4` et `python-dateutil` ;
-- exécute `scripts/fetch_news.py` ;
-- committe `data/news.json` si le fichier a changé ;
-- pousse les modifications dans le dépôt.
-
-## Ajouter une nouvelle source
-
-Ajoutez un dictionnaire dans `SOURCES` :
-
-```python
-{
-    "name": "Nom de la source",
-    "url": "https://example.com/feed/",
-    "type": "rss",
-    "category_hint": "Construction",
-    "language": "fr",
-}
-```
-
-Privilégiez toujours un flux RSS fiable. Si une source n’a pas de flux RSS, utilisez `type: "html"` pour une extraction simple.
-
-## Changer les catégories
-
-Les catégories visibles du site sont dans `app.js`.
-
-Les règles de catégorisation automatique sont dans `scripts/fetch_news.py`, dans `CATEGORY_KEYWORDS`. Ajoutez ou modifiez les mots-clés pour adapter le classement.
-
-## Traduction automatique future
-
-La fonction `translate_to_french(text)` existe déjà dans `scripts/fetch_news.py`. Pour la version 1, elle retourne le texte original.
-
-Plus tard, vous pourrez y connecter une API de traduction anglais vers français.
+Le workflow `.github/workflows/update_news.yml` se lance chaque jour à 6h avec le cron `0 6 * * *`. Il peut aussi être lancé manuellement depuis l’onglet `Actions` de GitHub.
 
 ## Limites légales
 
-Le site respecte les règles suivantes :
-
-- ne pas copier les articles complets ;
-- ne pas voler les images ;
-- ne pas télécharger les images dans la version 1 ;
-- afficher seulement titre, résumé court, source, date et lien ;
-- toujours mettre le lien vers l’article original ;
-- toujours afficher la source ;
-- ne pas supprimer l’attribution.
+Le site ne copie pas les articles complets, ne télécharge pas les images dans la version actuelle, affiche toujours la source et renvoie vers l’article original.
 
 ## Améliorations futures
 
