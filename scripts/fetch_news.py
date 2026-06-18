@@ -106,7 +106,8 @@ def fetch_html_source(source: dict[str, str]) -> list[dict[str, str]]:
         url = absolute_url(link.get("href", ""), source["url"])
         if not title or not url:
             continue
-        articles.append(build_article(source=source, title=title, summary="", url=url, published_at=""))
+        image = extract_html_image(link, soup, source["url"])
+        articles.append(build_article(source=source, title=title, summary="", url=url, published_at="", image=image))
 
     return articles
 
@@ -122,10 +123,11 @@ def entry_to_article(entry: Any, source: dict[str, str]) -> dict[str, str]:
         or entry.get("created", "")
         or ""
     )
-    return build_article(source=source, title=title, summary=summary, url=url, published_at=published_at)
+    image = extract_entry_image(entry)
+    return build_article(source=source, title=title, summary=summary, url=url, published_at=published_at, image=image)
 
 
-def build_article(source: dict[str, str], title: str, summary: str, url: str, published_at: str) -> dict[str, str]:
+def build_article(source: dict[str, str], title: str, summary: str, url: str, published_at: str, image: str = "") -> dict[str, str]:
     combined_text = f"{title} {summary}"
     category = detect_category(combined_text, source.get("category_hint", "Actualité"))
     translated_title = translate_to_french(title)
@@ -139,7 +141,7 @@ def build_article(source: dict[str, str], title: str, summary: str, url: str, pu
         "title_fr": translated_title or "Titre non disponible",
         "summary_fr": translated_summary or "Résumé non disponible",
         "url": url,
-        "image": "",
+        "image": image,
         "published_at": published_at or datetime.now(timezone.utc).date().isoformat(),
         "language": source.get("language", "auto"),
     }
@@ -165,6 +167,58 @@ def translate_to_french(text: str) -> str:
 
     TRANSLATION_CACHE[text] = translated or text
     return TRANSLATION_CACHE[text]
+
+
+def extract_entry_image(entry: Any) -> str:
+    candidates: list[str] = []
+
+    for key in ("media_content", "media_thumbnail"):
+        for media in entry.get(key, []) or []:
+            if isinstance(media, dict):
+                candidates.append(media.get("url", ""))
+
+    for enclosure in entry.get("enclosures", []) or []:
+        if isinstance(enclosure, dict):
+            href = enclosure.get("href", "")
+            kind = enclosure.get("type", "")
+            if href and ("image" in kind or href.lower().endswith((".jpg", ".jpeg", ".png", ".webp"))):
+                candidates.append(href)
+
+    summary = entry.get("summary", "") or entry.get("description", "")
+    if summary:
+        soup = BeautifulSoup(summary, "html.parser")
+        image = soup.find("img")
+        if image:
+            candidates.append(image.get("src", ""))
+
+    return first_valid_image(candidates)
+
+
+def extract_html_image(link: Any, soup: BeautifulSoup, base_url: str) -> str:
+    candidates: list[str] = []
+    article = link.find_parent("article")
+    if article:
+        image = article.find("img")
+        if image:
+            candidates.extend([image.get("src", ""), image.get("data-src", "")])
+
+    og_image = soup.select_one('meta[property="og:image"], meta[name="twitter:image"]')
+    if og_image:
+        candidates.append(og_image.get("content", ""))
+
+    return first_valid_image(absolute_url(candidate, base_url) for candidate in candidates)
+
+
+def first_valid_image(candidates: Any) -> str:
+    for candidate in candidates:
+        if not isinstance(candidate, str):
+            continue
+        candidate = candidate.strip()
+        if candidate.startswith("//"):
+            candidate = f"https:{candidate}"
+        if candidate.startswith(("http://", "https://")):
+            return candidate
+    return ""
 
 
 def detect_category(text: str, fallback: str) -> str:

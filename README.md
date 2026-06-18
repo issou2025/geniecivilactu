@@ -1,76 +1,43 @@
 # Génie Civil Actu
 
-Génie Civil Actu est un site web statique en français pour suivre les dernières actualités du génie civil, du BTP, des infrastructures, du BIM, des routes, des ponts, du béton, de l’hydraulique, de la géotechnique et de la construction.
+Génie Civil Actu est un site web en français pour suivre les dernières actualités du génie civil, du BTP, des infrastructures, du BIM, des routes, des ponts, du béton, de l’hydraulique, de la géotechnique et de la construction.
 
-Ce site affiche uniquement des titres, de courts résumés et des liens vers les sources originales. Les articles complets, images et contenus appartiennent à leurs auteurs et éditeurs respectifs.
-
-## Objectif du projet
-
-Le projet fournit une veille légère, rapide et professionnelle, prête à publier sur GitHub Pages. Il fonctionne sans backend, sans base de données, sans Firebase, sans Supabase, sans serveur Node.js et sans système de connexion.
+Ce site affiche uniquement des titres, de courts résumés, des images issues des flux quand elles sont disponibles, et des liens vers les sources originales. Les articles complets appartiennent à leurs auteurs et éditeurs respectifs.
 
 ## Fonctionnalités
 
 - Interface 100 % en français.
-- Chargement des actualités depuis `data/news.json`.
+- Actualités organisées par catégories.
+- Images affichées dans les cartes quand les sources en fournissent.
 - Recherche en temps réel par titre, résumé, source, catégorie et date.
 - Filtres par catégorie.
 - Tri par date décroissante.
-- Mode clair et mode sombre avec sauvegarde dans `localStorage`.
-- Grille responsive : mobile, tablette, ordinateur et grands écrans.
-- Messages de chargement, d’erreur, de réessai et d’absence de résultat.
-- Script Python pour agréger les flux d’actualités.
-- Mise à jour automatique par GitHub Actions.
-- Pages statiques importantes : catégories, à propos, contact et mentions légales.
+- Mode clair et mode sombre avec sauvegarde du choix.
+- Lecture dans le site avec fenêtre intégrée.
 - Traduction automatique en français des titres et résumés récupérés.
-- Lecture intégrée dans le site avec accès à la source originale.
+- Pages importantes : catégories, à propos, contact et mentions légales.
 
-## Structure du projet
+## Pages du site
 
-```text
-genie-civil-actu/
-├── index.html
-├── categories.html
-├── a-propos.html
-├── contact.html
-├── mentions-legales.html
-├── style.css
-├── app.js
-├── README.md
-├── data/
-│   └── news.json
-├── scripts/
-│   ├── sources.py
-│   └── fetch_news.py
-└── .github/
-    └── workflows/
-        └── update_news.yml
-```
+- `index.html` : accueil, recherche, filtres et grille d’actualités.
+- `categories.html` : présentation des grandes rubriques de veille.
+- `a-propos.html` : objectif du site et fonctionnement général.
+- `contact.html` : proposition de source ou signalement.
+- `mentions-legales.html` : attribution, limites légales et responsabilité.
 
-## Ouvrir le site localement
-
-Ouvrez simplement `index.html` dans un navigateur moderne.
-
-Pour tester le chargement JSON avec un petit serveur local :
+## Lancer en local
 
 ```bash
-python -m http.server 8000
+node dev-server.js
 ```
 
 Puis ouvrez :
 
 ```text
-http://localhost:8000
+http://127.0.0.1:8002/
 ```
 
-## Publier sur GitHub Pages
-
-1. Envoyez le dossier sur un dépôt GitHub.
-2. Dans GitHub, ouvrez `Settings`.
-3. Allez dans `Pages`.
-4. Choisissez la branche principale et le dossier racine.
-5. Enregistrez. Le site sera publié automatiquement par GitHub Pages.
-
-## Modifier les 20 sources
+## Modifier les sources
 
 Les sources sont dans `scripts/sources.py`, dans la liste `SOURCES`.
 
@@ -88,14 +55,13 @@ Le script `scripts/fetch_news.py` :
 
 - lit les sources définies dans `scripts/sources.py` ;
 - récupère les derniers articles ;
+- récupère une image distante quand le flux ou la page en fournit une ;
 - traduit en ligne les titres et résumés vers le français quand la dépendance de traduction est disponible ;
 - limite chaque source à quelques articles ;
-- conserve le titre, le résumé court, la source, la date, le lien et la catégorie ;
+- conserve le titre, le résumé court, la source, la date, le lien, l’image et la catégorie ;
 - ne copie jamais les articles complets ;
-- ne télécharge pas les images ;
-- met `image` à une chaîne vide ;
 - supprime les doublons ;
-- classe automatiquement les articles par mots-clés ;
+- classe les articles par mots-clés ;
 - génère un identifiant unique ;
 - trie les articles par date décroissante ;
 - conserve les 200 derniers articles ;
@@ -108,75 +74,24 @@ pip install feedparser requests beautifulsoup4 python-dateutil deep-translator
 python scripts/fetch_news.py
 ```
 
-## Fonctionnement de GitHub Actions
+## Catégories
 
-Le workflow `.github/workflows/update_news.yml` se lance chaque jour à 6h avec le cron :
+Le fichier d’exemple contient au moins un article dans chaque grande catégorie :
 
-```text
-0 6 * * *
-```
-
-Il peut aussi être lancé manuellement depuis l’onglet `Actions` de GitHub.
-
-Le workflow :
-
-- installe Python ;
-- installe `feedparser`, `requests`, `beautifulsoup4`, `python-dateutil` et `deep-translator` ;
-- exécute `scripts/fetch_news.py` ;
-- committe `data/news.json` si le fichier a changé ;
-- pousse les modifications dans le dépôt.
-
-## Ajouter une nouvelle source
-
-Ajoutez un dictionnaire dans `SOURCES` :
-
-```python
-{
-    "name": "Nom de la source",
-    "url": "https://example.com/feed/",
-    "type": "rss",
-    "category_hint": "Construction",
-    "language": "fr",
-}
-```
-
-Privilégiez toujours un flux RSS fiable. Si une source n’a pas de flux RSS, utilisez `type: "html"` pour une extraction simple.
-
-## Changer les catégories
-
-Les catégories visibles du site sont dans `app.js`.
-
-Les règles de catégorisation automatique sont dans `scripts/fetch_news.py`, dans `CATEGORY_KEYWORDS`. Ajoutez ou modifiez les mots-clés pour adapter le classement.
-
-## Traduction automatique
-
-La fonction `translate_to_french(text)` utilise une traduction en ligne vers le français avec détection automatique de la langue. Si la traduction échoue ou si la dépendance n’est pas installée, le script conserve le texte original et continue avec les autres articles.
+- Structures
+- Béton
+- Routes
+- Ponts
+- BIM / Revit
+- Hydraulique
+- Géotechnique
+- Construction
+- Innovation
+- Matériaux
+- Infrastructures
+- Environnement
+- Sécurité chantier
 
 ## Limites légales
 
-Le site respecte les règles suivantes :
-
-- ne pas copier les articles complets ;
-- ne pas voler les images ;
-- ne pas télécharger les images dans la version 1 ;
-- afficher seulement titre, résumé court, source, date et lien ;
-- toujours mettre le lien vers l’article original ;
-- toujours afficher la source ;
-- ne pas supprimer l’attribution.
-- lire les articles dans une fenêtre intégrée quand la source l’autorise, sans stocker le texte complet dans le JSON.
-
-## Améliorations futures
-
-- Traduction automatique anglais vers français.
-- Ajout d’images autorisées uniquement.
-- Newsletter.
-- Notifications web.
-- Version application Flutter.
-- Section fiches techniques.
-- Section BIM / Revit.
-- Outils de calcul génie civil.
-- Fiches de métré.
-- Modèles de devis.
-- Documents premium.
-- PWA pour consultation hors ligne.
-- Référencement SEO avancé.
+Le site ne copie pas les articles complets. Il affiche un résumé court, une image distante quand elle est fournie par la source, l’attribution et le lien vers l’article original. Certains éditeurs peuvent bloquer l’affichage intégré de leur page.
