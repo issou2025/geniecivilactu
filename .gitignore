@@ -1,0 +1,8 @@
+node-server.out
+node-server.err
+server.out
+server.err
+server2.out
+server2.err
+__pycache__/
+scripts/__pycache__/
