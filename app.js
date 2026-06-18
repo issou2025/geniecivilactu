@@ -213,6 +213,7 @@ function createArticleCard(article) {
     link.href = article.url;
     link.textContent = "Source";
     link.setAttribute("aria-label", `Ouvrir la source originale: ${article.title_fr}`);
+    readerButton.textContent = "Lire ici en français";
     readerButton.addEventListener("click", () => openReader(article));
   } else {
     link.remove();
@@ -249,11 +250,19 @@ function openReader(article) {
   readerSource.textContent = article.source;
   readerDate.textContent = formatDate(article.published_at);
   readerSourceLink.href = article.url;
-  readerSourceLink.setAttribute("aria-label", `Lire à la source: ${article.title_fr}`);
-  readerFrame.src = article.url;
+  readerSourceLink.setAttribute("aria-label", `Lire la source originale: ${article.title_fr}`);
+  readerFrame.src = getTranslatedArticleUrl(article.url);
 
   readerModal.setAttribute("aria-hidden", "false");
   document.body.classList.add("modal-open");
+}
+
+function getTranslatedArticleUrl(url) {
+  const translated = new URL("https://translate.google.com/translate");
+  translated.searchParams.set("sl", "auto");
+  translated.searchParams.set("tl", "fr");
+  translated.searchParams.set("u", url);
+  return translated.href;
 }
 
 function closeReader() {
