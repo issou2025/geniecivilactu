@@ -1,0 +1,36 @@
+name: Mettre à jour les actualités
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update-news:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Récupérer le dépôt
+        uses: actions/checkout@v4
+
+      - name: Installer Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Installer les dépendances
+        run: |
+          python -m pip install --upgrade pip
+          pip install feedparser requests beautifulsoup4 python-dateutil
+
+      - name: Exécuter le script d'actualités
+        run: python scripts/fetch_news.py
+
+      - name: Commiter les changements
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Mettre à jour les actualités"
+          file_pattern: data/news.json
