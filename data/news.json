@@ -1,0 +1,62 @@
+[
+  {
+    "id": "civil-001",
+    "source": "ASCE Civil Engineering Source",
+    "category": "Structures",
+    "title_fr": "Une nouvelle méthode améliore la durabilité des ponts",
+    "summary_fr": "Des ingénieurs présentent une solution permettant d’améliorer la durabilité des ouvrages exposés aux charges répétées et aux conditions climatiques sévères.",
+    "url": "https://www.asce.org/publications-and-news/civil-engineering-source",
+    "image": "",
+    "published_at": "2026-06-18"
+  },
+  {
+    "id": "civil-002",
+    "source": "Construction Dive",
+    "category": "Construction",
+    "title_fr": "Les entreprises du BTP accélèrent leurs outils numériques",
+    "summary_fr": "Plusieurs acteurs de la construction renforcent l’usage des plateformes collaboratives pour améliorer le suivi des projets et la coordination chantier.",
+    "url": "https://www.constructiondive.com/",
+    "image": "",
+    "published_at": "2026-06-17"
+  },
+  {
+    "id": "civil-003",
+    "source": "BIM Today",
+    "category": "BIM / Revit",
+    "title_fr": "Le BIM continue de transformer la maintenance des infrastructures",
+    "summary_fr": "Les modèles numériques deviennent des supports utiles pour anticiper les opérations de maintenance et mieux documenter les ouvrages existants.",
+    "url": "https://www.pbctoday.co.uk/news/category/bim-news/",
+    "image": "",
+    "published_at": "2026-06-16"
+  },
+  {
+    "id": "civil-004",
+    "source": "World Highways",
+    "category": "Routes",
+    "title_fr": "Nouveaux matériaux pour des chaussées plus durables",
+    "summary_fr": "Des solutions à plus faible empreinte carbone sont étudiées pour prolonger la durée de vie des chaussées et réduire les interventions de maintenance.",
+    "url": "https://www.worldhighways.com/",
+    "image": "",
+    "published_at": "2026-06-15"
+  },
+  {
+    "id": "civil-005",
+    "source": "Institution of Civil Engineers",
+    "category": "Infrastructures",
+    "title_fr": "La résilience des infrastructures devient une priorité",
+    "summary_fr": "Les maîtres d’ouvrage intègrent davantage les risques climatiques dans la conception, l’exploitation et la réhabilitation des infrastructures essentielles.",
+    "url": "https://www.ice.org.uk/news-insight",
+    "image": "",
+    "published_at": "2026-06-14"
+  },
+  {
+    "id": "civil-006",
+    "source": "The Constructor",
+    "category": "Béton",
+    "title_fr": "Le béton bas carbone gagne du terrain dans les projets urbains",
+    "summary_fr": "Les formulations à teneur réduite en clinker progressent dans les appels d’offres pour limiter l’impact environnemental des projets de construction.",
+    "url": "https://theconstructor.org/",
+    "image": "",
+    "published_at": "2026-06-13"
+  }
+]
