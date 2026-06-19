@@ -4,6 +4,7 @@ import hashlib
 import json
 import re
 import sys
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from datetime import datetime, timezone
 from email.utils import parsedate_to_datetime
 from pathlib import Path
@@ -23,9 +24,10 @@ from sources import SOURCES
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 OUTPUT_FILE = ROOT_DIR / "data" / "news.json"
-MAX_PER_SOURCE = 8
-MAX_ARTICLES = 200
-REQUEST_TIMEOUT = 15
+MAX_PER_SOURCE = 3
+MAX_ARTICLES = 160
+REQUEST_TIMEOUT = 10
+SOURCE_WORKERS = 8
 TRANSLATION_CACHE: dict[str, str] = {}
 
 CATEGORY_KEYWORDS = {
@@ -50,13 +52,16 @@ def main() -> int:
     successes: list[str] = []
     failures: list[str] = []
 
-    for source in SOURCES:
-        try:
-            fetched = fetch_source(source)
-            articles.extend(fetched)
-            successes.append(f"{source['name']} ({len(fetched)} article(s))")
-        except Exception as exc:
-            failures.append(f"{source['name']} : {exc}")
+    with ThreadPoolExecutor(max_workers=SOURCE_WORKERS) as executor:
+        futures = {executor.submit(fetch_source, source): source for source in SOURCES}
+        for future in as_completed(futures):
+            source = futures[future]
+            try:
+                fetched = future.result()
+                articles.extend(fetched)
+                successes.append(f"{source['name']} ({len(fetched)} article(s))")
+            except Exception as exc:
+                failures.append(f"{source['name']} : {exc}")
 
     clean_articles = deduplicate(articles)
     clean_articles.sort(key=sort_key, reverse=True)

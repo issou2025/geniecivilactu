@@ -58,13 +58,34 @@
             <span>rubriques métier</span>
           </div>
           <div class="metric">
-            <strong>20</strong>
+            <strong>40</strong>
             <span>sources suivies par le script</span>
           </div>
           <div class="metric">
             <strong>FR</strong>
             <span>lecture orientée français</span>
           </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Indicateurs de veille">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <strong id="statArticles">0</strong>
+          <span>articles disponibles</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statSources">0</strong>
+          <span>sources actives</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statCategories">13</strong>
+          <span>catégories suivies</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statFavorites">0</strong>
+          <span>favoris enregistrés</span>
         </div>
       </div>
     </section>
@@ -93,7 +114,42 @@
           <label class="sr-only" for="searchInput">Rechercher une actualité</label>
           <input id="searchInput" class="search-input" type="search" placeholder="Rechercher: pont, béton, BIM, sécurité..." autocomplete="off">
         </div>
+        <div class="advanced-controls" aria-label="Options de filtrage">
+          <label>
+            <span>Source</span>
+            <select id="sourceFilter">
+              <option value="Tous">Toutes les sources</option>
+            </select>
+          </label>
+          <label>
+            <span>Tri</span>
+            <select id="sortSelect">
+              <option value="newest">Plus récents</option>
+              <option value="oldest">Plus anciens</option>
+              <option value="source">Par source</option>
+              <option value="category">Par catégorie</option>
+            </select>
+          </label>
+          <div class="segmented-control" aria-label="Mode d'affichage">
+            <button class="view-button active" type="button" data-view="grid" aria-pressed="true">Grille</button>
+            <button class="view-button" type="button" data-view="list" aria-pressed="false">Liste</button>
+          </div>
+          <button class="ghost-button" id="favoritesOnly" type="button" aria-pressed="false">Favoris</button>
+          <button class="ghost-button" id="clearFilters" type="button">Effacer</button>
+        </div>
         <div class="category-filters" id="categoryFilters" aria-label="Toutes les catégories"></div>
+      </div>
+    </section>
+
+    <section class="spotlight-section" aria-labelledby="spotlightTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">À la une</p>
+            <h2 id="spotlightTitle">Article recommandé</h2>
+          </div>
+        </div>
+        <div class="spotlight-card" id="spotlightCard"></div>
       </div>
     </section>
 
@@ -203,7 +259,9 @@
           </div>
         </dl>
         <div class="card-actions">
+          <button class="favorite-button" type="button" aria-label="Ajouter aux favoris">Favori</button>
           <button class="reader-button" type="button">Lire ici en français</button>
+          <button class="share-button" type="button">Partager</button>
           <a class="read-link" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
@@ -234,5 +292,6 @@
   </div>
 
   <script src="app.js" defer></script>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
 </body>
 </html>

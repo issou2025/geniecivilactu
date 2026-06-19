@@ -356,8 +356,42 @@ textarea {
   text-align: center;
 }
 
+.stats-band {
+  padding: 18px 0 24px;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+}
+
+.stat-card {
+  padding: 18px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-card);
+}
+
+.stat-card strong {
+  display: block;
+  color: var(--color-primary-strong);
+  font-size: clamp(1.55rem, 4vw, 2.35rem);
+  line-height: 1;
+}
+
+.stat-card span {
+  display: block;
+  margin-top: 8px;
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 800;
+}
+
 .controls-section,
 .news-section,
+.spotlight-section,
 .feature-band,
 .quick-links,
 .page-section {
@@ -407,6 +441,84 @@ textarea {
   border-color: var(--color-accent);
 }
 
+.advanced-controls {
+  display: grid;
+  grid-template-columns: minmax(160px, 1fr) minmax(150px, 0.8fr) auto auto auto;
+  gap: 12px;
+  align-items: end;
+}
+
+.advanced-controls label {
+  display: grid;
+  gap: 6px;
+}
+
+.advanced-controls label span {
+  color: var(--color-muted);
+  font-size: 0.78rem;
+  font-weight: 900;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.advanced-controls select {
+  min-height: 44px;
+  width: 100%;
+  padding: 0 12px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+}
+
+.segmented-control {
+  display: inline-flex;
+  min-height: 44px;
+  overflow: hidden;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+}
+
+.view-button,
+.ghost-button,
+.favorite-button,
+.share-button {
+  min-height: 44px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  color: var(--color-text);
+  cursor: pointer;
+  font-weight: 900;
+  transition: transform 160ms ease, background-color 160ms ease, color 160ms ease, border-color 160ms ease;
+}
+
+.view-button {
+  min-width: 72px;
+  border: 0;
+  border-radius: 0;
+}
+
+.view-button.active,
+.ghost-button.active,
+.favorite-button.active {
+  background: var(--color-primary);
+  border-color: var(--color-primary);
+  color: #FFFFFF;
+}
+
+.ghost-button {
+  padding: 0 14px;
+}
+
+.view-button:hover,
+.ghost-button:hover,
+.favorite-button:hover,
+.share-button:hover {
+  transform: translateY(-1px);
+}
+
 .category-filters {
   display: flex;
   gap: 10px;
@@ -430,6 +542,61 @@ textarea {
   border-color: var(--color-primary);
   color: #FFFFFF;
   box-shadow: 0 10px 22px rgba(15, 118, 110, 0.2);
+}
+
+.spotlight-section {
+  padding-top: 22px;
+}
+
+.spotlight-card {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.82fr) minmax(0, 1.18fr);
+  gap: 0;
+  overflow: hidden;
+  min-height: 310px;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+  background: var(--color-surface);
+  box-shadow: var(--shadow-soft);
+}
+
+.spotlight-media {
+  min-height: 300px;
+  background:
+    linear-gradient(135deg, var(--color-primary), #64748B),
+    repeating-linear-gradient(90deg, rgba(255,255,255,0.18) 0 1px, transparent 1px 18px);
+}
+
+.spotlight-media img {
+  width: 100%;
+  height: 100%;
+  min-height: 300px;
+  object-fit: cover;
+}
+
+.spotlight-content {
+  display: grid;
+  align-content: center;
+  gap: 14px;
+  padding: clamp(22px, 4vw, 38px);
+}
+
+.spotlight-content h3 {
+  margin: 0;
+  color: var(--color-ink);
+  font-size: clamp(1.55rem, 3.4vw, 2.5rem);
+  line-height: 1.08;
+}
+
+.spotlight-content p {
+  margin: 0;
+  color: var(--color-muted);
+}
+
+.spotlight-meta {
+  color: var(--color-muted);
+  font-size: 0.9rem;
+  font-weight: 800;
 }
 
 .section-heading {
@@ -481,9 +648,17 @@ textarea {
   gap: 22px;
 }
 
+.news-grid.list-view {
+  grid-template-columns: 1fr;
+}
+
 @media (min-width: 1240px) {
   .news-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .news-grid.list-view {
+    grid-template-columns: 1fr;
   }
 }
 
@@ -504,6 +679,16 @@ textarea {
   transform: translateY(-4px);
   border-color: color-mix(in srgb, var(--color-primary) 52%, var(--color-border));
   box-shadow: 0 22px 44px rgba(23, 33, 43, 0.13);
+}
+
+.list-view .news-card {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.34fr) minmax(0, 1fr);
+}
+
+.list-view .card-media {
+  min-height: 100%;
+  aspect-ratio: auto;
 }
 
 .card-media {
@@ -600,7 +785,7 @@ textarea {
 
 .card-actions {
   display: grid;
-  grid-template-columns: 1fr auto;
+  grid-template-columns: auto 1fr auto auto;
   gap: 10px;
   margin-top: auto;
 }
@@ -626,6 +811,18 @@ textarea {
   border: 1px solid transparent;
   background: var(--color-primary);
   color: #FFFFFF;
+}
+
+.favorite-button,
+.share-button {
+  padding: 0 12px;
+  white-space: nowrap;
+}
+
+.share-button {
+  background: var(--color-accent-soft);
+  color: #92400E;
+  border-color: color-mix(in srgb, var(--color-accent) 42%, var(--color-border));
 }
 
 .feature-band {
@@ -971,6 +1168,33 @@ textarea {
   margin: 16px 24px 22px;
 }
 
+.back-to-top {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  z-index: 30;
+  width: 46px;
+  height: 46px;
+  border: 1px solid var(--color-border);
+  border-radius: 999px;
+  background: var(--color-primary);
+  color: #FFFFFF;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 900;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(10px);
+  transition: opacity 160ms ease, transform 160ms ease;
+  box-shadow: var(--shadow-soft);
+}
+
+.back-to-top.visible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
 .site-footer {
   padding: 36px 0;
   background:
@@ -1020,9 +1244,14 @@ textarea {
 
   .hero-layout,
   .feature-grid,
+  .spotlight-card,
   .footer-grid,
   .contact-layout {
     grid-template-columns: 1fr;
+  }
+
+.advanced-controls {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .hero-panel {
@@ -1031,6 +1260,10 @@ textarea {
 
   .topic-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .section-heading {
@@ -1081,12 +1314,30 @@ textarea {
     display: grid;
   }
 
+  .advanced-controls {
+    grid-template-columns: 1fr;
+  }
+
+  .segmented-control {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
   .topic-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .list-view .news-card {
+    display: flex;
+  }
+
   .controls-section,
   .news-section,
+  .spotlight-section,
   .feature-band,
   .quick-links,
   .page-section {
