@@ -12,6 +12,8 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <a class="skip-link" href="#actualites">Aller aux articles</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
   <header class="site-header">
     <div class="container header-grid">
       <a class="brand" href="index.html" aria-label="Accueil Génie Civil Actu">
@@ -87,6 +89,10 @@
           <strong id="statFavorites">0</strong>
           <span>favoris enregistrés</span>
         </div>
+        <div class="stat-card">
+          <strong id="statRead">0</strong>
+          <span>articles lus</span>
+        </div>
       </div>
     </section>
 
@@ -130,14 +136,52 @@
               <option value="category">Par catégorie</option>
             </select>
           </label>
+          <label>
+            <span>Période</span>
+            <select id="periodFilter">
+              <option value="all">Toutes les dates</option>
+              <option value="7">7 derniers jours</option>
+              <option value="30">30 derniers jours</option>
+              <option value="90">90 derniers jours</option>
+            </select>
+          </label>
           <div class="segmented-control" aria-label="Mode d'affichage">
             <button class="view-button active" type="button" data-view="grid" aria-pressed="true">Grille</button>
             <button class="view-button" type="button" data-view="list" aria-pressed="false">Liste</button>
           </div>
           <button class="ghost-button" id="favoritesOnly" type="button" aria-pressed="false">Favoris</button>
+          <button class="ghost-button" id="unreadOnly" type="button" aria-pressed="false">Non lus</button>
+          <button class="ghost-button" id="compactMode" type="button" aria-pressed="false">Compact</button>
+          <button class="ghost-button" id="randomArticle" type="button">Surprise</button>
+          <button class="ghost-button" id="refreshNews" type="button">Actualiser</button>
           <button class="ghost-button" id="clearFilters" type="button">Effacer</button>
         </div>
         <div class="category-filters" id="categoryFilters" aria-label="Toutes les catégories"></div>
+      </div>
+    </section>
+
+    <section class="insights-section" aria-labelledby="insightsTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Tableau de bord</p>
+            <h2 id="insightsTitle">Comprendre la veille en un coup d'œil</h2>
+          </div>
+        </div>
+        <div class="insights-grid">
+          <article class="insight-panel">
+            <h3>Tendances</h3>
+            <div class="trend-list" id="trendList"></div>
+          </article>
+          <article class="insight-panel">
+            <h3>Répartition</h3>
+            <div class="category-bars" id="categoryBars"></div>
+          </article>
+          <article class="insight-panel">
+            <h3>Sources actives</h3>
+            <div class="source-cloud" id="sourceCloud"></div>
+          </article>
+        </div>
       </div>
     </section>
 
@@ -168,6 +212,18 @@
 
         <div class="status-box" id="statusBox" role="status">Chargement des actualités...</div>
         <div class="news-grid" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <section class="timeline-section" aria-labelledby="timelineTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Chronologie</p>
+            <h2 id="timelineTitle">Derniers mouvements</h2>
+          </div>
+        </div>
+        <div class="timeline-list" id="timelineList"></div>
       </div>
     </section>
 
@@ -260,8 +316,10 @@
         </dl>
         <div class="card-actions">
           <button class="favorite-button" type="button" aria-label="Ajouter aux favoris">Favori</button>
+          <button class="read-state-button" type="button">Lu</button>
           <button class="reader-button" type="button">Lire ici en français</button>
           <button class="share-button" type="button">Partager</button>
+          <a class="translate-link" target="_blank" rel="noopener noreferrer">Traduire</a>
           <a class="read-link" target="_blank" rel="noopener noreferrer">Source</a>
         </div>
       </div>
@@ -293,5 +351,11 @@
 
   <script src="app.js" defer></script>
   <button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+  <nav class="mobile-bottom-nav" aria-label="Navigation mobile">
+    <a href="#accueil">Accueil</a>
+    <a href="#actualites">Articles</a>
+    <button id="mobileSearchFocus" type="button">Recherche</button>
+    <button id="mobileFiltersFocus" type="button">Filtres</button>
+  </nav>
 </body>
 </html>

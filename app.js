@@ -1,5 +1,7 @@
 const NEWS_URL = "data/news.json";
 const FAVORITES_KEY = "genie-civil-actu-favorites";
+const READ_KEY = "genie-civil-actu-read";
+const CACHE_KEY = "genie-civil-actu-cache";
 
 const categories = [
   "Tous",
@@ -24,9 +26,13 @@ const state = {
   category: "Tous",
   source: "Tous",
   sort: "newest",
+  period: "all",
   view: "grid",
   favoritesOnly: false,
-  favorites: new Set()
+  unreadOnly: false,
+  compact: false,
+  favorites: new Set(),
+  read: new Set()
 };
 
 const newsGrid = document.querySelector("#newsGrid");
@@ -35,15 +41,25 @@ const searchInput = document.querySelector("#searchInput");
 const categoryFilters = document.querySelector("#categoryFilters");
 const sourceFilter = document.querySelector("#sourceFilter");
 const sortSelect = document.querySelector("#sortSelect");
+const periodFilter = document.querySelector("#periodFilter");
 const clearFilters = document.querySelector("#clearFilters");
 const favoritesOnly = document.querySelector("#favoritesOnly");
+const unreadOnly = document.querySelector("#unreadOnly");
+const compactMode = document.querySelector("#compactMode");
+const randomArticle = document.querySelector("#randomArticle");
+const refreshNews = document.querySelector("#refreshNews");
 const articleCount = document.querySelector("#articleCount");
 const lastUpdated = document.querySelector("#lastUpdated");
 const statArticles = document.querySelector("#statArticles");
 const statSources = document.querySelector("#statSources");
 const statCategories = document.querySelector("#statCategories");
 const statFavorites = document.querySelector("#statFavorites");
+const statRead = document.querySelector("#statRead");
 const spotlightCard = document.querySelector("#spotlightCard");
+const trendList = document.querySelector("#trendList");
+const categoryBars = document.querySelector("#categoryBars");
+const sourceCloud = document.querySelector("#sourceCloud");
+const timelineList = document.querySelector("#timelineList");
 const themeToggle = document.querySelector("#themeToggle");
 const themeText = document.querySelector("#themeText");
 const themeIcon = document.querySelector("#themeIcon");
@@ -57,12 +73,19 @@ const readerSource = document.querySelector("#readerSource");
 const readerDate = document.querySelector("#readerDate");
 const readerSourceLink = document.querySelector("#readerSourceLink");
 const backToTop = document.querySelector("#backToTop");
+const scrollProgress = document.querySelector("#scrollProgress");
+const mobileSearchFocus = document.querySelector("#mobileSearchFocus");
+const mobileFiltersFocus = document.querySelector("#mobileFiltersFocus");
 
 document.addEventListener("DOMContentLoaded", () => {
   setupTheme();
   setupBackToTop();
+  setupScrollProgress();
+  setupMobileShortcuts();
+  setupKeyboardShortcuts();
   if (newsGrid && statusBox && searchInput && categoryFilters && template) {
     loadFavorites();
+    loadReadArticles();
     setupFilters();
     setupSearch();
     setupAdvancedControls();
@@ -138,6 +161,11 @@ function setupAdvancedControls() {
     renderArticles();
   });
 
+  periodFilter?.addEventListener("change", (event) => {
+    state.period = event.target.value;
+    renderArticles();
+  });
+
   document.querySelectorAll(".view-button").forEach((button) => {
     button.addEventListener("click", () => {
       state.view = button.dataset.view || "grid";
@@ -153,17 +181,51 @@ function setupAdvancedControls() {
     renderArticles();
   });
 
+  unreadOnly?.addEventListener("click", () => {
+    state.unreadOnly = !state.unreadOnly;
+    unreadOnly.classList.toggle("active", state.unreadOnly);
+    unreadOnly.setAttribute("aria-pressed", state.unreadOnly ? "true" : "false");
+    renderArticles();
+  });
+
+  compactMode?.addEventListener("click", () => {
+    state.compact = !state.compact;
+    compactMode.classList.toggle("active", state.compact);
+    compactMode.setAttribute("aria-pressed", state.compact ? "true" : "false");
+    renderArticles();
+  });
+
+  randomArticle?.addEventListener("click", () => {
+    const filtered = sortArticles(state.articles.filter(matchesCurrentFilters));
+    const pool = filtered.length ? filtered : state.articles;
+    const article = pool[Math.floor(Math.random() * pool.length)];
+    if (article) openReader(article);
+  });
+
+  refreshNews?.addEventListener("click", () => {
+    loadNews();
+    flashButton(refreshNews, "Actualisé");
+  });
+
   clearFilters?.addEventListener("click", () => {
     state.search = "";
     state.category = "Tous";
     state.source = "Tous";
     state.sort = "newest";
+    state.period = "all";
     state.favoritesOnly = false;
+    state.unreadOnly = false;
+    state.compact = false;
     searchInput.value = "";
     if (sourceFilter) sourceFilter.value = "Tous";
     if (sortSelect) sortSelect.value = "newest";
+    if (periodFilter) periodFilter.value = "all";
     favoritesOnly?.classList.remove("active");
     favoritesOnly?.setAttribute("aria-pressed", "false");
+    unreadOnly?.classList.remove("active");
+    unreadOnly?.setAttribute("aria-pressed", "false");
+    compactMode?.classList.remove("active");
+    compactMode?.setAttribute("aria-pressed", "false");
     updateFilterButtons();
     renderArticles();
   });
@@ -178,12 +240,25 @@ async function loadNews() {
     }
     const data = await response.json();
     state.articles = Array.isArray(data) ? normalizeArticles(data) : [];
+    cacheArticles();
     populateSourceFilter();
     updateLastUpdated();
     updateDashboard();
     renderArticles();
   } catch (error) {
     console.error(error);
+    if (loadCachedArticles()) {
+      populateSourceFilter();
+      updateLastUpdated();
+      updateDashboard();
+      renderArticles();
+      statusBox.hidden = false;
+      statusBox.textContent = "Actualités affichées depuis la dernière sauvegarde locale.";
+      window.setTimeout(() => {
+        if (state.articles.length) statusBox.hidden = true;
+      }, 1800);
+      return;
+    }
     articleCount.textContent = "Aucun article disponible";
     lastUpdated.textContent = "Dernière mise à jour: non disponible";
     showError("Impossible de charger les actualités");
@@ -223,11 +298,14 @@ function renderArticles() {
   const filtered = sortArticles(state.articles.filter(matchesCurrentFilters));
   newsGrid.innerHTML = "";
   newsGrid.classList.toggle("list-view", state.view === "list");
+  newsGrid.classList.toggle("compact-view", state.compact);
 
   articleCount.textContent = `${filtered.length} article${filtered.length > 1 ? "s" : ""} trouvé${filtered.length > 1 ? "s" : ""}`;
   updateFilterButtons();
   updateDashboard();
   renderSpotlight(filtered);
+  renderInsights(filtered);
+  renderTimeline(filtered);
 
   if (!state.articles.length) {
     showStatus("Aucun article disponible");
@@ -249,6 +327,8 @@ function matchesCurrentFilters(article) {
   const inCategory = state.category === "Tous" || article.category === state.category;
   const inSource = state.source === "Tous" || article.source === state.source;
   const inFavorites = !state.favoritesOnly || state.favorites.has(article.id);
+  const inUnread = !state.unreadOnly || !state.read.has(article.id);
+  const inPeriod = matchesPeriod(article);
   const text = [
     article.title_fr,
     article.summary_fr,
@@ -256,7 +336,19 @@ function matchesCurrentFilters(article) {
     article.category,
     article.published_at
   ].join(" ").toLowerCase();
-  return inCategory && inSource && inFavorites && text.includes(state.search);
+  return inCategory && inSource && inFavorites && inUnread && inPeriod && text.includes(state.search);
+}
+
+function matchesPeriod(article) {
+  if (state.period === "all") {
+    return true;
+  }
+  const days = Number(state.period);
+  const published = Date.parse(article.published_at);
+  if (!days || Number.isNaN(published)) {
+    return true;
+  }
+  return published >= Date.now() - days * 24 * 60 * 60 * 1000;
 }
 
 function sortArticles(articles) {
@@ -294,7 +386,9 @@ function createArticleCard(article) {
   const link = card.querySelector(".read-link");
   const readerButton = card.querySelector(".reader-button");
   const favoriteButton = card.querySelector(".favorite-button");
+  const readStateButton = card.querySelector(".read-state-button");
   const shareButton = card.querySelector(".share-button");
+  const translateLink = card.querySelector(".translate-link");
 
   badge.textContent = article.category;
   title.textContent = article.title_fr;
@@ -302,21 +396,28 @@ function createArticleCard(article) {
   source.textContent = article.source;
   date.textContent = `${formatDate(article.published_at)} · ${estimateReadingTime(article.summary_fr)} min`;
   card.dataset.articleId = article.id;
+  card.classList.toggle("is-read", state.read.has(article.id));
 
   renderMedia(media, article);
   updateFavoriteButton(favoriteButton, article);
+  updateReadStateButton(readStateButton, article);
   favoriteButton?.addEventListener("click", () => toggleFavorite(article));
+  readStateButton?.addEventListener("click", () => toggleRead(article));
   shareButton?.addEventListener("click", () => shareArticle(article, shareButton));
 
   if (article.url) {
     link.href = article.url;
     link.textContent = "Source";
     link.setAttribute("aria-label", `Ouvrir la source originale: ${article.title_fr}`);
+    translateLink.href = getTranslatedArticleUrl(article.url);
+    translateLink.textContent = "Traduire";
+    translateLink.setAttribute("aria-label", `Lire la traduction française: ${article.title_fr}`);
     readerButton.textContent = "Lire ici en français";
     readerButton.addEventListener("click", () => openReader(article));
   } else {
     link.remove();
     readerButton.remove();
+    translateLink?.remove();
   }
 
   return card;
@@ -397,6 +498,7 @@ function updateDashboard() {
   if (statSources) statSources.textContent = String(sources.size || 40);
   if (statCategories) statCategories.textContent = String(categories.length - 1);
   if (statFavorites) statFavorites.textContent = String(state.favorites.size);
+  if (statRead) statRead.textContent = String(state.read.size);
 }
 
 function getCategoryCounts() {
@@ -442,6 +544,49 @@ function updateFavoriteButton(button, article) {
   button.setAttribute("aria-label", active ? "Retirer des favoris" : "Ajouter aux favoris");
 }
 
+function loadReadArticles() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(READ_KEY) || "[]");
+    state.read = new Set(Array.isArray(saved) ? saved : []);
+  } catch {
+    state.read = new Set();
+  }
+}
+
+function saveReadArticles() {
+  localStorage.setItem(READ_KEY, JSON.stringify([...state.read]));
+  updateDashboard();
+}
+
+function toggleRead(article) {
+  if (state.read.has(article.id)) {
+    state.read.delete(article.id);
+  } else {
+    state.read.add(article.id);
+  }
+  saveReadArticles();
+  renderArticles();
+}
+
+function markRead(article) {
+  if (!article?.id || state.read.has(article.id)) {
+    return;
+  }
+  state.read.add(article.id);
+  saveReadArticles();
+  renderArticles();
+}
+
+function updateReadStateButton(button, article) {
+  if (!button) {
+    return;
+  }
+  const active = state.read.has(article.id);
+  button.classList.toggle("active", active);
+  button.textContent = active ? "Lu ✓" : "Non lu";
+  button.setAttribute("aria-label", active ? "Marquer comme non lu" : "Marquer comme lu");
+}
+
 async function shareArticle(article, button) {
   const shareUrl = article.url || window.location.href;
   const payload = {
@@ -471,6 +616,170 @@ function flashButton(button, text) {
   }, 1400);
 }
 
+function cacheArticles() {
+  try {
+    localStorage.setItem(CACHE_KEY, JSON.stringify(state.articles));
+  } catch {
+    // Le cache est une aide, pas une condition de fonctionnement.
+  }
+}
+
+function loadCachedArticles() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CACHE_KEY) || "[]");
+    if (!Array.isArray(saved) || !saved.length) {
+      return false;
+    }
+    state.articles = normalizeArticles(saved);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function renderInsights(articles) {
+  renderTrends(articles);
+  renderCategoryBars(articles);
+  renderSourceCloud(articles);
+}
+
+function renderTrends(articles) {
+  if (!trendList) return;
+  const stopWords = new Set([
+    "avec", "dans", "des", "les", "une", "pour", "sur", "aux", "par", "plus",
+    "son", "ses", "qui", "que", "est", "sont", "civil", "genie", "construction"
+  ]);
+  const counts = new Map();
+  articles.forEach((article) => {
+    getArticleText(article)
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .toLowerCase()
+      .match(/[a-z0-9]{4,}/g)
+      ?.forEach((word) => {
+        if (!stopWords.has(word)) {
+          counts.set(word, (counts.get(word) || 0) + 1);
+        }
+      });
+  });
+
+  const trends = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
+    .slice(0, 12);
+
+  trendList.innerHTML = "";
+  if (!trends.length) {
+    trendList.textContent = "Aucune tendance pour ce filtre.";
+    return;
+  }
+
+  trends.forEach(([word, count]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "trend-chip";
+    button.textContent = `${word} ${count}`;
+    button.addEventListener("click", () => {
+      state.search = word;
+      searchInput.value = word;
+      renderArticles();
+      searchInput.scrollIntoView({ behavior: "smooth", block: "center" });
+    });
+    trendList.appendChild(button);
+  });
+}
+
+function renderCategoryBars(articles) {
+  if (!categoryBars) return;
+  const counts = new Map();
+  articles.forEach((article) => {
+    counts.set(article.category, (counts.get(article.category) || 0) + 1);
+  });
+  const rows = [...counts.entries()].sort((a, b) => b[1] - a[1]).slice(0, 8);
+  const max = Math.max(1, ...rows.map(([, count]) => count));
+
+  categoryBars.innerHTML = "";
+  if (!rows.length) {
+    categoryBars.textContent = "Aucune categorie disponible.";
+    return;
+  }
+
+  rows.forEach(([category, count]) => {
+    const row = document.createElement("button");
+    row.type = "button";
+    row.className = "category-bar";
+    row.innerHTML = `
+      <span>${escapeHtml(category)}</span>
+      <strong>${count}</strong>
+      <i class="bar-track" aria-hidden="true"><b class="bar-fill" style="width: ${(count / max) * 100}%"></b></i>
+    `;
+    row.addEventListener("click", () => {
+      state.category = category;
+      updateFilterButtons();
+      renderArticles();
+      document.querySelector("#actualites")?.scrollIntoView({ behavior: "smooth" });
+    });
+    categoryBars.appendChild(row);
+  });
+}
+
+function renderSourceCloud(articles) {
+  if (!sourceCloud) return;
+  const counts = new Map();
+  articles.forEach((article) => {
+    counts.set(article.source, (counts.get(article.source) || 0) + 1);
+  });
+  const sources = [...counts.entries()]
+    .sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0], "fr"))
+    .slice(0, 16);
+
+  sourceCloud.innerHTML = "";
+  if (!sources.length) {
+    sourceCloud.textContent = "Aucune source active pour ce filtre.";
+    return;
+  }
+
+  sources.forEach(([source, count]) => {
+    const button = document.createElement("button");
+    button.type = "button";
+    button.className = "source-pill";
+    button.textContent = `${source} (${count})`;
+    button.addEventListener("click", () => {
+      state.source = source;
+      if (sourceFilter) sourceFilter.value = source;
+      renderArticles();
+      document.querySelector("#actualites")?.scrollIntoView({ behavior: "smooth" });
+    });
+    sourceCloud.appendChild(button);
+  });
+}
+
+function renderTimeline(articles) {
+  if (!timelineList) return;
+  const latest = sortArticles(articles).slice(0, 7);
+  timelineList.innerHTML = "";
+  if (!latest.length) {
+    timelineList.textContent = "Aucun mouvement recent.";
+    return;
+  }
+
+  latest.forEach((article) => {
+    const item = document.createElement("button");
+    item.type = "button";
+    item.className = "timeline-item";
+    item.innerHTML = `
+      <span>${escapeHtml(formatDate(article.published_at))}</span>
+      <strong>${escapeHtml(article.title_fr)}</strong>
+      <small>${escapeHtml(article.source)} · ${escapeHtml(article.category)}</small>
+    `;
+    item.addEventListener("click", () => openReader(article));
+    timelineList.appendChild(item);
+  });
+}
+
+function getArticleText(article) {
+  return [article.title_fr, article.summary_fr, article.category, article.source].join(" ");
+}
+
 function setupReader() {
   if (!readerModal) {
     return;
@@ -488,10 +797,11 @@ function setupReader() {
 }
 
 function openReader(article) {
-  if (!readerModal || !readerFrame) {
+  if (!readerModal || !readerFrame || !article?.url) {
     return;
   }
 
+  markRead(article);
   readerTitle.textContent = article.title_fr;
   readerSummary.textContent = article.summary_fr;
   readerCategory.textContent = article.category;
@@ -534,6 +844,50 @@ function setupBackToTop() {
 
   backToTop.addEventListener("click", () => {
     window.scrollTo({ top: 0, behavior: "smooth" });
+  });
+}
+
+function setupScrollProgress() {
+  if (!scrollProgress) {
+    return;
+  }
+
+  const update = () => {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const progress = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    scrollProgress.style.width = `${Math.min(100, Math.max(0, progress))}%`;
+  };
+
+  update();
+  window.addEventListener("scroll", update, { passive: true });
+  window.addEventListener("resize", update);
+}
+
+function setupMobileShortcuts() {
+  mobileSearchFocus?.addEventListener("click", () => {
+    searchInput?.scrollIntoView({ behavior: "smooth", block: "center" });
+    window.setTimeout(() => searchInput?.focus(), 260);
+  });
+
+  mobileFiltersFocus?.addEventListener("click", () => {
+    document.querySelector(".controls-section")?.scrollIntoView({ behavior: "smooth", block: "start" });
+  });
+}
+
+function setupKeyboardShortcuts() {
+  document.addEventListener("keydown", (event) => {
+    const target = event.target;
+    const isTyping = target instanceof HTMLInputElement || target instanceof HTMLTextAreaElement || target instanceof HTMLSelectElement;
+    if (event.key === "/" && !isTyping) {
+      event.preventDefault();
+      searchInput?.focus();
+    }
+    if (event.key === "Escape" && isTyping && searchInput) {
+      state.search = "";
+      searchInput.value = "";
+      renderArticles();
+      searchInput.blur();
+    }
   });
 }
 

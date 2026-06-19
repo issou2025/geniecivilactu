@@ -26,8 +26,8 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 OUTPUT_FILE = ROOT_DIR / "data" / "news.json"
 MAX_PER_SOURCE = 3
 MAX_ARTICLES = 160
-REQUEST_TIMEOUT = 10
-SOURCE_WORKERS = 8
+REQUEST_TIMEOUT = 16
+SOURCE_WORKERS = 6
 TRANSLATION_CACHE: dict[str, str] = {}
 
 CATEGORY_KEYWORDS = {
@@ -49,6 +49,7 @@ CATEGORY_KEYWORDS = {
 
 def main() -> int:
     articles: list[dict[str, str]] = []
+    existing_articles = load_existing_articles()
     successes: list[str] = []
     failures: list[str] = []
 
@@ -62,6 +63,9 @@ def main() -> int:
                 successes.append(f"{source['name']} ({len(fetched)} article(s))")
             except Exception as exc:
                 failures.append(f"{source['name']} : {exc}")
+
+    if existing_articles:
+        articles.extend(existing_articles)
 
     clean_articles = deduplicate(articles)
     clean_articles.sort(key=sort_key, reverse=True)
@@ -82,8 +86,23 @@ def main() -> int:
         for item in failures:
             print(f"  - {item}")
 
+    if existing_articles:
+        print(f"{len(existing_articles)} ancien(s) article(s) conservé(s) en secours.")
+
     print(f"{len(clean_articles)} article(s) sauvegardé(s) dans {OUTPUT_FILE}")
     return 0
+
+
+def load_existing_articles() -> list[dict[str, str]]:
+    if not OUTPUT_FILE.exists():
+        return []
+    try:
+        data = json.loads(OUTPUT_FILE.read_text(encoding="utf-8"))
+    except (OSError, json.JSONDecodeError):
+        return []
+    if not isinstance(data, list):
+        return []
+    return [article for article in data if isinstance(article, dict)]
 
 
 def fetch_source(source: dict[str, str]) -> list[dict[str, str]]:
