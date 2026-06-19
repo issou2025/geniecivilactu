@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Génie Civil Actu - Actualités du génie civil et du BTP</title>
+  <meta name="description" content="Actualités en français sur le génie civil, le BTP, les infrastructures, le béton, les routes, les ponts, le BIM, l'hydraulique et la construction.">
+  <meta property="og:title" content="Génie Civil Actu">
+  <meta property="og:description" content="Une veille moderne pour suivre les sujets importants du génie civil et du BTP.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#actualites">Aller aux articles</a>
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+  <header class="site-header">
+    <div class="container header-grid">
+      <a class="brand" href="index.html" aria-label="Accueil Génie Civil Actu">
+        <span class="brand-mark" aria-hidden="true">GC</span>
+        <span>
+          <strong>Génie Civil Actu</strong>
+          <small>Veille BTP, ouvrages et infrastructures</small>
+        </span>
+      </a>
+
+      <nav class="main-nav" aria-label="Navigation principale">
+        <a href="index.html" aria-current="page">Accueil</a>
+        <a href="categories.html">Catégories</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Changer le thème">
+        <span aria-hidden="true" id="themeIcon">●</span>
+        <span id="themeText">Mode sombre</span>
+      </button>
+    </div>
+  </header>
+
+  <main id="accueil">
+    <section class="hero hero-home">
+      <div class="container hero-layout">
+        <div class="hero-copy">
+          <p class="eyebrow">Actualités techniques en français</p>
+          <h1>Le fil d'actualité du génie civil, clair, rapide et bien organisé.</h1>
+          <p class="hero-text">
+            Routes, ponts, béton, BIM, hydraulique, géotechnique, sécurité chantier et grands projets:
+            retrouvez les sujets importants dans une interface moderne, lisible et agréable.
+          </p>
+          <div class="hero-actions">
+            <a class="primary-link" href="#actualites">Lire les articles</a>
+            <a class="secondary-link" href="categories.html">Voir les catégories</a>
+          </div>
+        </div>
+
+        <div class="hero-panel" aria-label="Résumé du site">
+          <div class="metric">
+            <strong>13</strong>
+            <span>rubriques métier</span>
+          </div>
+          <div class="metric">
+            <strong>40</strong>
+            <span>sources suivies par le script</span>
+          </div>
+          <div class="metric">
+            <strong>FR</strong>
+            <span>lecture orientée français</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="stats-band" aria-label="Indicateurs de veille">
+      <div class="container stats-grid">
+        <div class="stat-card">
+          <strong id="statArticles">0</strong>
+          <span>articles disponibles</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statSources">0</strong>
+          <span>sources actives</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statCategories">13</strong>
+          <span>catégories suivies</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statFavorites">0</strong>
+          <span>favoris enregistrés</span>
+        </div>
+        <div class="stat-card">
+          <strong id="statRead">0</strong>
+          <span>articles lus</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="topic-strip" aria-label="Thèmes principaux">
+      <div class="container topic-grid">
+        <span>Structures</span>
+        <span>Béton</span>
+        <span>Routes</span>
+        <span>Ponts</span>
+        <span>BIM</span>
+        <span>Hydraulique</span>
+        <span>Géotechnique</span>
+        <span>Environnement</span>
+      </div>
+    </section>
+
+    <section class="controls-section" aria-labelledby="filtersTitle">
+      <div class="container control-panel">
+        <div>
+          <p class="eyebrow">Recherche</p>
+          <h2 id="filtersTitle" class="section-title">Trouver rapidement une information</h2>
+          <p class="section-intro">Filtrez les articles par thème, source ou mot-clé technique.</p>
+        </div>
+        <div class="search-row">
+          <label class="sr-only" for="searchInput">Rechercher une actualité</label>
+          <input id="searchInput" class="search-input" type="search" placeholder="Rechercher: pont, béton, BIM, sécurité..." autocomplete="off">
+        </div>
+        <div class="advanced-controls" aria-label="Options de filtrage">
+          <label>
+            <span>Source</span>
+            <select id="sourceFilter">
+              <option value="Tous">Toutes les sources</option>
+            </select>
+          </label>
+          <label>
+            <span>Tri</span>
+            <select id="sortSelect">
+              <option value="newest">Plus récents</option>
+              <option value="oldest">Plus anciens</option>
+              <option value="source">Par source</option>
+              <option value="category">Par catégorie</option>
+            </select>
+          </label>
+          <label>
+            <span>Période</span>
+            <select id="periodFilter">
+              <option value="all">Toutes les dates</option>
+              <option value="7">7 derniers jours</option>
+              <option value="30">30 derniers jours</option>
+              <option value="90">90 derniers jours</option>
+            </select>
+          </label>
+          <div class="segmented-control" aria-label="Mode d'affichage">
+            <button class="view-button active" type="button" data-view="grid" aria-pressed="true">Grille</button>
+            <button class="view-button" type="button" data-view="list" aria-pressed="false">Liste</button>
+          </div>
+          <button class="ghost-button" id="favoritesOnly" type="button" aria-pressed="false">Favoris</button>
+          <button class="ghost-button" id="unreadOnly" type="button" aria-pressed="false">Non lus</button>
+          <button class="ghost-button" id="compactMode" type="button" aria-pressed="false">Compact</button>
+          <button class="ghost-button" id="randomArticle" type="button">Surprise</button>
+          <button class="ghost-button" id="refreshNews" type="button">Actualiser</button>
+          <button class="ghost-button" id="clearFilters" type="button">Effacer</button>
+        </div>
+        <div class="category-filters" id="categoryFilters" aria-label="Toutes les catégories"></div>
+      </div>
+    </section>
+
+    <section class="insights-section" aria-labelledby="insightsTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Tableau de bord</p>
+            <h2 id="insightsTitle">Comprendre la veille en un coup d'œil</h2>
+          </div>
+        </div>
+        <div class="insights-grid">
+          <article class="insight-panel">
+            <h3>Tendances</h3>
+            <div class="trend-list" id="trendList"></div>
+          </article>
+          <article class="insight-panel">
+            <h3>Répartition</h3>
+            <div class="category-bars" id="categoryBars"></div>
+          </article>
+          <article class="insight-panel">
+            <h3>Sources actives</h3>
+            <div class="source-cloud" id="sourceCloud"></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="spotlight-section" aria-labelledby="spotlightTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">À la une</p>
+            <h2 id="spotlightTitle">Article recommandé</h2>
+          </div>
+        </div>
+        <div class="spotlight-card" id="spotlightCard"></div>
+      </div>
+    </section>
+
+    <section class="news-section" id="actualites" aria-labelledby="newsTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Dernières publications</p>
+            <h2 id="newsTitle">Articles à lire maintenant</h2>
+          </div>
+          <div class="meta-panel" aria-live="polite">
+            <span id="articleCount">Chargement des actualités...</span>
+            <span id="lastUpdated">Dernière mise à jour: en cours</span>
+          </div>
+        </div>
+
+        <div class="status-box" id="statusBox" role="status">Chargement des actualités...</div>
+        <div class="news-grid" id="newsGrid"></div>
+      </div>
+    </section>
+
+    <section class="timeline-section" aria-labelledby="timelineTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Chronologie</p>
+            <h2 id="timelineTitle">Derniers mouvements</h2>
+          </div>
+        </div>
+        <div class="timeline-list" id="timelineList"></div>
+      </div>
+    </section>
+
+    <section class="feature-band">
+      <div class="container feature-grid">
+        <article>
+          <span class="feature-icon" aria-hidden="true">01</span>
+          <h2>Une lecture plus fluide</h2>
+          <p>Chaque carte met en avant l'image, la catégorie, la source et un résumé court pour décider vite quoi lire.</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">02</span>
+          <h2>Des catégories utiles</h2>
+          <p>Les thèmes suivent les besoins réels du secteur: ouvrages, matériaux, infrastructures, méthodes et sécurité.</p>
+        </article>
+        <article>
+          <span class="feature-icon" aria-hidden="true">03</span>
+          <h2>Une veille internationale</h2>
+          <p>Les sources peuvent publier dans différentes langues; l'affichage met l'accent sur une lecture en français.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="quick-links" aria-labelledby="quickLinksTitle">
+      <div class="container">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Navigation</p>
+            <h2 id="quickLinksTitle">Pages utiles</h2>
+          </div>
+        </div>
+        <div class="link-grid">
+          <a class="link-card" href="categories.html">
+            <strong>Catégories</strong>
+            <span>Explorer les rubriques Structures, Béton, Routes, BIM, Hydraulique et plus.</span>
+          </a>
+          <a class="link-card" href="a-propos.html">
+            <strong>À propos</strong>
+            <span>Comprendre l'objectif du site et son organisation éditoriale.</span>
+          </a>
+          <a class="link-card" href="contact.html">
+            <strong>Contact</strong>
+            <span>Proposer une source, signaler un lien ou envoyer une suggestion.</span>
+          </a>
+          <a class="link-card" href="mentions-legales.html">
+            <strong>Mentions légales</strong>
+            <span>Lire les règles d'attribution, de responsabilité et de respect des sources.</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <strong>Génie Civil Actu</strong>
+        <p>Une veille claire pour les professionnels, étudiants et passionnés du génie civil.</p>
+      </div>
+      <nav class="footer-links" aria-label="Liens du pied de page">
+        <a href="index.html">Accueil</a>
+        <a href="categories.html">Catégories</a>
+        <a href="a-propos.html">À propos</a>
+        <a href="contact.html">Contact</a>
+        <a href="mentions-legales.html">Mentions légales</a>
+      </nav>
+      <p>
+        Le site affiche des titres, de courts résumés et des liens vers les sources originales.
+        Les contenus complets appartiennent à leurs auteurs et éditeurs respectifs.
+      </p>
+    </div>
+  </footer>
+
+  <template id="articleTemplate">
+    <article class="news-card">
+      <div class="card-media"></div>
+      <div class="card-content">
+        <span class="badge"></span>
+        <h3></h3>
+        <p class="summary"></p>
+        <dl class="article-meta">
+          <div>
+            <dt>Source</dt>
+            <dd class="source"></dd>
+          </div>
+          <div>
+            <dt>Date</dt>
+            <dd class="date"></dd>
+          </div>
+        </dl>
+        <div class="card-actions">
+          <button class="favorite-button" type="button" aria-label="Ajouter aux favoris">Favori</button>
+          <button class="read-state-button" type="button">Lu</button>
+          <button class="reader-button" type="button">Lire ici en français</button>
+          <button class="share-button" type="button">Partager</button>
+          <a class="translate-link" target="_blank" rel="noopener noreferrer">Traduire</a>
+          <a class="read-link" target="_blank" rel="noopener noreferrer">Source</a>
+        </div>
+      </div>
+    </article>
+  </template>
+
+  <div class="reader-modal" id="readerModal" aria-hidden="true">
+    <div class="reader-backdrop" data-close-reader></div>
+    <section class="reader-dialog" role="dialog" aria-modal="true" aria-labelledby="readerTitle">
+      <button class="reader-close" type="button" aria-label="Fermer la lecture" data-close-reader>×</button>
+      <div class="reader-header">
+        <span class="badge" id="readerCategory">Actualité</span>
+        <h2 id="readerTitle">Titre non disponible</h2>
+        <p id="readerSummary">Résumé non disponible</p>
+        <dl class="reader-meta">
+          <div><dt>Source</dt><dd id="readerSource">Source inconnue</dd></div>
+          <div><dt>Date</dt><dd id="readerDate">Date non disponible</dd></div>
+        </dl>
+      </div>
+      <div class="reader-frame-wrap">
+        <iframe id="readerFrame" title="Article traduit en français" loading="lazy" referrerpolicy="no-referrer"></iframe>
+        <div class="reader-frame-note">
+          Le lecteur affiche la version traduite en français. Si l'éditeur bloque l'affichage, utilisez le lien vers la source.
+        </div>
+      </div>
+      <a class="read-link reader-source-link" id="readerSourceLink" target="_blank" rel="noopener noreferrer">Lire la source originale</a>
+    </section>
+  </div>
+
+  <script src="app.js" defer></script>
+  <button class="back-to-top" id="backToTop" type="button" aria-label="Retour en haut">↑</button>
+  <nav class="mobile-bottom-nav" aria-label="Navigation mobile">
+    <a href="#accueil">Accueil</a>
+    <a href="#actualites">Articles</a>
+    <button id="mobileSearchFocus" type="button">Recherche</button>
+    <button id="mobileFiltersFocus" type="button">Filtres</button>
+  </nav>
+</body>
+</html>
