@@ -9,7 +9,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/06/08/concrete-and-historic-words-shape-the-soon-to-open-obama-presidential-center",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -22,7 +22,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/06/10/new-mops-to-revolutionize-power-line-and-substation-foundations-design-and-construction",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -35,7 +35,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/06/09/the-best-ways-to-ensure-frp-anchors-bond-to-reinforced-concrete-structures",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -48,7 +48,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementamericas.com/category/news/latest/",
     "image": "https://cementoptimized.com/wp-content/uploads/2026/06/Saint-Constant-Plant-Aerial.jpg",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -61,33 +61,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementoptimized.com/2026/06/19/amrize-to-modernize-montreal-area-cement-plant/",
     "image": "https://cementoptimized.com/wp-content/uploads/2026/06/Saint-Constant-Plant-Aerial.jpg",
-    "published_at": "2026-06-20",
-    "language": "en"
-  },
-  {
-    "id": "civil-ee19f865fd5c",
-    "source": "World Cement",
-    "category": "Béton",
-    "title_original": "MIT and CarbonCure researchers reveal how carbon mineralisation improves concrete microstructure",
-    "summary_original": "",
-    "title_fr": "Des chercheurs du MIT et de CarbonCure révèlent comment la minéralisation du carbone améliore la microstructure du béton",
-    "summary_fr": "Résumé non disponible",
-    "url": "https://www.worldcement.com/the-americas/12062026/mit-and-carboncure-researchers-reveal-exactly-how-carbon-mineralisation-improves-concrete-microstructure/",
-    "image": "https://d23p67eaj7q4a1.cloudfront.net/media/articles/pop/environment-trees-02.jpg",
-    "published_at": "2026-06-20",
-    "language": "en"
-  },
-  {
-    "id": "civil-6e83faec09d1",
-    "source": "World Cement",
-    "category": "Béton",
-    "title_original": "World Cement Spotlight with Regal Rexnord",
-    "summary_original": "",
-    "title_fr": "Pleins feux sur le ciment mondial avec Regal Rexnord",
-    "summary_fr": "Résumé non disponible",
-    "url": "https://www.worldcement.com/spotlight-interviews/03062026/world-cement-spotlight-with-regal-rexnord/",
-    "image": "",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -100,7 +74,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/Bde-Presents-Bentley-Systems/8993",
     "image": "",
-    "published_at": "2026-06-20",
+    "published_at": "2026-06-21",
     "language": "en"
   },
   {
@@ -113,20 +87,85 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/UK-steel-bridge-installed-over-eight-days/9920",
     "image": "",
+    "published_at": "2026-06-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-ee19f865fd5c",
+    "source": "World Cement",
+    "category": "Béton",
+    "title_original": "MIT and CarbonCure researchers reveal how carbon mineralisation improves concrete microstructure",
+    "summary_original": "",
+    "title_fr": "Des chercheurs du MIT et de CarbonCure révèlent comment la minéralisation du carbone améliore la microstructure du béton",
+    "summary_fr": "Résumé non disponible",
+    "url": "https://www.worldcement.com/the-americas/12062026/mit-and-carboncure-researchers-reveal-exactly-how-carbon-mineralisation-improves-concrete-microstructure/",
+    "image": "https://d23p67eaj7q4a1.cloudfront.net/media/articles/pop/environment-trees-02.jpg",
+    "published_at": "2026-06-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-6e83faec09d1",
+    "source": "World Cement",
+    "category": "Béton",
+    "title_original": "World Cement Spotlight with Regal Rexnord",
+    "summary_original": "",
+    "title_fr": "Pleins feux sur le ciment mondial avec Regal Rexnord",
+    "summary_fr": "Résumé non disponible",
+    "url": "https://www.worldcement.com/spotlight-interviews/03062026/world-cement-spotlight-with-regal-rexnord/",
+    "image": "",
+    "published_at": "2026-06-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-f6bf4557f532",
+    "source": "For Construction Pros",
+    "category": "Béton",
+    "title_original": "New Executive Director Named for ACPA Southeast Chapter",
+    "summary_original": "The Southeast Chapter of the American Concrete Pavement Association has appointed industry veteran Scott Palotta as executive...",
+    "title_fr": "Nouveau directeur exécutif nommé pour la section Sud-Est de l'ACPA",
+    "summary_fr": "La section sud-est de l'American Concrete Pavement Association a nommé le vétéran de l'industrie Scott Palotta au poste de direction...",
+    "url": "https://www.forconstructionpros.com/business/labor-workforce-development/article/22968772/american-concrete-pavement-association-acpa-new-executive-director-named-for-acpa-southeast-chapter",
+    "image": "",
     "published_at": "2026-06-20",
     "language": "en"
   },
   {
-    "id": "civil-965b29455602",
-    "source": "The Construction Index",
-    "category": "Structures",
-    "title_original": "Geobear appoints commercial director",
-    "summary_original": "Geotechnical specialist Geobear has appointed Jon Chevin as commercial and infrastructure director.",
-    "title_fr": "Geobear nomme un directeur commercial",
-    "summary_fr": "Le spécialiste géotechnique Geobear a nommé Jon Chevin au poste de directeur commercial et des infrastructures.",
-    "url": "https://www.theconstructionindex.co.uk/news/view/geobear-appoints-commercial-director",
-    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/06/1781854799_geo256---jon-chevin-headshot.jpeg",
-    "published_at": "2026-06-19",
+    "id": "civil-abb4569c94b8",
+    "source": "For Construction Pros",
+    "category": "Construction",
+    "title_original": "The Pattern is the Problem: The Invisible Standards Women in Leadership Are Still Navigating",
+    "summary_original": "null",
+    "title_fr": "Le modèle est le problème : les normes invisibles auxquelles les femmes dirigeantes sont toujours confrontées",
+    "summary_fr": "nul",
+    "url": "https://www.forconstructionpros.com/business/article/22966758/command-alkon-the-pattern-is-the-problem-the-invisible-standards-women-in-leadership-are-still-navigating",
+    "image": "",
+    "published_at": "2026-06-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-77363fa12286",
+    "source": "Highways Today",
+    "category": "Routes",
+    "title_original": "TNO’s Möbius Recovers The Plastic Streams Mechanical Recycling Leaves Behind",
+    "summary_original": "TNO’s Möbius Recovers The Plastic Streams Mechanical Recycling Leaves Behind Europe’s circular-plastics debate has spent years stuck between two imperfect options. Mechanical recycling is cheap and established, but it…",
+    "title_fr": "Möbius de TNO récupère les flux de plastique laissés par le recyclage mécanique",
+    "summary_fr": "Möbius du TNO récupère les flux de plastique que le recyclage mécanique laisse derrière lui Le débat européen sur les plastiques circulaires a passé des années coincé entre deux options imparfaites. Le recyclage mécanique est bon marché et établi, mais il…",
+    "url": "https://highways.today/2026/06/20/tno-mobius/",
+    "image": "https://highways.today/wp-content/uploads/2026/06/tno4.jpg",
+    "published_at": "2026-06-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-5611cfe3d910",
+    "source": "Highways Today",
+    "category": "Routes",
+    "title_original": "Delft, Where the Dutch Build Water Security and Teach It to the World",
+    "summary_original": "Delft, Where the Dutch Build Water Security and Teach It to the World Delft is a small city with an outsized claim on the world’s water. Within a few kilometres sit the institute that has trained more of the planet’s…",
+    "title_fr": "Delft, où les Néerlandais construisent la sécurité de l'eau et l'enseignent au monde",
+    "summary_fr": "Delft, là où les Néerlandais construisent la sécurité de l’eau et l’enseignent au monde Delft est une petite ville avec un droit démesuré sur l’eau mondiale. À quelques kilomètres se trouve l’institut qui a formé un plus grand nombre de personnes de la planète…",
+    "url": "https://highways.today/2026/06/20/delft-water-security/",
+    "image": "https://highways.today/wp-content/uploads/2026/06/Delft1.jpg",
+    "published_at": "2026-06-20",
     "language": "en"
   },
   {
@@ -169,6 +208,19 @@
     "language": "en"
   },
   {
+    "id": "civil-965b29455602",
+    "source": "The Construction Index",
+    "category": "Structures",
+    "title_original": "Geobear appoints commercial director",
+    "summary_original": "Geotechnical specialist Geobear has appointed Jon Chevin as commercial and infrastructure director.",
+    "title_fr": "Geobear nomme un directeur commercial",
+    "summary_fr": "Le spécialiste géotechnique Geobear a nommé Jon Chevin au poste de directeur commercial et des infrastructures.",
+    "url": "https://www.theconstructionindex.co.uk/news/view/geobear-appoints-commercial-director",
+    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/06/1781854799_geo256---jon-chevin-headshot.jpeg",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
     "id": "civil-203a0c294116",
     "source": "Construction Management / CIOB",
     "category": "Structures",
@@ -182,19 +234,6 @@
     "language": "en"
   },
   {
-    "id": "civil-19551a99a662",
-    "source": "BIM Today",
-    "category": "Routes",
-    "title_original": "Professionals must upskill and adapt to lead the next decade of BIM in construction",
-    "summary_original": "The construction industry is shifting from BIM adoption to a broader focus on information management across the built asset lifecycle, calling for industry professionals to upskill and bridge the gap for a new era. The…",
-    "title_fr": "Les professionnels doivent se perfectionner et s’adapter pour diriger la prochaine décennie du BIM dans la construction",
-    "summary_fr": "Le secteur de la construction abandonne l'adoption du BIM pour se concentrer davantage sur la gestion de l'information tout au long du cycle de vie des actifs bâtis, appelant les professionnels du secteur à se perfectionner et à combler le fossé d'une nouvelle ère. Le…",
-    "url": "https://www.pbctoday.co.uk/news/digital-construction-news/professionals-must-upskill-adapt-lead-next-decade-of-bim-in-construction/163027/",
-    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/06/iStock-2256112795-696x385.jpg",
-    "published_at": "2026-06-19",
-    "language": "en"
-  },
-  {
     "id": "civil-d9e6a0429e2f",
     "source": "Global Construction Review",
     "category": "Structures",
@@ -204,6 +243,19 @@
     "summary_fr": "Les travaux ont commencé sur le centre national de tennis d'Arabie Saoudite dans la ville de Qiddiya, à 45 km à l'ouest de Riyad. Ce sera le plus grand complexe de tennis de la région. Conçu par l'architecte américain Populous,… Le poste Début de la construction le…",
     "url": "https://www.globalconstructionreview.com/construction-begins-on-saudi-arabias-national-tennis-centre/",
     "image": "https://www.globalconstructionreview.com/wp-content/uploads/2026/06/tennis-1-600x338.jpg",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-19551a99a662",
+    "source": "BIM Today",
+    "category": "Routes",
+    "title_original": "Professionals must upskill and adapt to lead the next decade of BIM in construction",
+    "summary_original": "The construction industry is shifting from BIM adoption to a broader focus on information management across the built asset lifecycle, calling for industry professionals to upskill and bridge the gap for a new era. The…",
+    "title_fr": "Les professionnels doivent se perfectionner et s’adapter pour diriger la prochaine décennie du BIM dans la construction",
+    "summary_fr": "Le secteur de la construction abandonne l'adoption du BIM pour se concentrer davantage sur la gestion de l'information tout au long du cycle de vie des actifs bâtis, appelant les professionnels du secteur à se perfectionner et à combler le fossé d'une nouvelle ère. Le…",
+    "url": "https://www.pbctoday.co.uk/news/digital-construction-news/professionals-must-upskill-adapt-lead-next-decade-of-bim-in-construction/163027/",
+    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/06/iStock-2256112795-696x385.jpg",
     "published_at": "2026-06-19",
     "language": "en"
   },
@@ -242,19 +294,6 @@
     "title_fr": "Brookfield accepte de céder le constructeur Multiplex à Obayashi pour 650 millions de dollars",
     "summary_fr": "Brookfield a conclu un accord pour céder son unité mondiale de construction, Multiplex, à Obayashi, un groupe de construction japonais, pour 650 millions de dollars.",
     "url": "https://www.worldconstructionnetwork.com/news/brookfield-multiplex-obayashi-acquisition/",
-    "image": "",
-    "published_at": "2026-06-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-844ab7bf4dea",
-    "source": "For Construction Pros",
-    "category": "Construction",
-    "title_original": "From Stakes to Satellites: The Evolution of Machine Control",
-    "summary_original": "null",
-    "title_fr": "Des enjeux aux satellites : l’évolution du contrôle des machines",
-    "summary_fr": "nul",
-    "url": "https://www.forconstructionpros.com/construction-technology/machine-grade-control-gps-laser-other/article/22968597/leica-geosystems-inc-from-stakes-to-satellites-the-evolution-of-machine-control",
     "image": "",
     "published_at": "2026-06-19",
     "language": "en"
@@ -299,6 +338,19 @@
     "language": "en"
   },
   {
+    "id": "civil-844ab7bf4dea",
+    "source": "For Construction Pros",
+    "category": "Construction",
+    "title_original": "From Stakes to Satellites: The Evolution of Machine Control",
+    "summary_original": "null",
+    "title_fr": "Des enjeux aux satellites : l’évolution du contrôle des machines",
+    "summary_fr": "nul",
+    "url": "https://www.forconstructionpros.com/construction-technology/machine-grade-control-gps-laser-other/article/22968597/leica-geosystems-inc-from-stakes-to-satellites-the-evolution-of-machine-control",
+    "image": "",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
     "id": "civil-fa4eaf70b21e",
     "source": "PBC Today",
     "category": "Construction",
@@ -334,45 +386,6 @@
     "summary_fr": "Rory Evans du LHC Midlands et South East, explique ce que les bailleurs sociaux doivent savoir face à l'évolution de la réglementation des réseaux de chaleur. L’après Les réseaux de chaleur s’aventurent en terrain inconnu et les bailleurs sociaux ont besoin d’experts…",
     "url": "https://www.pbctoday.co.uk/news/energy-news/heat-networks-heading-uncharted-waters-social-landlords-need-expert-navigation/163036/",
     "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/06/Model-city-1-696x385.jpeg",
-    "published_at": "2026-06-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-dfef07b06cd9",
-    "source": "Highways Today",
-    "category": "Béton",
-    "title_original": "Most Reliable Roofing Contractors in Wyoming for Full Roof Replacements",
-    "summary_original": "Most Reliable Roofing Contractors in Wyoming for Full Roof Replacements Wyoming is rough on roofs. And not every contractor is ready for what that actually means. Reliable roofing contractors in Wyoming need to handle…",
-    "title_fr": "Entrepreneurs en toiture les plus fiables du Wyoming pour le remplacement complet du toit",
-    "summary_fr": "Les couvreurs les plus fiables du Wyoming pour les remplacements complets du toit Le Wyoming est rude avec les toits. Et tous les entrepreneurs ne sont pas prêts à comprendre ce que cela signifie réellement. Les couvreurs fiables du Wyoming doivent gérer…",
-    "url": "https://highways.today/2026/06/19/roofing-contractors-in-wyoming/",
-    "image": "https://highways.today/wp-content/uploads/2026/06/Wyoming-Roof-2.jpg",
-    "published_at": "2026-06-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-1d279fe24a07",
-    "source": "Highways Today",
-    "category": "Hydraulique",
-    "title_original": "Affordable Roofing Services in Omaha for Homeowners",
-    "summary_original": "Affordable Roofing Services in Omaha for Homeowners Nebraska weather doesn’t go easy on roofs. Between spring hailstorms, summer heat, and winter ice dams, Omaha homeowners deal with more roofing stress than most. But…",
-    "title_fr": "Services de toiture abordables à Omaha pour les propriétaires",
-    "summary_fr": "Services de toiture abordables à Omaha pour les propriétaires Le temps au Nebraska n’est pas facile pour les toits. Entre les tempêtes de grêle printanières, la chaleur estivale et les barrages de glace hivernaux, les propriétaires d’Omaha sont confrontés à plus de stress sur leur toiture que la plupart. Mais…",
-    "url": "https://highways.today/2026/06/19/roofing-services-omaha/",
-    "image": "https://highways.today/wp-content/uploads/2026/06/Omaha1.jpg",
-    "published_at": "2026-06-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-eb5e1fb256e0",
-    "source": "Highways Today",
-    "category": "Innovation",
-    "title_original": "Dry Hydroponics and LocalDutch Bring Smart Farming to the Smart City",
-    "summary_original": "Dry Hydroponics and LocalDutch Bring Smart Farming to the Smart City A Dutch venture born in the glasshouses of Westland is bringing a different kind of food retail to American neighbourhoods, and in time to…",
-    "title_fr": "La culture hydroponique sèche et LocalDutch apportent l'agriculture intelligente à la ville intelligente",
-    "summary_fr": "La culture hydroponique sèche et LocalDutch apportent l'agriculture intelligente à la ville intelligente Une entreprise néerlandaise née dans les serres du Westland apporte un type différent de vente au détail de produits alimentaires dans les quartiers américains et, à terme,…",
-    "url": "https://highways.today/2026/06/19/dry-hydroponics-localdutch/",
-    "image": "https://highways.today/wp-content/uploads/2026/06/hydroponics-7.jpg",
     "published_at": "2026-06-19",
     "language": "en"
   },
@@ -425,6 +438,45 @@
     "summary_fr": "Cet article compare deux ensembles de données sur le rapport énergétique produits en 2010 et 2025 et discute des implications en ce qui concerne l'utilisation de valeurs N de champ non normalisées et de la pertinence de l'utilisation des valeurs N60 pour…",
     "url": "https://www.geplus.co.uk/technical-papers/technical-paper%e2%94%82the-evolution-of-the-standard-penetration-test-energy-ratio-19-06-2026/",
     "image": "",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-dfef07b06cd9",
+    "source": "Highways Today",
+    "category": "Béton",
+    "title_original": "Most Reliable Roofing Contractors in Wyoming for Full Roof Replacements",
+    "summary_original": "Most Reliable Roofing Contractors in Wyoming for Full Roof Replacements Wyoming is rough on roofs. And not every contractor is ready for what that actually means. Reliable roofing contractors in Wyoming need to handle…",
+    "title_fr": "Entrepreneurs en toiture les plus fiables du Wyoming pour le remplacement complet du toit",
+    "summary_fr": "Les couvreurs les plus fiables du Wyoming pour les remplacements complets du toit Le Wyoming est rude avec les toits. Et tous les entrepreneurs ne sont pas prêts à comprendre ce que cela signifie réellement. Les couvreurs fiables du Wyoming doivent gérer…",
+    "url": "https://highways.today/2026/06/19/roofing-contractors-in-wyoming/",
+    "image": "https://highways.today/wp-content/uploads/2026/06/Wyoming-Roof-2.jpg",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-1d279fe24a07",
+    "source": "Highways Today",
+    "category": "Hydraulique",
+    "title_original": "Affordable Roofing Services in Omaha for Homeowners",
+    "summary_original": "Affordable Roofing Services in Omaha for Homeowners Nebraska weather doesn’t go easy on roofs. Between spring hailstorms, summer heat, and winter ice dams, Omaha homeowners deal with more roofing stress than most. But…",
+    "title_fr": "Services de toiture abordables à Omaha pour les propriétaires",
+    "summary_fr": "Services de toiture abordables à Omaha pour les propriétaires Le temps au Nebraska n’est pas facile pour les toits. Entre les tempêtes de grêle printanières, la chaleur estivale et les barrages de glace hivernaux, les propriétaires d’Omaha sont confrontés à plus de stress sur leur toiture que la plupart. Mais…",
+    "url": "https://highways.today/2026/06/19/roofing-services-omaha/",
+    "image": "https://highways.today/wp-content/uploads/2026/06/Omaha1.jpg",
+    "published_at": "2026-06-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-eb5e1fb256e0",
+    "source": "Highways Today",
+    "category": "Innovation",
+    "title_original": "Dry Hydroponics and LocalDutch Bring Smart Farming to the Smart City",
+    "summary_original": "Dry Hydroponics and LocalDutch Bring Smart Farming to the Smart City A Dutch venture born in the glasshouses of Westland is bringing a different kind of food retail to American neighbourhoods, and in time to…",
+    "title_fr": "La culture hydroponique sèche et LocalDutch apportent l'agriculture intelligente à la ville intelligente",
+    "summary_fr": "La culture hydroponique sèche et LocalDutch apportent l'agriculture intelligente à la ville intelligente Une entreprise néerlandaise née dans les serres du Westland apporte un type différent de vente au détail de produits alimentaires dans les quartiers américains et, à terme,…",
+    "url": "https://highways.today/2026/06/19/dry-hydroponics-localdutch/",
+    "image": "https://highways.today/wp-content/uploads/2026/06/hydroponics-7.jpg",
     "published_at": "2026-06-19",
     "language": "en"
   },
@@ -533,19 +585,6 @@
     "language": "en"
   },
   {
-    "id": "civil-1471f1e3b8f4",
-    "source": "ScienceDaily Civil Engineering",
-    "category": "Innovation",
-    "title_original": "Could cosmic memory explain dark matter, dark energy, and black holes?",
-    "summary_original": "A new theory suggests the universe is constantly recording its own history in the fabric of spacetime. If correct, this cosmic memory could help solve some of the biggest puzzles in physics, from black holes to dark…",
-    "title_fr": "La mémoire cosmique pourrait-elle expliquer la matière noire, l’énergie noire et les trous noirs ?",
-    "summary_fr": "Une nouvelle théorie suggère que l’univers enregistre constamment sa propre histoire dans la structure de l’espace-temps. Si elle est correcte, cette mémoire cosmique pourrait aider à résoudre certaines des plus grandes énigmes de la physique, des trous noirs aux trous sombres…",
-    "url": "https://www.sciencedaily.com/releases/2026/06/260616103131.htm",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
     "id": "civil-b9184131b76b",
     "source": "Construction Dive",
     "category": "Structures",
@@ -598,32 +637,6 @@
     "language": "en"
   },
   {
-    "id": "civil-cac8b7619962",
-    "source": "Construction Management / CIOB",
-    "category": "BIM / Revit",
-    "title_original": "Digital twin identifies £22k/year savings for wholesaler",
-    "summary_original": "United Wholesale Scotland (UWS), Scotland’s largest independent cash-and-carry and wholesale operator, has identified £18,000 to £21,700 in annual savings opportunities at its Queenslie HQ in Glasgow via a digital…",
-    "title_fr": "Le jumeau numérique identifie 22 000 £ d'économies par an pour le grossiste",
-    "summary_fr": "United Wholesale Scotland (UWS), le plus grand opérateur indépendant de vente en gros et de vente en gros d'Écosse, a identifié entre 18 000 et 21 700 £ d'opportunités d'économies annuelles à son siège social de Queenslie à Glasgow via une enquête numérique…",
-    "url": "https://constructionmanagement.co.uk/digital-twin-identifies-22k-year-savings-for-wholesaler/",
-    "image": "https://constructionmanagement.co.uk/wp-content/uploads/2026/06/UWS-Phase-2-Factory-Render_upscayl_4x_upscayl-standard-4x-600x338.jpg",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-ec9fa3eae516",
-    "source": "Construction Management / CIOB",
-    "category": "Innovation",
-    "title_original": "Insulation installers must be registered under retrofit reform plans",
-    "summary_original": "Government aims to create a public register of approved insulation installers to clean up the scandal-hit retrofit market. The post Insulation installers must be registered under retrofit reform plans appeared first on…",
-    "title_fr": "Les installateurs d'isolation doivent être enregistrés dans le cadre des plans de réforme de la rénovation",
-    "summary_fr": "Le gouvernement vise à créer un registre public des installateurs d'isolation agréés pour assainir le marché de la rénovation, frappé par le scandale. L'article Les installateurs d'isolation doivent être enregistrés dans le cadre des plans de réforme de la rénovation apparaît en premier sur…",
-    "url": "https://constructionmanagement.co.uk/insulation-installers-must-be-registered-under-retrofit-reform-plans/",
-    "image": "https://constructionmanagement.co.uk/wp-content/uploads/2026/06/External-insulation-600x338.jpg",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
     "id": "civil-73d5c9f5e53c",
     "source": "Engineering.com",
     "category": "Innovation",
@@ -663,6 +676,45 @@
     "language": "en"
   },
   {
+    "id": "civil-cac8b7619962",
+    "source": "Construction Management / CIOB",
+    "category": "BIM / Revit",
+    "title_original": "Digital twin identifies £22k/year savings for wholesaler",
+    "summary_original": "United Wholesale Scotland (UWS), Scotland’s largest independent cash-and-carry and wholesale operator, has identified £18,000 to £21,700 in annual savings opportunities at its Queenslie HQ in Glasgow via a digital…",
+    "title_fr": "Le jumeau numérique identifie 22 000 £ d'économies par an pour le grossiste",
+    "summary_fr": "United Wholesale Scotland (UWS), le plus grand opérateur indépendant de vente en gros et de vente en gros d'Écosse, a identifié entre 18 000 et 21 700 £ d'opportunités d'économies annuelles à son siège social de Queenslie à Glasgow via une enquête numérique…",
+    "url": "https://constructionmanagement.co.uk/digital-twin-identifies-22k-year-savings-for-wholesaler/",
+    "image": "https://constructionmanagement.co.uk/wp-content/uploads/2026/06/UWS-Phase-2-Factory-Render_upscayl_4x_upscayl-standard-4x-600x338.jpg",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-ec9fa3eae516",
+    "source": "Construction Management / CIOB",
+    "category": "Innovation",
+    "title_original": "Insulation installers must be registered under retrofit reform plans",
+    "summary_original": "Government aims to create a public register of approved insulation installers to clean up the scandal-hit retrofit market. The post Insulation installers must be registered under retrofit reform plans appeared first on…",
+    "title_fr": "Les installateurs d'isolation doivent être enregistrés dans le cadre des plans de réforme de la rénovation",
+    "summary_fr": "Le gouvernement vise à créer un registre public des installateurs d'isolation agréés pour assainir le marché de la rénovation, frappé par le scandale. L'article Les installateurs d'isolation doivent être enregistrés dans le cadre des plans de réforme de la rénovation apparaît en premier sur…",
+    "url": "https://constructionmanagement.co.uk/insulation-installers-must-be-registered-under-retrofit-reform-plans/",
+    "image": "https://constructionmanagement.co.uk/wp-content/uploads/2026/06/External-insulation-600x338.jpg",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-1471f1e3b8f4",
+    "source": "ScienceDaily Civil Engineering",
+    "category": "Innovation",
+    "title_original": "Could cosmic memory explain dark matter, dark energy, and black holes?",
+    "summary_original": "A new theory suggests the universe is constantly recording its own history in the fabric of spacetime. If correct, this cosmic memory could help solve some of the biggest puzzles in physics, from black holes to dark…",
+    "title_fr": "La mémoire cosmique pourrait-elle expliquer la matière noire, l’énergie noire et les trous noirs ?",
+    "summary_fr": "Une nouvelle théorie suggère que l’univers enregistre constamment sa propre histoire dans la structure de l’espace-temps. Si elle est correcte, cette mémoire cosmique pourrait aider à résoudre certaines des plus grandes énigmes de la physique, des trous noirs aux trous sombres…",
+    "url": "https://www.sciencedaily.com/releases/2026/06/260616103131.htm",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
     "id": "civil-f430553285f0",
     "source": "Global Construction Review",
     "category": "Construction",
@@ -689,27 +741,14 @@
     "language": "en"
   },
   {
-    "id": "civil-ddcc12c16ee3",
-    "source": "For Construction Pros",
-    "category": "Routes",
-    "title_original": "Post-War Asphalt Update: Regional Impacts On Tonnage Pricing",
-    "summary_original": "The war may have officially ended, but the downstream effects on the asphalt binder market won't reverse course over night. How...",
-    "title_fr": "Mise à jour sur l'asphalte d'après-guerre : impacts régionaux sur le prix au tonnage",
-    "summary_fr": "La guerre est peut-être officiellement terminée, mais les effets en aval sur le marché des liants bitumineux ne s'inverseront pas du jour au lendemain. Comment...",
-    "url": "https://www.forconstructionpros.com/asphalt/application/policy-matters/article/22969125/iran-war-asphalt-prices-how-different-us-regions-are-feeling-the-impact",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-04be4c1a8d3a",
-    "source": "For Construction Pros",
-    "category": "Structures",
-    "title_original": "Concrete Contractor Profile: Building A Concrete Foundation of People & Teams",
-    "summary_original": "Getting to know concrete contractors from around the country one at a time: Craig Leyers, president and CEO of Stable Dry.",
-    "title_fr": "Profil d'entrepreneur en béton : Construire une base concrète de personnes et d'équipes",
-    "summary_fr": "Apprendre à connaître les entrepreneurs en béton de partout au pays, un à la fois : Craig Leyers, président et chef de la direction de Stable Dry.",
-    "url": "https://www.forconstructionpros.com/concrete/article/22966121/stable-dry-stabledry-ceo-on-building-strong-foundation-teams",
+    "id": "civil-6685305fda38",
+    "source": "Railway Technology",
+    "category": "Innovation",
+    "title_original": "Global semiconductors hiring slows after Q1 surge: What this means for your sector",
+    "summary_original": "Track semiconductor hiring trends by AI jobs, cloud computing, top employers, in-demand skills, and key markets. The post Global semiconductors hiring slows after Q1 surge: What this means for your sector appeared…",
+    "title_fr": "L'embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur",
+    "summary_fr": "Suivez les tendances d'embauche dans le secteur des semi-conducteurs par emplois en IA, cloud computing, principaux employeurs, compétences recherchées et marchés clés. Le post L’embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur est apparu…",
+    "url": "https://www.railway-technology.com/sponsored/global-semiconductors-hiring-slows-after-q1-surge-what-this-means-for-your-sector/",
     "image": "",
     "published_at": "2026-06-18",
     "language": "en"
@@ -723,19 +762,6 @@
     "title_fr": "L'embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur",
     "summary_fr": "Suivez les tendances d'embauche dans le secteur des semi-conducteurs par emplois en IA, cloud computing, principaux employeurs, compétences recherchées et marchés clés. Le post L’embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur est apparu…",
     "url": "https://www.airport-technology.com/sponsored/global-semiconductors-hiring-slows-after-q1-surge-what-this-means-for-your-sector/",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-6685305fda38",
-    "source": "Railway Technology",
-    "category": "Innovation",
-    "title_original": "Global semiconductors hiring slows after Q1 surge: What this means for your sector",
-    "summary_original": "Track semiconductor hiring trends by AI jobs, cloud computing, top employers, in-demand skills, and key markets. The post Global semiconductors hiring slows after Q1 surge: What this means for your sector appeared…",
-    "title_fr": "L'embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur",
-    "summary_fr": "Suivez les tendances d'embauche dans le secteur des semi-conducteurs par emplois en IA, cloud computing, principaux employeurs, compétences recherchées et marchés clés. Le post L’embauche mondiale de semi-conducteurs ralentit après la forte hausse du premier trimestre : ce que cela signifie pour votre secteur est apparu…",
-    "url": "https://www.railway-technology.com/sponsored/global-semiconductors-hiring-slows-after-q1-surge-what-this-means-for-your-sector/",
     "image": "",
     "published_at": "2026-06-18",
     "language": "en"
@@ -767,45 +793,6 @@
     "language": "en"
   },
   {
-    "id": "civil-a5a7cfe21a10",
-    "source": "AEC Magazine",
-    "category": "Construction",
-    "title_original": "RIB Unify platform launches for construction",
-    "summary_original": "Cloud platform combines document management, process management and estimating with embedded AI The post RIB Unify platform launches for construction appeared first on AEC Magazine .",
-    "title_fr": "La plateforme RIB Unify est lancée pour la construction",
-    "summary_fr": "La plate-forme cloud combine la gestion des documents, la gestion des processus et l'estimation avec l'IA intégrée. L'article lancé par la plate-forme RIB Unify pour la construction est apparu en premier sur AEC Magazine.",
-    "url": "https://aecmag.com/collaboration/rib-unify-ai-native-cloud-platform-launches/",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-30c51c32fd54",
-    "source": "Trenchless Works",
-    "category": "Innovation",
-    "title_original": "First GRUNDODRILL 28N Plus in the country lands in Scotland",
-    "summary_original": "It has been bought by a forward-thinking company that has helped to grow the trenchless technology sector in Scotland over the last few years. The post First GRUNDODRILL 28N Plus in the country lands in Scotland…",
-    "title_fr": "Le premier GRUNDODRILL 28N Plus à la campagne atterrit en Écosse",
-    "summary_fr": "Il a été racheté par une entreprise avant-gardiste qui a contribué au développement du secteur de la technologie sans tranchée en Écosse au cours des dernières années. Le post Premier GRUNDODRILL 28N Plus à la campagne en Ecosse…",
-    "url": "https://www.trenchless-works.com/first-grundodrill-28n-plus-in-the-country-lands-in-scotland/?utm_source=rss&utm_medium=rss&utm_campaign=first-grundodrill-28n-plus-in-the-country-lands-in-scotland",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-c0ee8d5e88c3",
-    "source": "Trenchless Works",
-    "category": "Hydraulique",
-    "title_original": "Scanprobe to host drainage and trenchless open day",
-    "summary_original": "For drainage and trenchless professionals on Tuesday 9 June, from 7:00am to 12:00pm, at its headquarters in Kenley, Surrey. The post Scanprobe to host drainage and trenchless open day appeared first on Trenchless Works .",
-    "title_fr": "Scanprobe pour accueillir le drainage et la journée portes ouvertes sans tranchée",
-    "summary_fr": "For drainage and trenchless professionals on Tuesday 9 June, from 7:00am to 12:00pm, at its headquarters in Kenley, Surrey. L'article Scanprobe pour héberger le drainage et la journée portes ouvertes sans tranchée apparaît en premier sur Trenchless Works .",
-    "url": "https://www.trenchless-works.com/scanprobe-to-host-drainage-and-trenchless-open-day/?utm_source=rss&utm_medium=rss&utm_campaign=scanprobe-to-host-drainage-and-trenchless-open-day",
-    "image": "",
-    "published_at": "2026-06-18",
-    "language": "en"
-  },
-  {
     "id": "civil-1f7b278b1380",
     "source": "Ground Engineering",
     "category": "Géotechnique",
@@ -832,6 +819,32 @@
     "language": "en"
   },
   {
+    "id": "civil-30c51c32fd54",
+    "source": "Trenchless Works",
+    "category": "Innovation",
+    "title_original": "First GRUNDODRILL 28N Plus in the country lands in Scotland",
+    "summary_original": "It has been bought by a forward-thinking company that has helped to grow the trenchless technology sector in Scotland over the last few years. The post First GRUNDODRILL 28N Plus in the country lands in Scotland…",
+    "title_fr": "Le premier GRUNDODRILL 28N Plus à la campagne atterrit en Écosse",
+    "summary_fr": "Il a été racheté par une entreprise avant-gardiste qui a contribué au développement du secteur de la technologie sans tranchée en Écosse au cours des dernières années. Le post Premier GRUNDODRILL 28N Plus à la campagne en Ecosse…",
+    "url": "https://www.trenchless-works.com/first-grundodrill-28n-plus-in-the-country-lands-in-scotland/?utm_source=rss&utm_medium=rss&utm_campaign=first-grundodrill-28n-plus-in-the-country-lands-in-scotland",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-c0ee8d5e88c3",
+    "source": "Trenchless Works",
+    "category": "Hydraulique",
+    "title_original": "Scanprobe to host drainage and trenchless open day",
+    "summary_original": "For drainage and trenchless professionals on Tuesday 9 June, from 7:00am to 12:00pm, at its headquarters in Kenley, Surrey. The post Scanprobe to host drainage and trenchless open day appeared first on Trenchless Works .",
+    "title_fr": "Scanprobe pour accueillir le drainage et la journée portes ouvertes sans tranchée",
+    "summary_fr": "Pour les professionnels du drainage et du sans tranchée, le mardi 9 juin, de 7h00 à 12h00, à son siège social à Kenley, Surrey. L'article Scanprobe pour héberger le drainage et la journée portes ouvertes sans tranchée apparaît en premier sur Trenchless Works .",
+    "url": "https://www.trenchless-works.com/scanprobe-to-host-drainage-and-trenchless-open-day/?utm_source=rss&utm_medium=rss&utm_campaign=scanprobe-to-host-drainage-and-trenchless-open-day",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
     "id": "civil-cddceb9f05ab",
     "source": "Construction Canada",
     "category": "Innovation",
@@ -840,6 +853,45 @@
     "title_fr": "L’expansion durable des collèges améliore la formation en soins de santé",
     "summary_fr": "L'agrandissement de l'Institut de santé appliquée du Niagara College permettra d'accueillir 800 étudiants supplémentaires. Découvrez comment il répond aux besoins en soins de santé de l’Ontario et répond aux normes de durabilité. L’après Collège durable…",
     "url": "https://www.constructioncanada.net/sustainable-college-expansion-improves-healthcare-training/",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-a5a7cfe21a10",
+    "source": "AEC Magazine",
+    "category": "Construction",
+    "title_original": "RIB Unify platform launches for construction",
+    "summary_original": "Cloud platform combines document management, process management and estimating with embedded AI The post RIB Unify platform launches for construction appeared first on AEC Magazine .",
+    "title_fr": "La plateforme RIB Unify est lancée pour la construction",
+    "summary_fr": "La plate-forme cloud combine la gestion des documents, la gestion des processus et l'estimation avec l'IA intégrée. L'article lancé par la plate-forme RIB Unify pour la construction est apparu en premier sur AEC Magazine.",
+    "url": "https://aecmag.com/collaboration/rib-unify-ai-native-cloud-platform-launches/",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-ddcc12c16ee3",
+    "source": "For Construction Pros",
+    "category": "Routes",
+    "title_original": "Post-War Asphalt Update: Regional Impacts On Tonnage Pricing",
+    "summary_original": "The war may have officially ended, but the downstream effects on the asphalt binder market won't reverse course over night. How...",
+    "title_fr": "Mise à jour sur l'asphalte d'après-guerre : impacts régionaux sur le prix au tonnage",
+    "summary_fr": "La guerre est peut-être officiellement terminée, mais les effets en aval sur le marché des liants bitumineux ne s'inverseront pas du jour au lendemain. Comment...",
+    "url": "https://www.forconstructionpros.com/asphalt/application/policy-matters/article/22969125/iran-war-asphalt-prices-how-different-us-regions-are-feeling-the-impact",
+    "image": "",
+    "published_at": "2026-06-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-04be4c1a8d3a",
+    "source": "For Construction Pros",
+    "category": "Structures",
+    "title_original": "Concrete Contractor Profile: Building A Concrete Foundation of People & Teams",
+    "summary_original": "Getting to know concrete contractors from around the country one at a time: Craig Leyers, president and CEO of Stable Dry.",
+    "title_fr": "Profil d'entrepreneur en béton : Construire une base concrète de personnes et d'équipes",
+    "summary_fr": "Apprendre à connaître les entrepreneurs en béton de partout au pays, un à la fois : Craig Leyers, président et chef de la direction de Stable Dry.",
+    "url": "https://www.forconstructionpros.com/concrete/article/22966121/stable-dry-stabledry-ceo-on-building-strong-foundation-teams",
     "image": "",
     "published_at": "2026-06-18",
     "language": "en"
@@ -1300,19 +1352,6 @@
     "language": "en"
   },
   {
-    "id": "civil-c18ee1d87383",
-    "source": "AEC Magazine",
-    "category": "BIM / Revit",
-    "title_original": "Neural CAD AI foundational models",
-    "summary_original": "Autodesk's Mike Haley takes a closer look at what Autodesk is calling the next stage in 3D design The post Neural CAD AI foundational models appeared first on AEC Magazine .",
-    "title_fr": "Modèles fondamentaux de l'IA CAO neuronale",
-    "summary_fr": "Mike Haley d'Autodesk examine de plus près ce qu'Autodesk appelle la prochaine étape de la conception 3D. Les modèles fondamentaux post-Neural CAD AI sont apparus en premier sur AEC Magazine.",
-    "url": "https://aecmag.com/ai/neural-cad-ai-foundational-models/",
-    "image": "",
-    "published_at": "2026-06-16",
-    "language": "en"
-  },
-  {
     "id": "civil-31ac36242686",
     "source": "Trenchless Works",
     "category": "Routes",
@@ -1321,6 +1360,19 @@
     "title_fr": "Barhale va livrer la phase finale du programme Greenwich Trunk Main de 17 millions de livres sterling",
     "summary_fr": "Ils installeront la section restante de 1 km de pipeline en fonte ductile entre le rond-point de Blackwall Lane et l'arène O2 en utilisant une construction à ciel ouvert. L'article Barhale va livrer la phase finale du Greenwich Trunk de 17 millions de livres sterling…",
     "url": "https://www.trenchless-works.com/barhale-to-deliver-final-phase-of-17m-greenwich-trunk-main-programme/?utm_source=rss&utm_medium=rss&utm_campaign=barhale-to-deliver-final-phase-of-17m-greenwich-trunk-main-programme",
+    "image": "",
+    "published_at": "2026-06-16",
+    "language": "en"
+  },
+  {
+    "id": "civil-c18ee1d87383",
+    "source": "AEC Magazine",
+    "category": "BIM / Revit",
+    "title_original": "Neural CAD AI foundational models",
+    "summary_original": "Autodesk's Mike Haley takes a closer look at what Autodesk is calling the next stage in 3D design The post Neural CAD AI foundational models appeared first on AEC Magazine .",
+    "title_fr": "Modèles fondamentaux de l'IA CAO neuronale",
+    "summary_fr": "Mike Haley d'Autodesk examine de plus près ce qu'Autodesk appelle la prochaine étape de la conception 3D. Les modèles fondamentaux post-Neural CAD AI sont apparus en premier sur AEC Magazine.",
+    "url": "https://aecmag.com/ai/neural-cad-ai-foundational-models/",
     "image": "",
     "published_at": "2026-06-16",
     "language": "en"
@@ -1378,19 +1430,6 @@
     "language": "en"
   },
   {
-    "id": "civil-089784b25f34",
-    "source": "BIM Today",
-    "category": "Structures",
-    "title_original": "Designing a truly digital hospital: What we’re learning from Monklands",
-    "summary_original": "The Monklands project shows that true digital transformation is about much more than models and data platforms, writes Kathleen Baird, associate director at WSP. The post Designing a truly digital hospital: What we’re…",
-    "title_fr": "Concevoir un hôpital véritablement numérique : ce que nous apprenons de Monklands",
-    "summary_fr": "Le projet Monklands montre que la véritable transformation numérique va bien au-delà des modèles et des plateformes de données, écrit Kathleen Baird, directrice associée chez WSP. L’article Concevoir un hôpital véritablement numérique : ce que nous sommes…",
-    "url": "https://www.pbctoday.co.uk/news/digital-construction-news/designing-a-truly-digital-hospital-what-were-learning-from-monklands/162762/",
-    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/06/Image-2-696x385.png",
-    "published_at": "2026-06-11",
-    "language": "en"
-  },
-  {
     "id": "civil-6d24d9da55ff",
     "source": "Concrete Construction",
     "category": "Béton",
@@ -1400,6 +1439,19 @@
     "summary_fr": "Je pense qu’avant de parler des avantages et des inconvénients d’un monopour (couler la semelle et le mur en même temps), il est important de définir ce qui fait une journée de béton réussie. Nous pouvons commencer par l’industrie…",
     "url": "https://www.jlconline.com/how-to/foundations/monopour-the-evolution-of-icf-construction",
     "image": "",
+    "published_at": "2026-06-11",
+    "language": "en"
+  },
+  {
+    "id": "civil-089784b25f34",
+    "source": "BIM Today",
+    "category": "Structures",
+    "title_original": "Designing a truly digital hospital: What we’re learning from Monklands",
+    "summary_original": "The Monklands project shows that true digital transformation is about much more than models and data platforms, writes Kathleen Baird, associate director at WSP. The post Designing a truly digital hospital: What we’re…",
+    "title_fr": "Concevoir un hôpital véritablement numérique : ce que nous apprenons de Monklands",
+    "summary_fr": "Le projet Monklands montre que la véritable transformation numérique va bien au-delà des modèles et des plateformes de données, écrit Kathleen Baird, directrice associée chez WSP. L’article Concevoir un hôpital véritablement numérique : ce que nous sommes…",
+    "url": "https://www.pbctoday.co.uk/news/digital-construction-news/designing-a-truly-digital-hospital-what-were-learning-from-monklands/162762/",
+    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/06/Image-2-696x385.png",
     "published_at": "2026-06-11",
     "language": "en"
   },
