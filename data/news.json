@@ -9,7 +9,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/08/12/people-powered-building-your-resilient-engineering-team",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -22,7 +22,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/sponsored-article/2026/08/10/vinyl-chloride-review-could-reshape-pipe-material-standards",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -35,7 +35,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/08/12/brussels-dual-tower-project-gives-weight-to-sustainability-while-remaining-flexible",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -48,7 +48,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementamericas.com/category/news/latest/",
     "image": "https://cementoptimized.com/wp-content/uploads/2026/08/sullivan-july2026.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -61,7 +61,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementoptimized.com/2026/08/21/sullivan-releases-summer-cement-and-construction-outlook/",
     "image": "https://cementoptimized.com/wp-content/uploads/2026/08/sullivan-july2026.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -74,7 +74,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/Bde-Presents-Bentley-Systems/8993",
     "image": "",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -87,7 +87,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/UK-steel-bridge-installed-over-eight-days/9920",
     "image": "",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -100,7 +100,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.worldcement.com/europe-cis/21082026/holcim-to-acquire-fermacell/",
     "image": "https://d23p67eaj7q4a1.cloudfront.net/media/articles/pop/handshake-07.jpg",
-    "published_at": "2026-08-22",
+    "published_at": "2026-08-23",
     "language": "en"
   },
   {
@@ -113,6 +113,58 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.worldcement.com/spotlight-interviews/07072026/world-cement-spotlight-interview-with-dracyon-corp/",
     "image": "",
+    "published_at": "2026-08-23",
+    "language": "en"
+  },
+  {
+    "id": "civil-86c08b4a51cc",
+    "source": "For Construction Pros",
+    "category": "Construction",
+    "title_original": "ABC: Construction Adds 22,000 Jobs in July",
+    "summary_original": "U.S. construction employment increased by 22,000 jobs in July, with nonresidential specialty trade contractors accounting for...",
+    "title_fr": "ABC : La construction crée 22 000 emplois en juillet",
+    "summary_fr": "L'emploi dans la construction aux États-Unis a augmenté de 22 000 emplois en juillet, les entrepreneurs spécialisés non résidentiels représentant...",
+    "url": "https://www.forconstructionpros.com/business/labor-workforce-development/article/22972296/associated-builders-and-contractors-inc-abc-abc-construction-adds-22000-jobs-in-july",
+    "image": "",
+    "published_at": "2026-08-22",
+    "language": "en"
+  },
+  {
+    "id": "civil-650182b9c00f",
+    "source": "Highways Today",
+    "category": "BIM / Revit",
+    "title_original": "When Construction Starts Learning",
+    "summary_original": "When Construction Starts Learning An excavator working to a 3D model can leave behind far more than the finished formation. Machine control records where it worked, while telematics can provide another history of…",
+    "title_fr": "Quand la construction commence à apprendre",
+    "summary_fr": "Quand la construction commence à apprendre Une excavatrice travaillant sur un modèle 3D peut laisser derrière elle bien plus que la formation finie. Le contrôle des machines enregistre les endroits où elles ont fonctionné, tandis que la télématique peut fournir une autre histoire de…",
+    "url": "https://highways.today/2026/08/22/when-construction-starts-learning/",
+    "image": "https://highways.today/wp-content/uploads/2026/08/Construction-1.jpg",
+    "published_at": "2026-08-22",
+    "language": "en"
+  },
+  {
+    "id": "civil-183761b183e3",
+    "source": "Highways Today",
+    "category": "Hydraulique",
+    "title_original": "Mastenbroek Refines 20/15 Drainage Trencher for 2026",
+    "summary_original": "Mastenbroek Refines 20/15 Drainage Trencher for 2026 A machine first introduced in 1981 might seem an unlikely place to look for equipment development, but Mastenbroek’s latest 20/15 drainage trencher makes a good case…",
+    "title_fr": "Mastenbroek affine la trancheuse de drainage 20/15 pour 2026",
+    "summary_fr": "Mastenbroek affine la trancheuse de drainage 20/15 pour 2026 Une machine introduite pour la première fois en 1981 peut sembler un endroit improbable pour le développement d'équipements, mais la dernière trancheuse de drainage 20/15 de Mastenbroek constitue un bon argument…",
+    "url": "https://highways.today/2026/08/22/mastenbroek-20-15-drainage-trencher/",
+    "image": "https://highways.today/wp-content/uploads/2026/08/Mastenbroek_2.jpg",
+    "published_at": "2026-08-22",
+    "language": "en"
+  },
+  {
+    "id": "civil-ad25b5be0dcb",
+    "source": "Highways Today",
+    "category": "Routes",
+    "title_original": "Used Equipment Supply Tightens as European Buyer Demand Accelerates",
+    "summary_original": "Used Equipment Supply Tightens as European Buyer Demand Accelerates Demand for used tractor units across Europe rose 72% year-on-year during the second quarter of 2026 while the number advertised for sale fell by 26%.…",
+    "title_fr": "L’offre d’équipements d’occasion se resserre à mesure que la demande des acheteurs européens s’accélère",
+    "summary_fr": "L'offre d'équipements d'occasion se resserre alors que la demande des acheteurs européens s'accélère La demande de tracteurs d'occasion à travers l'Europe a augmenté de 72 % sur un an au cours du deuxième trimestre 2026, tandis que le nombre d'annonces à vendre a chuté de 26 %.…",
+    "url": "https://highways.today/2026/08/22/used-equipment-european-buyer/",
+    "image": "https://highways.today/wp-content/uploads/2026/08/equipment.jpg",
     "published_at": "2026-08-22",
     "language": "en"
   },
@@ -140,6 +192,84 @@
     "url": "https://highways.today/2026/08/22/astm-asphalt-cracking-standard/",
     "image": "https://highways.today/wp-content/uploads/2026/08/Asphalt-Cracking.jpg",
     "published_at": "2026-08-22",
+    "language": "en"
+  },
+  {
+    "id": "civil-70257193e489",
+    "source": "New Civil Engineer",
+    "category": "Environnement",
+    "title_original": "GBE-N outlines £730M-£1.1bn early works package",
+    "summary_original": "Great British Energy – Nuclear (GBE-N) has outlined plans for an early works package with an estimated contract value range of £730M to £1.1bn. The post GBE-N outlines £730M-£1.1bn early works package appeared first on…",
+    "title_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "summary_fr": "Great British Energy – Nuclear (GBE-N) a présenté ses plans pour un premier lot de travaux d'une valeur contractuelle estimée entre 730 millions de livres sterling et 1,1 milliard de livres sterling. L'article GBE-N présente un ensemble de travaux préliminaires de 730 millions de livres sterling à 1,1 milliard de livres sterling apparaît en premier sur…",
+    "url": "https://www.newcivilengineer.com/latest/gbe-n-outlines-730m-1-1bn-early-works-package-21-08-2026/",
+    "image": "",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-afb86a7b10d1",
+    "source": "New Civil Engineer",
+    "category": "Construction",
+    "title_original": "HS2 agrees to mitigate ‘foul odour’ from construction site exacerbated by heat",
+    "summary_original": "HS2 has agreed to introduce further mitigation measures to stop a foul odour emanating from a construction site in North Warwickshire that is being exacerbated by the recent heat. The post HS2 agrees to mitigate ‘foul…",
+    "title_fr": "HS2 s’engage à atténuer les « mauvaises odeurs » du chantier de construction exacerbées par la chaleur",
+    "summary_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "url": "https://www.newcivilengineer.com/latest/hs2-agrees-to-mitigate-foul-odour-from-construction-site-exacerbated-by-heat-21-08-2026/",
+    "image": "",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-305f6283daab",
+    "source": "New Civil Engineer",
+    "category": "Structures",
+    "title_original": "Network Rail seeks expressions of interest for £77.6m Wales & Western civils framework",
+    "summary_original": "Network Rail has issued an Expression of Interest (EOI) for a proposed £77.6M framework covering geotechnical and civil engineering works across its Wales and Western regions. The post Network Rail seeks expressions of…",
+    "title_fr": "Network Rail recherche des expressions d'intérêt pour un cadre civil au Pays de Galles et dans l'Ouest de 77,6 millions de livres sterling",
+    "summary_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "url": "https://www.newcivilengineer.com/latest/network-rail-seeks-expressions-of-interest-for-77-6m-wales-western-civils-framework-21-08-2026/",
+    "image": "",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-d28d3be243eb",
+    "source": "The Construction Index",
+    "category": "Structures",
+    "title_original": "Network Rail seeks rock cutting EOIs for Wales & Western",
+    "summary_original": "Network Rail is inviting expressions of interest for a £93m contract for rock cutting, as it develops a new framework.",
+    "title_fr": "Network Rail recherche des manifestations d'intérêt révolutionnaires pour le Pays de Galles et l'Ouest",
+    "summary_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
+    "url": "https://www.theconstructionindex.co.uk/news/view/network-rail-seeks-rock-cutting-eois-for-wales-western",
+    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787297690_track-renewal-near-bath.jpg",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-2d94c0cb2076",
+    "source": "The Construction Index",
+    "category": "Construction",
+    "title_original": "Majestic stands with Huddersfield fans",
+    "summary_original": "Majestic Construction has completed new safe standing at Huddersfield Town's Accu Stadium, boosting the matchday experience while keeping fans safe.",
+    "title_fr": "Majestic aux côtés des fans de Huddersfield",
+    "summary_fr": "Majestic Construction a achevé un nouveau niveau de sécurité au stade Accu de Huddersfield Town, améliorant ainsi l'expérience de match tout en assurant la sécurité des supporters.",
+    "url": "https://www.theconstructionindex.co.uk/news/view/majestic-stands-with-huddersfield-fans",
+    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787252841_lead---the-south-stand.jpeg",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-9c3795a13e38",
+    "source": "The Construction Index",
+    "category": "Construction",
+    "title_original": "Hardies acquires Storrier & Donaldson",
+    "summary_original": "Scottish chartered surveyor Hardies has acquired Storrier & Donaldson Quantity Surveyors. The incoming team members will join the Glasgow offices of Shepherd and Hardies.",
+    "title_fr": "Hardies acquiert Storrier & Donaldson",
+    "summary_fr": "Le géomètre agréé écossais Hardies a acquis Storrier & Donaldson Quantity Surveyors. Les nouveaux membres de l'équipe rejoindront les bureaux de Glasgow de Shepherd and Hardies.",
+    "url": "https://www.theconstructionindex.co.uk/news/view/hardies-acquires-storrier-donaldson",
+    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787251584_ltor-douglas-smith--ian-fergusson-and-robert-currie.jpeg",
+    "published_at": "2026-08-21",
     "language": "en"
   },
   {
@@ -178,84 +308,6 @@
     "summary_fr": "Les conversions d'hôtels et les projets de luxe ont dominé le pipeline mondial, qui a légèrement augmenté d'une année sur l'autre pour atteindre 15 976 projets, selon Lodging Econometrics.",
     "url": "https://www.constructiondive.com/news/global-hotel-construction-pipeline-q2-2026/828482/",
     "image": "https://imgproxy.divecdn.com/ErKYdvaeKseRyM-wFnUCyQQr04vQ_cuCypRQQfBxBKA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0xNTc2NDM2NjIuanBn.webp",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-70257193e489",
-    "source": "New Civil Engineer",
-    "category": "Environnement",
-    "title_original": "GBE-N outlines £730M-£1.1bn early works package",
-    "summary_original": "Great British Energy – Nuclear (GBE-N) has outlined plans for an early works package with an estimated contract value range of £730M to £1.1bn. The post GBE-N outlines £730M-£1.1bn early works package appeared first on…",
-    "title_fr": "GBE-N présente un programme de travaux préliminaires de 730 millions à 1,1 milliard de livres sterling",
-    "summary_fr": "Great British Energy – Nuclear (GBE-N) a présenté ses plans pour un premier lot de travaux d'une valeur contractuelle estimée entre 730 millions de livres sterling et 1,1 milliard de livres sterling. L'article GBE-N présente un ensemble de travaux préliminaires de 730 millions de livres sterling à 1,1 milliard de livres sterling apparaît en premier sur…",
-    "url": "https://www.newcivilengineer.com/latest/gbe-n-outlines-730m-1-1bn-early-works-package-21-08-2026/",
-    "image": "",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-afb86a7b10d1",
-    "source": "New Civil Engineer",
-    "category": "Construction",
-    "title_original": "HS2 agrees to mitigate ‘foul odour’ from construction site exacerbated by heat",
-    "summary_original": "HS2 has agreed to introduce further mitigation measures to stop a foul odour emanating from a construction site in North Warwickshire that is being exacerbated by the recent heat. The post HS2 agrees to mitigate ‘foul…",
-    "title_fr": "HS2 s’engage à atténuer les « mauvaises odeurs » du chantier de construction exacerbées par la chaleur",
-    "summary_fr": "HS2 a accepté d'introduire des mesures d'atténuation supplémentaires pour mettre fin à une odeur nauséabonde émanant d'un chantier de construction dans le North Warwickshire et exacerbée par la chaleur récente. Le post HS2 s’engage à atténuer les « fautes…",
-    "url": "https://www.newcivilengineer.com/latest/hs2-agrees-to-mitigate-foul-odour-from-construction-site-exacerbated-by-heat-21-08-2026/",
-    "image": "",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-305f6283daab",
-    "source": "New Civil Engineer",
-    "category": "Structures",
-    "title_original": "Network Rail seeks expressions of interest for £77.6m Wales & Western civils framework",
-    "summary_original": "Network Rail has issued an Expression of Interest (EOI) for a proposed £77.6M framework covering geotechnical and civil engineering works across its Wales and Western regions. The post Network Rail seeks expressions of…",
-    "title_fr": "Network Rail recherche des expressions d'intérêt pour un cadre civil au Pays de Galles et dans l'Ouest de 77,6 millions de livres sterling",
-    "summary_fr": "Network Rail a publié une expression d'intérêt (EOI) pour un cadre proposé de 77,6 millions de livres sterling couvrant les travaux géotechniques et de génie civil dans ses régions du Pays de Galles et de l'Ouest. Le post Network Rail cherche des expressions de…",
-    "url": "https://www.newcivilengineer.com/latest/network-rail-seeks-expressions-of-interest-for-77-6m-wales-western-civils-framework-21-08-2026/",
-    "image": "",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-d28d3be243eb",
-    "source": "The Construction Index",
-    "category": "Structures",
-    "title_original": "Network Rail seeks rock cutting EOIs for Wales & Western",
-    "summary_original": "Network Rail is inviting expressions of interest for a £93m contract for rock cutting, as it develops a new framework.",
-    "title_fr": "Network Rail recherche des manifestations d'intérêt révolutionnaires pour le Pays de Galles et l'Ouest",
-    "summary_fr": "Network Rail lance un appel à manifestation d'intérêt pour un contrat de 93 millions de livres sterling pour la coupe de roche, alors qu'il développe un nouveau cadre.",
-    "url": "https://www.theconstructionindex.co.uk/news/view/network-rail-seeks-rock-cutting-eois-for-wales-western",
-    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787297690_track-renewal-near-bath.jpg",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-2d94c0cb2076",
-    "source": "The Construction Index",
-    "category": "Construction",
-    "title_original": "Majestic stands with Huddersfield fans",
-    "summary_original": "Majestic Construction has completed new safe standing at Huddersfield Town's Accu Stadium, boosting the matchday experience while keeping fans safe.",
-    "title_fr": "Majestic aux côtés des fans de Huddersfield",
-    "summary_fr": "Majestic Construction a achevé un nouveau niveau de sécurité au stade Accu de Huddersfield Town, améliorant ainsi l'expérience de match tout en assurant la sécurité des supporters.",
-    "url": "https://www.theconstructionindex.co.uk/news/view/majestic-stands-with-huddersfield-fans",
-    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787252841_lead---the-south-stand.jpeg",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-9c3795a13e38",
-    "source": "The Construction Index",
-    "category": "Construction",
-    "title_original": "Hardies acquires Storrier & Donaldson",
-    "summary_original": "Scottish chartered surveyor Hardies has acquired Storrier & Donaldson Quantity Surveyors. The incoming team members will join the Glasgow offices of Shepherd and Hardies.",
-    "title_fr": "Hardies acquiert Storrier & Donaldson",
-    "summary_fr": "Le géomètre agréé écossais Hardies a acquis Storrier & Donaldson Quantity Surveyors. Les nouveaux membres de l'équipe rejoindront les bureaux de Glasgow de Shepherd and Hardies.",
-    "url": "https://www.theconstructionindex.co.uk/news/view/hardies-acquires-storrier-donaldson",
-    "image": "https://www.theconstructionindex.co.uk/assets/news_articles/2026/08/1787251584_ltor-douglas-smith--ian-fergusson-and-robert-currie.jpeg",
     "published_at": "2026-08-21",
     "language": "en"
   },
@@ -305,7 +357,7 @@
     "title_original": "Pudu Robotics launches PUDU MP2000 pallet robot",
     "summary_original": "The robot offers a 2,000 kg payload capacity and uses AI-native perception for floor-to-floor material transport. The post Pudu Robotics launches PUDU MP2000 pallet robot appeared first on Engineering.com .",
     "title_fr": "Pudu Robotics lance le robot palette PUDU MP2000",
-    "summary_fr": "Le robot offre une capacité de charge utile de 2 000 kg et utilise la perception native de l’IA pour le transport de matériaux d’un sol à l’autre. L'article Pudu Robotics lance le robot palette PUDU MP2000 apparaît en premier sur Engineering.com.",
+    "summary_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "url": "https://www.engineering.com/pudu-robotics-launches-pudu-mp2000-pallet-robot/",
     "image": "",
     "published_at": "2026-08-21",
@@ -330,7 +382,7 @@
     "category": "Innovation",
     "title_original": "EinScan Trak supports wireless 3D scanning workflows",
     "summary_original": "The system combines tracking and handheld modes with marker-free scanning, three laser modes, and 5MP texture capture. The post EinScan Trak supports wireless 3D scanning workflows appeared first on Engineering.com .",
-    "title_fr": "EinScan Trak prend en charge les flux de travail de numérisation 3D sans fil",
+    "title_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "summary_fr": "Le système combine les modes de suivi et portable avec une numérisation sans marqueur, trois modes laser et une capture de texture 5MP. L'article EinScan Trak prend en charge les flux de travail de numérisation 3D sans fil apparaît en premier sur Engineering.com.",
     "url": "https://www.engineering.com/einscan-trak-supports-wireless-3d-scanning-workflows/",
     "image": "",
@@ -357,7 +409,7 @@
     "title_original": "OMA-designed affordable housing completed in San Francisco’s Haight-Ashbury",
     "summary_original": "730 Stanyan, a mixed-use development with 160 affordable apartments has been completed in San Francisco’s Haight-Ashbury neighbourhood. Designed by Netherlands-headquartered architects OMA and San Francisco’s Y.A.…",
     "title_fr": "Des logements abordables conçus par l'OMA sont achevés à Haight-Ashbury à San Francisco",
-    "summary_fr": "730 Stanyan, un développement à usage mixte comprenant 160 appartements abordables a été achevé dans le quartier Haight-Ashbury de San Francisco. Conçu par les architectes OMA, basés aux Pays-Bas, et Y.A. de San Francisco…",
+    "summary_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "url": "https://www.globalconstructionreview.com/oma-designed-affordable-housing-completed-in-san-franciscos-haight-ashbury/",
     "image": "https://www.globalconstructionreview.com/wp-content/uploads/2026/08/oma1-600x338.jpg",
     "published_at": "2026-08-21",
@@ -442,32 +494,6 @@
     "language": "en"
   },
   {
-    "id": "civil-75fdabefe89d",
-    "source": "For Construction Pros",
-    "category": "Construction",
-    "title_original": "Deltek Reports Growing AI Adoption, Ongoing Workforce Challenges for Contractors, A&E Firms",
-    "summary_original": "Deltek's latest industry studies found government contractors and A&E firms are expanding AI use while continuing to face labor...",
-    "title_fr": "Deltek signale une adoption croissante de l'IA et des défis persistants en matière de main-d'œuvre pour les entrepreneurs et les entreprises A&E",
-    "summary_fr": "Les dernières études industrielles de Deltek ont ​​révélé que les entrepreneurs gouvernementaux et les entreprises A&E élargissent l'utilisation de l'IA tout en continuant à faire face à des problèmes de main-d'œuvre...",
-    "url": "https://www.forconstructionpros.com/business/industry-trends/article/22972213/deltek-deltek-reports-growing-ai-adoption-ongoing-workforce-challenges-for-contractors-ae-firms",
-    "image": "",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-28fd6c6f9fd8",
-    "source": "For Construction Pros",
-    "category": "Routes",
-    "title_original": "Rethinking Fog Seals As Strategic Pavement Preservation",
-    "summary_original": "Over the last decade, fog sealing has changed in ways that haven’t fully caught up with how the industry talks about it.",
-    "title_fr": "Repenser les joints antibrouillard en tant que préservation stratégique des chaussées",
-    "summary_fr": "Au cours de la dernière décennie, l’étanchéité au brouillard a évolué d’une manière qui n’a pas vraiment suivi la façon dont l’industrie en parle.",
-    "url": "https://www.forconstructionpros.com/pavement-maintenance/preservation-maintenance/article/22970873/terracon-rethinking-fog-seals-from-surface-treatment-to-strategic-pavement-preservation",
-    "image": "",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
     "id": "civil-adcdde270451",
     "source": "Water Technology",
     "category": "Construction",
@@ -507,6 +533,32 @@
     "language": "en"
   },
   {
+    "id": "civil-75fdabefe89d",
+    "source": "For Construction Pros",
+    "category": "Construction",
+    "title_original": "Deltek Reports Growing AI Adoption, Ongoing Workforce Challenges for Contractors, A&E Firms",
+    "summary_original": "Deltek's latest industry studies found government contractors and A&E firms are expanding AI use while continuing to face labor...",
+    "title_fr": "Deltek signale une adoption croissante de l'IA et des défis persistants en matière de main-d'œuvre pour les entrepreneurs et les entreprises A&E",
+    "summary_fr": "Les dernières études industrielles de Deltek ont ​​révélé que les entrepreneurs gouvernementaux et les entreprises A&E élargissent l'utilisation de l'IA tout en continuant à faire face à des problèmes de main-d'œuvre...",
+    "url": "https://www.forconstructionpros.com/business/industry-trends/article/22972213/deltek-deltek-reports-growing-ai-adoption-ongoing-workforce-challenges-for-contractors-ae-firms",
+    "image": "",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-28fd6c6f9fd8",
+    "source": "For Construction Pros",
+    "category": "Routes",
+    "title_original": "Rethinking Fog Seals As Strategic Pavement Preservation",
+    "summary_original": "Over the last decade, fog sealing has changed in ways that haven’t fully caught up with how the industry talks about it.",
+    "title_fr": "Repenser les joints antibrouillard en tant que préservation stratégique des chaussées",
+    "summary_fr": "Au cours de la dernière décennie, l’étanchéité au brouillard a évolué d’une manière qui n’a pas vraiment suivi la façon dont l’industrie en parle.",
+    "url": "https://www.forconstructionpros.com/pavement-maintenance/preservation-maintenance/article/22970873/terracon-rethinking-fog-seals-from-surface-treatment-to-strategic-pavement-preservation",
+    "image": "",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
     "id": "civil-e53846fb0474",
     "source": "PBC Today",
     "category": "Structures",
@@ -542,19 +594,6 @@
     "summary_fr": "D'autres communiqués du Service d'insolvabilité montrent que les insolvabilités dans le secteur de la construction sont toujours plus élevées que dans toute autre industrie ou secteur. Les faillites post-construction, toujours plus élevées que dans tout autre secteur, sont apparues en premier sur…",
     "url": "https://www.pbctoday.co.uk/news/hr-skills-news/construction-insolvencies-still-higher-than-any-other-sector/164929/",
     "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/08/iStock-2187716152-696x385.jpg",
-    "published_at": "2026-08-21",
-    "language": "en"
-  },
-  {
-    "id": "civil-09d781c68cde",
-    "source": "Highways Today",
-    "category": "Ponts",
-    "title_original": "Turning Drone Inspections into a Long-Term Memory for Bridges",
-    "summary_original": "Turning Drone Inspections into a Long-Term Memory for Bridges Bridge inspection has always produced a great deal of data and very little memory. Every routine survey captures cracks, spalling and water leakage in fine…",
-    "title_fr": "Faire des inspections par drones une mémoire à long terme pour les ponts",
-    "summary_fr": "Transformer les inspections par drones en mémoire à long terme pour les ponts L'inspection des ponts a toujours produit beaucoup de données et très peu de mémoire. Chaque étude de routine permet de capturer in fine les fissures, les effritements et les fuites d’eau…",
-    "url": "https://highways.today/2026/08/21/drone-inspections-for-bridges/",
-    "image": "https://highways.today/wp-content/uploads/2026/08/bridgedrones.jpg",
     "published_at": "2026-08-21",
     "language": "en"
   },
@@ -624,12 +663,12 @@
     "language": "en"
   },
   {
-    "id": "civil-f83d04417f13",
+    "id": "civil-a0e5c8f00828",
     "source": "Smart Cities Dive",
     "category": "Innovation",
-    "title_original": "125 mph passenger trains could connect Austin and San Antonio in about an hour: HNTB study",
+    "title_original": "125-mph passenger trains could connect San Antonio and Austin, Texas, in about an hour: HNTB study",
     "summary_original": "The trains would run on a dedicated rail line and cost about $13.5 billion, according to a feasibility study commissioned by Travis County.",
-    "title_fr": "Des trains de voyageurs à 125 mph pourraient relier Austin et San Antonio en une heure environ : étude HNTB",
+    "title_fr": "Des trains de voyageurs à 125 mph pourraient relier San Antonio et Austin, Texas, en une heure environ : étude HNTB",
     "summary_fr": "Les trains circuleraient sur une ligne ferroviaire dédiée et coûteraient environ 13,5 milliards de dollars, selon une étude de faisabilité commandée par le comté de Travis.",
     "url": "https://www.smartcitiesdive.com/news/austin-san-antonio-texas-passenger-train-proposed-hntb/828328/",
     "image": "",
@@ -659,6 +698,19 @@
     "summary_fr": "Les groupes de défense du logement affirment que ces villes tentent de limiter l'impact d'une nouvelle loi d'État conçue pour augmenter la densité des logements à proximité des transports en commun.",
     "url": "https://www.smartcitiesdive.com/news/3-california-cities-lawsuit-housing-transit-oriented-development/828500/",
     "image": "https://imgproxy.divecdn.com/B8AFkNS18RYYmIl9t8ZPQv4Dc6CwprFAdScpgQlv9I4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy02MzY4NDEwMjJfODhJUElwNS5qcGc=.webp",
+    "published_at": "2026-08-21",
+    "language": "en"
+  },
+  {
+    "id": "civil-09d781c68cde",
+    "source": "Highways Today",
+    "category": "Ponts",
+    "title_original": "Turning Drone Inspections into a Long-Term Memory for Bridges",
+    "summary_original": "Turning Drone Inspections into a Long-Term Memory for Bridges Bridge inspection has always produced a great deal of data and very little memory. Every routine survey captures cracks, spalling and water leakage in fine…",
+    "title_fr": "Faire des inspections par drones une mémoire à long terme pour les ponts",
+    "summary_fr": "Transformer les inspections par drones en mémoire à long terme pour les ponts L'inspection des ponts a toujours produit beaucoup de données et très peu de mémoire. Chaque étude de routine permet de capturer in fine les fissures, les effritements et les fuites d’eau…",
+    "url": "https://highways.today/2026/08/21/drone-inspections-for-bridges/",
+    "image": "https://highways.today/wp-content/uploads/2026/08/bridgedrones.jpg",
     "published_at": "2026-08-21",
     "language": "en"
   },
@@ -728,19 +780,6 @@
     "language": "en"
   },
   {
-    "id": "civil-d0391524a7af",
-    "source": "For Construction Pros",
-    "category": "Structures",
-    "title_original": "DAP Names Scott Showalter President Following Mark Heird's Retirement",
-    "summary_original": "Showalter, a 20-year company veteran, succeeds Mark Heird as president and will lead DAP's next phase of growth across its building...",
-    "title_fr": "DAP nomme Scott Showalter président après le départ à la retraite de Mark Heird",
-    "summary_fr": "Showalter, un vétéran de l'entreprise depuis 20 ans, succède à Mark Heird en tant que président et dirigera la prochaine phase de croissance de DAP dans l'ensemble de son bâtiment...",
-    "url": "https://www.forconstructionpros.com/business/labor-workforce-development/article/22971959/dap-dap-names-scott-showalter-president-following-mark-heirds-retirement",
-    "image": "",
-    "published_at": "2026-08-20",
-    "language": "en"
-  },
-  {
     "id": "civil-06e7c1d4eb3f",
     "source": "AEC Magazine",
     "category": "Innovation",
@@ -749,6 +788,19 @@
     "title_fr": "PlanRadar ajoute des agents IA pour automatiser les tâches de routine",
     "summary_fr": "Une fois qu'un agent est déclenché, il exécute l'action lui-même, sans étape d'approbation. L'article PlanRadar ajoute des agents IA pour automatiser les tâches de routine est apparu en premier sur AEC Magazine.",
     "url": "https://aecmag.com/project-management/planradar-adds-ai-agents-to-automate-routine-tasks/",
+    "image": "",
+    "published_at": "2026-08-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-d0391524a7af",
+    "source": "For Construction Pros",
+    "category": "Structures",
+    "title_original": "DAP Names Scott Showalter President Following Mark Heird's Retirement",
+    "summary_original": "Showalter, a 20-year company veteran, succeeds Mark Heird as president and will lead DAP's next phase of growth across its building...",
+    "title_fr": "DAP nomme Scott Showalter président après le départ à la retraite de Mark Heird",
+    "summary_fr": "Showalter, un vétéran de l'entreprise depuis 20 ans, succède à Mark Heird en tant que président et dirigera la prochaine phase de croissance de DAP dans l'ensemble de son bâtiment...",
+    "url": "https://www.forconstructionpros.com/business/labor-workforce-development/article/22971959/dap-dap-names-scott-showalter-president-following-mark-heirds-retirement",
     "image": "",
     "published_at": "2026-08-20",
     "language": "en"
@@ -1682,7 +1734,7 @@
     "category": "Innovation",
     "title_original": "Large reliability gains from small handling habits: A lubricant storage guide",
     "summary_original": "With tightening profit margins in the aviation industry, robust maintenance strategies are essential for survival. The post Large reliability gains from small handling habits: A lubricant storage guide appeared first…",
-    "title_fr": "Des gains de fiabilité importants grâce à de petites habitudes de manipulation : un guide de stockage des lubrifiants",
+    "title_fr": "Error 500 (Server Error)!!1500.That’s an error.There was an error. Please try again later.That’s all we know.",
     "summary_fr": "Avec le resserrement des marges bénéficiaires dans l’industrie aéronautique, des stratégies de maintenance robustes sont essentielles à la survie. L'article Gains de fiabilité importants grâce à de petites habitudes de manipulation : un guide de stockage des lubrifiants est apparu en premier…",
     "url": "https://www.airport-technology.com/sponsored/large-reliability-gains-from-small-handling-habits-a-lubricant-storage-guide/",
     "image": "https://www.airport-technology.com/wp-content/uploads/sites/14/2026/08/shutterstock_2318775895-1-2-scaled.jpg",
@@ -2024,58 +2076,6 @@
     "summary_fr": "Risen Energy et Ascania Energy ont signé deux protocoles d'accord (MoU) pour poursuivre jusqu'à 100 MW d'énergie solaire et 200 MWh de projets de stockage d'énergie par batterie en Ukraine.",
     "url": "https://www.power-technology.com/news/risen-ascania-mous-solar-battery-storage-ukraine/",
     "image": "https://www.power-technology.com/wp-content/uploads/sites/21/2026/08/Power-2-18Aug26-20260817021205EDT_image_1.jpg",
-    "published_at": "2026-08-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-884796b4c8fe",
-    "source": "Water Technology",
-    "category": "Hydraulique",
-    "title_original": "RWE EBITDA jumps 43% as wind, generation and trading rebound",
-    "summary_original": "RWE has reported adjusted EBITDA of €3bn for the first half of 2026, up 44% from €2.1bn a year earlier, while adjusted net income rose to €1.3bn.",
-    "title_fr": "L'EBITDA de RWE bondit de 43 % grâce au rebond de l'énergie éolienne, de la production et du commerce",
-    "summary_fr": "RWE a déclaré un EBITDA ajusté de 3 milliards d'euros pour le premier semestre 2026, en hausse de 44 % par rapport aux 2,1 milliards d'euros un an plus tôt, tandis que le résultat net ajusté a atteint 1,3 milliard d'euros.",
-    "url": "https://www.power-technology.com/news/rwe-ebitda-jumps-43-as-wind-generation-and-trading-rebound/",
-    "image": "https://www.power-technology.com/wp-content/uploads/sites/21/2026/08/RWE_shutterstock_2540294475.jpeg",
-    "published_at": "2026-08-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-e9624e492cb6",
-    "source": "Water Technology",
-    "category": "Construction",
-    "title_original": "Aurinkokarhu, FEP JV aim to deliver 3GW of energy projects in Finland",
-    "summary_original": "Aurinkokarhu and FEP have entered into a JV to develop and finance approximately 3GW of solar, BESS, and hybrid energy projects in Finland.",
-    "title_fr": "Aurinkokarhu et FEP JV visent à réaliser 3 GW de projets énergétiques en Finlande",
-    "summary_fr": "Aurinkokarhu et FEP ont conclu une coentreprise pour développer et financer environ 3 GW de projets d'énergie solaire, BESS et hybride en Finlande.",
-    "url": "https://www.power-technology.com/news/aurinkokarhu-fep-3gw-energy-projects/",
-    "image": "https://www.power-technology.com/wp-content/uploads/sites/21/2026/08/BESS-and-substation.jpg",
-    "published_at": "2026-08-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-436b83a6c307",
-    "source": "PBC Today",
-    "category": "Structures",
-    "title_original": "How real-time compliance visibility is changing infrastructure operations",
-    "summary_original": "MJL’s experience shows how moving from delayed paperwork to real-time digital checks can improve compliance visibility. The post How real-time compliance visibility is changing infrastructure operations appeared first…",
-    "title_fr": "Comment la visibilité de la conformité en temps réel modifie les opérations de l'infrastructure",
-    "summary_fr": "L’expérience de MJL montre comment le passage d’une paperasse retardée à des contrôles numériques en temps réel peut améliorer la visibilité sur la conformité. L'article Comment la visibilité de la conformité en temps réel change les opérations de l'infrastructure apparaît en premier…",
-    "url": "https://www.pbctoday.co.uk/news/digital-construction-news/how-real-time-compliance-visibility-changing-infrastructure-operations/164821/",
-    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/08/MJL-Webinar_Article-1_1200x630-1-696x385.jpg",
-    "published_at": "2026-08-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-9c14175e663c",
-    "source": "PBC Today",
-    "category": "Structures",
-    "title_original": "BCIA launches new BEMS Delivery Framework to tackle inconsistency in BEMS specifications",
-    "summary_original": "The BEMS Delivery Framework will create a clearer, more consistent approach to delivering Building Energy Management Systems. The post BCIA launches new BEMS Delivery Framework to tackle inconsistency in BEMS…",
-    "title_fr": "La BCIA lance un nouveau cadre de livraison BEMS pour lutter contre les incohérences dans les spécifications BEMS",
-    "summary_fr": "Le cadre de livraison BEMS créera une approche plus claire et plus cohérente pour fournir des systèmes de gestion de l’énergie des bâtiments. L'article BCIA lance un nouveau cadre de livraison BEMS pour lutter contre les incohérences dans BEMS…",
-    "url": "https://www.pbctoday.co.uk/news/building-control-news/new-bems-delivery-framework-tackle-inconsistency-in-bems-specifications/164819/",
-    "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/08/BEMS-Framework-696x385.png",
     "published_at": "2026-08-18",
     "language": "en"
   }
