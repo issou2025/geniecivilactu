@@ -9,7 +9,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/09/11/tree-canopy-can-help-cities-mitigate-air-pollution-and-heat-but-space-is-limited",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -22,7 +22,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/sponsored-article/2026/09/14/can-mirafi-rsi-provide-reinforcement-and-stabilization-in-sand-solmax-put-mirafi-rsi-high-performance-geotextile-to-the-ultimate-soft-soils-test",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -35,33 +35,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.asce.org/publications-and-news/civil-engineering-source/article/2026/09/09/young-professionals-might-not-remember-911-but-lessons-learned-persist",
     "image": "https://www.asce.org/-/media/asce-images-and-files/og-images/asce.jpg",
-    "published_at": "2026-09-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-0251f5cc8686",
-    "source": "World Cement",
-    "category": "Matériaux",
-    "title_original": "Heidelberg Materials takes majority stake in Peru-based Cementos Inka",
-    "summary_original": "",
-    "title_fr": "Heidelberg Materials takes majority stake in Peru-based Cementos Inka",
-    "summary_fr": "Résumé non disponible",
-    "url": "https://www.worldcement.com/the-americas/18092026/heidelberg-materials-takes-majority-stake-in-peru-based-cementos-inka/",
-    "image": "https://d23p67eaj7q4a1.cloudfront.net/media/articles/pop/south-america-02.jpg",
-    "published_at": "2026-09-19",
-    "language": "en"
-  },
-  {
-    "id": "civil-c6fe406f649c",
-    "source": "World Cement",
-    "category": "Béton",
-    "title_original": "World Cement Spotlight with Dracyon Corp",
-    "summary_original": "",
-    "title_fr": "World Cement Spotlight with Dracyon Corp",
-    "summary_fr": "Résumé non disponible",
-    "url": "https://www.worldcement.com/spotlight-interviews/07072026/world-cement-spotlight-interview-with-dracyon-corp/",
-    "image": "",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -74,7 +48,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementamericas.com/category/news/latest/",
     "image": "https://cementoptimized.com/wp-content/uploads/2026/09/silo-cleaning-DSC02692.jpg",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -87,7 +61,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementoptimized.com/2026/09/17/msha-announces-overhaul-of-alternative-case-resolution-procedures/",
     "image": "",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -100,7 +74,33 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://cementoptimized.com/2026/09/16/thermal-battery-will-be-deployed-as-part-of-holcims-electrification-roadmap/",
     "image": "",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-0251f5cc8686",
+    "source": "World Cement",
+    "category": "Matériaux",
+    "title_original": "Heidelberg Materials takes majority stake in Peru-based Cementos Inka",
+    "summary_original": "",
+    "title_fr": "Heidelberg Materials takes majority stake in Peru-based Cementos Inka",
+    "summary_fr": "Résumé non disponible",
+    "url": "https://www.worldcement.com/the-americas/18092026/heidelberg-materials-takes-majority-stake-in-peru-based-cementos-inka/",
+    "image": "https://d23p67eaj7q4a1.cloudfront.net/media/articles/pop/south-america-02.jpg",
+    "published_at": "2026-09-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-c6fe406f649c",
+    "source": "World Cement",
+    "category": "Béton",
+    "title_original": "World Cement Spotlight with Dracyon Corp",
+    "summary_original": "",
+    "title_fr": "World Cement Spotlight with Dracyon Corp",
+    "summary_fr": "Résumé non disponible",
+    "url": "https://www.worldcement.com/spotlight-interviews/07072026/world-cement-spotlight-interview-with-dracyon-corp/",
+    "image": "",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -113,7 +113,7 @@
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/Bde-Presents-Bentley-Systems/8993",
     "image": "",
-    "published_at": "2026-09-19",
+    "published_at": "2026-09-20",
     "language": "en"
   },
   {
@@ -125,6 +125,45 @@
     "title_fr": "UK: steel bridge installed over eight days",
     "summary_fr": "Résumé non disponible",
     "url": "https://www.bridgeweb.com/UK-steel-bridge-installed-over-eight-days/9920",
+    "image": "",
+    "published_at": "2026-09-20",
+    "language": "en"
+  },
+  {
+    "id": "civil-a9f6587801b7",
+    "source": "ScienceDaily Civil Engineering",
+    "category": "Innovation",
+    "title_original": "Scientists find that “perfect” systems may be surprisingly fragile",
+    "summary_original": "Complex systems may work better when their parts are not perfectly alike. Northwestern physicists found that carefully balanced variation, or “disorder,” can make networks such as power grids, ecosystems, neurons, and…",
+    "title_fr": "Scientists find that “perfect” systems may be surprisingly fragile",
+    "summary_fr": "Complex systems may work better when their parts are not perfectly alike. Northwestern physicists found that carefully balanced variation, or “disorder,” can make networks such as power grids, ecosystems, neurons, and…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260919031022.htm",
+    "image": "",
+    "published_at": "2026-09-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-01b59291df0e",
+    "source": "For Construction Pros",
+    "category": "Construction",
+    "title_original": "Construction Documentation Gaps Can Turn Project Issues into Disputes",
+    "summary_original": "When project decisions live across drawings, email, RFIs, submittals, and chat, you don't just lose time. You lose the record...",
+    "title_fr": "Construction Documentation Gaps Can Turn Project Issues into Disputes",
+    "summary_fr": "When project decisions live across drawings, email, RFIs, submittals, and chat, you don't just lose time. You lose the record...",
+    "url": "https://www.forconstructionpros.com/business/business-services/business-management/article/22974081/newforma-inc-construction-documentation-gaps-can-turn-project-issues-into-disputes",
+    "image": "",
+    "published_at": "2026-09-19",
+    "language": "en"
+  },
+  {
+    "id": "civil-d97f03e86add",
+    "source": "Construction Specifier",
+    "category": "Structures",
+    "title_original": "Evergreen Charter School: Mass timber, community, and inclusive design",
+    "summary_original": "Learn how mass timber, high-performance enclosure design, and occupant-centered planning can create welcoming learning environments. The post Evergreen Charter School: Mass timber, community, and inclusive design…",
+    "title_fr": "Evergreen Charter School: Mass timber, community, and inclusive design",
+    "summary_fr": "Learn how mass timber, high-performance enclosure design, and occupant-centered planning can create welcoming learning environments. The post Evergreen Charter School: Mass timber, community, and inclusive design…",
+    "url": "https://www.constructionspecifier.com/evergreen-charter-school-mass-timber-community-and-inclusive-design/",
     "image": "",
     "published_at": "2026-09-19",
     "language": "en"
@@ -208,40 +247,14 @@
     "language": "en"
   },
   {
-    "id": "civil-88d55a46b5bd",
-    "source": "New Civil Engineer",
-    "category": "Structures",
-    "title_original": "National Gas pushes forward with second phase of 2414km hydrogen pipeline Project Union",
-    "summary_original": "National Gas has moved the proposed St Fergus–Teesside hydrogen pipeline into the engineering design phase marking a significant step in plans for a national hydrogen network across the UK. The post National Gas pushes…",
-    "title_fr": "National Gas pushes forward with second phase of 2414km hydrogen pipeline Project Union",
-    "summary_fr": "National Gas has moved the proposed St Fergus–Teesside hydrogen pipeline into the engineering design phase marking a significant step in plans for a national hydrogen network across the UK. The post National Gas pushes…",
-    "url": "https://www.newcivilengineer.com/latest/national-gas-pushes-forward-with-second-phase-of-2414km-hydrogen-pipeline-project-union-18-09-2026/",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-827523f70d64",
-    "source": "New Civil Engineer",
-    "category": "Hydraulique",
-    "title_original": "Work begins to protect Teesside breakwater from ‘increasingly severe’ storms",
-    "summary_original": "Around 55,000t of rock is being installed by PD Ports at South Gare, breakwater, in Redcar, which protects the River Tees, in response to increasingly severe storm conditions. The post Work begins to protect Teesside…",
-    "title_fr": "Work begins to protect Teesside breakwater from ‘increasingly severe’ storms",
-    "summary_fr": "Around 55,000t of rock is being installed by PD Ports at South Gare, breakwater, in Redcar, which protects the River Tees, in response to increasingly severe storm conditions. The post Work begins to protect Teesside…",
-    "url": "https://www.newcivilengineer.com/latest/work-begins-to-protect-teesside-breakwater-from-increasingly-severe-storms-18-09-2026/",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-95c713a825a4",
-    "source": "New Civil Engineer",
-    "category": "Ponts",
-    "title_original": "In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding",
-    "summary_original": "HS2 has begun installing ironstone cladding on its new Oxford Canal viaduct near Wormleighton in Warwickshire. The post In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding appeared…",
-    "title_fr": "In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding",
-    "summary_fr": "HS2 has begun installing ironstone cladding on its new Oxford Canal viaduct near Wormleighton in Warwickshire. The post In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding appeared…",
-    "url": "https://www.newcivilengineer.com/latest/in-pictures-hs2-adds-local-touch-to-warwickshire-canal-viaduct-with-ironstone-cladding-18-09-2026/",
+    "id": "civil-07b2c8e0ddd1",
+    "source": "ScienceDaily Civil Engineering",
+    "category": "Innovation",
+    "title_original": "Billions in rare earth elements may be hiding in America’s coal ash",
+    "summary_original": "Scientists are looking to diatoms, sea sponges, and plants for a cleaner way to recover rare earth elements and other valuable minerals hidden inside coal ash, red mud, and mine tailings. The bio-inspired approach…",
+    "title_fr": "Billions in rare earth elements may be hiding in America’s coal ash",
+    "summary_fr": "Scientists are looking to diatoms, sea sponges, and plants for a cleaner way to recover rare earth elements and other valuable minerals hidden inside coal ash, red mud, and mine tailings. The bio-inspired approach…",
+    "url": "https://www.sciencedaily.com/releases/2026/09/260918024759.htm",
     "image": "",
     "published_at": "2026-09-18",
     "language": "en"
@@ -286,45 +299,6 @@
     "language": "en"
   },
   {
-    "id": "civil-1ba615ff55cf",
-    "source": "Engineering.com",
-    "category": "Structures",
-    "title_original": "Investigating the Acoustic Performance of a Chamber Music Hall with Simulation",
-    "summary_original": "Chamber music ensembles rely on excellent acoustics at the music halls where they are performing. Combining acoustics simulation and ray tracing enables engineers to improve the design of music halls and help deliver…",
-    "title_fr": "Investigating the Acoustic Performance of a Chamber Music Hall with Simulation",
-    "summary_fr": "Chamber music ensembles rely on excellent acoustics at the music halls where they are performing. Combining acoustics simulation and ray tracing enables engineers to improve the design of music halls and help deliver…",
-    "url": "https://www.engineering.com/investigating-the-acoustic-performance-of-a-chamber-music-hall-with-simulation/",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-1233504adfe1",
-    "source": "Engineering.com",
-    "category": "Structures",
-    "title_original": "Bambu Lab opens 3D printing challenge for assistive designs",
-    "summary_original": "Seven accessibility organizations will test designs for everyday tasks and distribute selected models through volunteer networks. The post Bambu Lab opens 3D printing challenge for assistive designs appeared first on…",
-    "title_fr": "Bambu Lab opens 3D printing challenge for assistive designs",
-    "summary_fr": "Seven accessibility organizations will test designs for everyday tasks and distribute selected models through volunteer networks. The post Bambu Lab opens 3D printing challenge for assistive designs appeared first on…",
-    "url": "https://www.engineering.com/bambu-lab-opens-3d-printing-challenge-for-assistive-designs/",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-bb44b44bc33e",
-    "source": "Engineering.com",
-    "category": "Matériaux",
-    "title_original": "NovoLINC launches MaxLINC thermal interface material",
-    "summary_original": "MaxLINC targets heat flux above 100 W/cm² and accommodates up to 350 µm of device and package warpage. The post NovoLINC launches MaxLINC thermal interface material appeared first on Engineering.com .",
-    "title_fr": "NovoLINC launches MaxLINC thermal interface material",
-    "summary_fr": "MaxLINC targets heat flux above 100 W/cm² and accommodates up to 350 µm of device and package warpage. The post NovoLINC launches MaxLINC thermal interface material appeared first on Engineering.com .",
-    "url": "https://www.engineering.com/novolinc-launches-maxlinc-thermal-interface-material/",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
     "id": "civil-cadf1c5e01c3",
     "source": "Construction Management / CIOB",
     "category": "Construction",
@@ -360,6 +334,45 @@
     "summary_fr": "A traffic management firm has recruited 12 people following their release from prison as part of a programme supporting offenders into sustainable employment. The post Traffic management firm helps prison leavers build…",
     "url": "https://constructionmanagement.co.uk/traffic-management-firm-helps-prison-leavers-build-careers-in-the-highways-sector/",
     "image": "https://constructionmanagement.co.uk/wp-content/uploads/2026/09/HMP-Wealstun-TM-event-Aug-26-600x338.jpg",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-1ba615ff55cf",
+    "source": "Engineering.com",
+    "category": "Structures",
+    "title_original": "Investigating the Acoustic Performance of a Chamber Music Hall with Simulation",
+    "summary_original": "Chamber music ensembles rely on excellent acoustics at the music halls where they are performing. Combining acoustics simulation and ray tracing enables engineers to improve the design of music halls and help deliver…",
+    "title_fr": "Investigating the Acoustic Performance of a Chamber Music Hall with Simulation",
+    "summary_fr": "Chamber music ensembles rely on excellent acoustics at the music halls where they are performing. Combining acoustics simulation and ray tracing enables engineers to improve the design of music halls and help deliver…",
+    "url": "https://www.engineering.com/investigating-the-acoustic-performance-of-a-chamber-music-hall-with-simulation/",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-1233504adfe1",
+    "source": "Engineering.com",
+    "category": "Structures",
+    "title_original": "Bambu Lab opens 3D printing challenge for assistive designs",
+    "summary_original": "Seven accessibility organizations will test designs for everyday tasks and distribute selected models through volunteer networks. The post Bambu Lab opens 3D printing challenge for assistive designs appeared first on…",
+    "title_fr": "Bambu Lab opens 3D printing challenge for assistive designs",
+    "summary_fr": "Seven accessibility organizations will test designs for everyday tasks and distribute selected models through volunteer networks. The post Bambu Lab opens 3D printing challenge for assistive designs appeared first on…",
+    "url": "https://www.engineering.com/bambu-lab-opens-3d-printing-challenge-for-assistive-designs/",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-bb44b44bc33e",
+    "source": "Engineering.com",
+    "category": "Matériaux",
+    "title_original": "NovoLINC launches MaxLINC thermal interface material",
+    "summary_original": "MaxLINC targets heat flux above 100 W/cm² and accommodates up to 350 µm of device and package warpage. The post NovoLINC launches MaxLINC thermal interface material appeared first on Engineering.com .",
+    "title_fr": "NovoLINC launches MaxLINC thermal interface material",
+    "summary_fr": "MaxLINC targets heat flux above 100 W/cm² and accommodates up to 350 µm of device and package warpage. The post NovoLINC launches MaxLINC thermal interface material appeared first on Engineering.com .",
+    "url": "https://www.engineering.com/novolinc-launches-maxlinc-thermal-interface-material/",
+    "image": "",
     "published_at": "2026-09-18",
     "language": "en"
   },
@@ -455,19 +468,6 @@
     "language": "en"
   },
   {
-    "id": "civil-325b03a8a644",
-    "source": "For Construction Pros",
-    "category": "Innovation",
-    "title_original": "Without Further Ado, The Rental 2026 Editor's Choice Award Winners",
-    "summary_original": "The Rental Editor's Choice Awards celebrate the innovations in the equipment and general tool rental industry. Here are the winners...",
-    "title_fr": "Without Further Ado, The Rental 2026 Editor's Choice Award Winners",
-    "summary_fr": "The Rental Editor's Choice Awards celebrate the innovations in the equipment and general tool rental industry. Here are the winners...",
-    "url": "https://www.forconstructionpros.com/rental/construction/article/22947952/the-rental-2026-editors-choice-award-winners",
-    "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
     "id": "civil-30745e89176b",
     "source": "Water Technology",
     "category": "Construction",
@@ -533,6 +533,84 @@
     "language": "en"
   },
   {
+    "id": "civil-ef6047cfa67d",
+    "source": "Smart Cities Dive",
+    "category": "Infrastructures",
+    "title_original": "US transit bus industry generated $1.1B in federal, state and local tax revenue in 2025: report",
+    "summary_original": "“The industry’s economic footprint extends well beyond the firms that assemble transit buses,” according to an Oxford Economics report.",
+    "title_fr": "US transit bus industry generated $1.1B in federal, state and local tax revenue in 2025: report",
+    "summary_fr": "“The industry’s economic footprint extends well beyond the firms that assemble transit buses,” according to an Oxford Economics report.",
+    "url": "https://www.smartcitiesdive.com/news/transit-bus-industry-data-oxford-economics/830720/",
+    "image": "https://imgproxy.divecdn.com/_F3lvu3PbJ1lk1RzpeQhGlH_j4ebDt_LBNnkyCWa1HY/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8wMDVNZXRyb2J1cy1BZGRpc29uLVJkLmpwZw==.webp",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-09208d83f06f",
+    "source": "Smart Cities Dive",
+    "category": "Hydraulique",
+    "title_original": "Local water projects on path to federal support as WRDA 2026 clears House",
+    "summary_original": "The Water Resources Development Act of 2026 targets flood protection, ports, waterways and water supply while giving communities more tools to work with the U.S. Army Corps of Engineers.",
+    "title_fr": "Local water projects on path to federal support as WRDA 2026 clears House",
+    "summary_fr": "The Water Resources Development Act of 2026 targets flood protection, ports, waterways and water supply while giving communities more tools to work with the U.S. Army Corps of Engineers.",
+    "url": "https://www.smartcitiesdive.com/news/local-water-projects-federal-support-wrda-2026-clears-house/830776/",
+    "image": "https://imgproxy.divecdn.com/ubcl1VYPTc-LSSz6BwAR8UOOIctptznzEa1m_FsIxzo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjgzMjQ1MTI0LmpwZw==.webp",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-88d55a46b5bd",
+    "source": "New Civil Engineer",
+    "category": "Structures",
+    "title_original": "National Gas pushes forward with second phase of 2414km hydrogen pipeline Project Union",
+    "summary_original": "National Gas has moved the proposed St Fergus–Teesside hydrogen pipeline into the engineering design phase marking a significant step in plans for a national hydrogen network across the UK. The post National Gas pushes…",
+    "title_fr": "National Gas pushes forward with second phase of 2414km hydrogen pipeline Project Union",
+    "summary_fr": "National Gas has moved the proposed St Fergus–Teesside hydrogen pipeline into the engineering design phase marking a significant step in plans for a national hydrogen network across the UK. The post National Gas pushes…",
+    "url": "https://www.newcivilengineer.com/latest/national-gas-pushes-forward-with-second-phase-of-2414km-hydrogen-pipeline-project-union-18-09-2026/",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-827523f70d64",
+    "source": "New Civil Engineer",
+    "category": "Hydraulique",
+    "title_original": "Work begins to protect Teesside breakwater from ‘increasingly severe’ storms",
+    "summary_original": "Around 55,000t of rock is being installed by PD Ports at South Gare, breakwater, in Redcar, which protects the River Tees, in response to increasingly severe storm conditions. The post Work begins to protect Teesside…",
+    "title_fr": "Work begins to protect Teesside breakwater from ‘increasingly severe’ storms",
+    "summary_fr": "Around 55,000t of rock is being installed by PD Ports at South Gare, breakwater, in Redcar, which protects the River Tees, in response to increasingly severe storm conditions. The post Work begins to protect Teesside…",
+    "url": "https://www.newcivilengineer.com/latest/work-begins-to-protect-teesside-breakwater-from-increasingly-severe-storms-18-09-2026/",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-95c713a825a4",
+    "source": "New Civil Engineer",
+    "category": "Ponts",
+    "title_original": "In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding",
+    "summary_original": "HS2 has begun installing ironstone cladding on its new Oxford Canal viaduct near Wormleighton in Warwickshire. The post In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding appeared…",
+    "title_fr": "In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding",
+    "summary_fr": "HS2 has begun installing ironstone cladding on its new Oxford Canal viaduct near Wormleighton in Warwickshire. The post In pictures: HS2 adds local touch to Warwickshire canal viaduct with ironstone cladding appeared…",
+    "url": "https://www.newcivilengineer.com/latest/in-pictures-hs2-adds-local-touch-to-warwickshire-canal-viaduct-with-ironstone-cladding-18-09-2026/",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
+    "id": "civil-325b03a8a644",
+    "source": "For Construction Pros",
+    "category": "Innovation",
+    "title_original": "Without Further Ado, The Rental 2026 Editor's Choice Award Winners",
+    "summary_original": "The Rental Editor's Choice Awards celebrate the innovations in the equipment and general tool rental industry. Here are the winners...",
+    "title_fr": "Without Further Ado, The Rental 2026 Editor's Choice Award Winners",
+    "summary_fr": "The Rental Editor's Choice Awards celebrate the innovations in the equipment and general tool rental industry. Here are the winners...",
+    "url": "https://www.forconstructionpros.com/rental/construction/article/22947952/the-rental-2026-editors-choice-award-winners",
+    "image": "",
+    "published_at": "2026-09-18",
+    "language": "en"
+  },
+  {
     "id": "civil-3fae38b1cddf",
     "source": "Ground Engineering",
     "category": "Routes",
@@ -568,32 +646,6 @@
     "summary_fr": "One year after Ordnance Survey took responsibility for operating the National Underground Asset Register (NUAR), more than 400 asset owners across England, Wales and Northern Ireland have added data showing the…",
     "url": "https://www.geplus.co.uk/news/business-news/national-underground-asset-register-breaks-another-barrier-18-09-2026/",
     "image": "",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-ef6047cfa67d",
-    "source": "Smart Cities Dive",
-    "category": "Infrastructures",
-    "title_original": "US transit bus industry generated $1.1B in federal, state and local tax revenue in 2025: report",
-    "summary_original": "“The industry’s economic footprint extends well beyond the firms that assemble transit buses,” according to an Oxford Economics report.",
-    "title_fr": "US transit bus industry generated $1.1B in federal, state and local tax revenue in 2025: report",
-    "summary_fr": "“The industry’s economic footprint extends well beyond the firms that assemble transit buses,” according to an Oxford Economics report.",
-    "url": "https://www.smartcitiesdive.com/news/transit-bus-industry-data-oxford-economics/830720/",
-    "image": "https://imgproxy.divecdn.com/_F3lvu3PbJ1lk1RzpeQhGlH_j4ebDt_LBNnkyCWa1HY/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS8wMDVNZXRyb2J1cy1BZGRpc29uLVJkLmpwZw==.webp",
-    "published_at": "2026-09-18",
-    "language": "en"
-  },
-  {
-    "id": "civil-09208d83f06f",
-    "source": "Smart Cities Dive",
-    "category": "Hydraulique",
-    "title_original": "Local water projects on path to federal support as WRDA 2026 clears House",
-    "summary_original": "The Water Resources Development Act of 2026 targets flood protection, ports, waterways and water supply while giving communities more tools to work with the U.S. Army Corps of Engineers.",
-    "title_fr": "Local water projects on path to federal support as WRDA 2026 clears House",
-    "summary_fr": "The Water Resources Development Act of 2026 targets flood protection, ports, waterways and water supply while giving communities more tools to work with the U.S. Army Corps of Engineers.",
-    "url": "https://www.smartcitiesdive.com/news/local-water-projects-federal-support-wrda-2026-clears-house/830776/",
-    "image": "https://imgproxy.divecdn.com/ubcl1VYPTc-LSSz6BwAR8UOOIctptznzEa1m_FsIxzo/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjgzMjQ1MTI0LmpwZw==.webp",
     "published_at": "2026-09-18",
     "language": "en"
   },
@@ -1313,19 +1365,6 @@
     "language": "en"
   },
   {
-    "id": "civil-d2ba73fc399e",
-    "source": "Global Construction Review",
-    "category": "Infrastructures",
-    "title_original": "New Zealand’s first underground railway opens",
-    "summary_original": "The City Rail Link (CRL), New Zealand’s first underground railway and the nation’s largest transport infrastructure project, opened to the public on 13th September. The route connects downtown Auckland to… The post New…",
-    "title_fr": "New Zealand’s first underground railway opens",
-    "summary_fr": "The City Rail Link (CRL), New Zealand’s first underground railway and the nation’s largest transport infrastructure project, opened to the public on 13th September. The route connects downtown Auckland to… The post New…",
-    "url": "https://www.globalconstructionreview.com/new-zealands-first-underground-railway-opens/",
-    "image": "https://www.globalconstructionreview.com/wp-content/uploads/2026/09/NZ-600x338.jpg",
-    "published_at": "2026-09-16",
-    "language": "en"
-  },
-  {
     "id": "civil-8a98de699771",
     "source": "BIM Today",
     "category": "BIM / Revit",
@@ -1335,6 +1374,19 @@
     "summary_fr": "BIM and laser scanning are now essential tools in meeting heightened fire safety standards, writes Ryan Donoghue, head of digital engineering at AJ Digital. The post How BIM and laser scanning are improving fire safety…",
     "url": "https://www.pbctoday.co.uk/news/digital-construction-news/bim-news/how-bim-and-laser-scanning-are-improving-fire-safety/165467/",
     "image": "https://www.pbctoday.co.uk/news/wp-content/uploads/2026/09/AJ-pic-696x385.jpg",
+    "published_at": "2026-09-16",
+    "language": "en"
+  },
+  {
+    "id": "civil-d2ba73fc399e",
+    "source": "Global Construction Review",
+    "category": "Infrastructures",
+    "title_original": "New Zealand’s first underground railway opens",
+    "summary_original": "The City Rail Link (CRL), New Zealand’s first underground railway and the nation’s largest transport infrastructure project, opened to the public on 13th September. The route connects downtown Auckland to… The post New…",
+    "title_fr": "New Zealand’s first underground railway opens",
+    "summary_fr": "The City Rail Link (CRL), New Zealand’s first underground railway and the nation’s largest transport infrastructure project, opened to the public on 13th September. The route connects downtown Auckland to… The post New…",
+    "url": "https://www.globalconstructionreview.com/new-zealands-first-underground-railway-opens/",
+    "image": "https://www.globalconstructionreview.com/wp-content/uploads/2026/09/NZ-600x338.jpg",
     "published_at": "2026-09-16",
     "language": "en"
   },
@@ -1846,19 +1898,6 @@
     "language": "en"
   },
   {
-    "id": "civil-c948c734706d",
-    "source": "Construction Specifier",
-    "category": "Structures",
-    "title_original": "Play Building Blocks: Wordplay for Specifiers—September 15, 2026",
-    "summary_original": "Put your construction know-how to the test with this week’s Building Blocks puzzle from The Construction Specifier. Can you crack the word? The post Play Building Blocks: Wordplay for Specifiers—September 15, 2026…",
-    "title_fr": "Play Building Blocks: Wordplay for Specifiers—September 15, 2026",
-    "summary_fr": "Put your construction know-how to the test with this week’s Building Blocks puzzle from The Construction Specifier. Can you crack the word? The post Play Building Blocks: Wordplay for Specifiers—September 15, 2026…",
-    "url": "https://www.constructionspecifier.com/play-building-blocks-wordplay-for-specifiers-september-15-2026/",
-    "image": "",
-    "published_at": "2026-09-15",
-    "language": "en"
-  },
-  {
     "id": "civil-2fd43d0128e7",
     "source": "AEC Magazine",
     "category": "BIM / Revit",
@@ -1880,6 +1919,19 @@
     "title_fr": "HP ZBook Ultra G3a brings local AI to Revit",
     "summary_fr": "Mobile workstation paired with Perplexity’s agentic platform to run substantial AI models locally alongside Revit The post HP ZBook Ultra G3a brings local AI to Revit appeared first on AEC Magazine .",
     "url": "https://aecmag.com/workstations/hp-zbook-ultra-g3a-brings-local-ai-to-revit/",
+    "image": "",
+    "published_at": "2026-09-15",
+    "language": "en"
+  },
+  {
+    "id": "civil-c948c734706d",
+    "source": "Construction Specifier",
+    "category": "Structures",
+    "title_original": "Play Building Blocks: Wordplay for Specifiers—September 15, 2026",
+    "summary_original": "Put your construction know-how to the test with this week’s Building Blocks puzzle from The Construction Specifier. Can you crack the word? The post Play Building Blocks: Wordplay for Specifiers—September 15, 2026…",
+    "title_fr": "Play Building Blocks: Wordplay for Specifiers—September 15, 2026",
+    "summary_fr": "Put your construction know-how to the test with this week’s Building Blocks puzzle from The Construction Specifier. Can you crack the word? The post Play Building Blocks: Wordplay for Specifiers—September 15, 2026…",
+    "url": "https://www.constructionspecifier.com/play-building-blocks-wordplay-for-specifiers-september-15-2026/",
     "image": "",
     "published_at": "2026-09-15",
     "language": "en"
@@ -2024,58 +2076,6 @@
     "summary_fr": "The $5.5 billion 14-mile rail line will reach historically underserved communities in Brooklyn and Queens.",
     "url": "https://www.smartcitiesdive.com/news/queens-brooklyn-interborough-express-train-mta/830375/",
     "image": "https://imgproxy.divecdn.com/OjvMEz-aR0Fm6GquOUAVxulGD-3ASu7gb6PP6NAAUao/g:nowe:0:34/c:2048:1157/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS81NTIyMjgyNzkzMl9lNGM3OTdjMTUzX28uanBn.webp",
-    "published_at": "2026-09-15",
-    "language": "en"
-  },
-  {
-    "id": "civil-b152d8fbaecd",
-    "source": "Smart Cities Dive",
-    "category": "Innovation",
-    "title_original": "Airbnb’s $250M housing accelerator program to start in Austin, Texas",
-    "summary_original": "The short-term rental company is committing the long-term investment toward multifamily housing development and pledged support for local pro-housing policies.",
-    "title_fr": "Airbnb’s $250M housing accelerator program to start in Austin, Texas",
-    "summary_fr": "The short-term rental company is committing the long-term investment toward multifamily housing development and pledged support for local pro-housing policies.",
-    "url": "https://www.smartcitiesdive.com/news/airbnb-multifamily-housing-investment-austin-texas/830414/",
-    "image": "https://imgproxy.divecdn.com/nWO4qkZpmSATyN8rLWsQcb2FQlbcXnjKzt0HOoypAl4/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9BaXJibmIuanBlZw==.webp",
-    "published_at": "2026-09-15",
-    "language": "en"
-  },
-  {
-    "id": "civil-83ba67507fb8",
-    "source": "Smart Cities Dive",
-    "category": "Infrastructures",
-    "title_original": "Cities, states sue DHS over plan to deny green cards to immigrants who use public benefits",
-    "summary_original": "The change would shift costs to local governments and discourage eligible residents from accessing benefits, the lawsuits allege.",
-    "title_fr": "Cities, states sue DHS over plan to deny green cards to immigrants who use public benefits",
-    "summary_fr": "The change would shift costs to local governments and discourage eligible residents from accessing benefits, the lawsuits allege.",
-    "url": "https://www.smartcitiesdive.com/news/cities-states-sue-dhs-public-charge-rule-deny-green-cards-immigrants-benefits/830412/",
-    "image": "https://imgproxy.divecdn.com/xHItVvxQuYxzHgJ2tx28W2yTa8ow3jUzzdH2a2W-5hA/g:ce/rs:fill:1600:900:1/Z3M6Ly9kaXZlc2l0ZS1zdG9yYWdlL2RpdmVpbWFnZS9HZXR0eUltYWdlcy0yMjk1MjUyNTI5LmpwZw==.webp",
-    "published_at": "2026-09-15",
-    "language": "en"
-  },
-  {
-    "id": "civil-0de750bc9dee",
-    "source": "New Civil Engineer",
-    "category": "Construction",
-    "title_original": "Graham to deliver £220M Oxford flood defence project",
-    "summary_original": "National contractor Graham has been appointed by the Environment Agency to deliver the £220M Oxford Flood Alleviation Scheme (OFAS), one of the most significant flood defence projects in England. The post Graham to…",
-    "title_fr": "Graham to deliver £220M Oxford flood defence project",
-    "summary_fr": "National contractor Graham has been appointed by the Environment Agency to deliver the £220M Oxford Flood Alleviation Scheme (OFAS), one of the most significant flood defence projects in England. The post Graham to…",
-    "url": "https://www.newcivilengineer.com/latest/graham-to-deliver-220m-oxford-flood-defence-project-15-09-2026/",
-    "image": "",
-    "published_at": "2026-09-15",
-    "language": "en"
-  },
-  {
-    "id": "civil-070a6aa077f2",
-    "source": "New Civil Engineer",
-    "category": "Construction",
-    "title_original": "Why early engagement is critical to successful defence construction project delivery",
-    "summary_original": "As defence spending accelerates following the UK's Strategic Defence Review, project teams face increasing pressure to deliver secure, resilient infrastructure at pace. The post Why early engagement is critical to…",
-    "title_fr": "Why early engagement is critical to successful defence construction project delivery",
-    "summary_fr": "As defence spending accelerates following the UK's Strategic Defence Review, project teams face increasing pressure to deliver secure, resilient infrastructure at pace. The post Why early engagement is critical to…",
-    "url": "https://www.newcivilengineer.com/latest/why-early-engagement-is-critical-to-successful-defence-construction-project-delivery-15-09-2026/",
-    "image": "",
     "published_at": "2026-09-15",
     "language": "en"
   }
